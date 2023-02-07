@@ -46,7 +46,7 @@ export class DataDnsPtrRecordSet extends cdktf.TerraformDataSource {
       terraformResourceType: 'dns_ptr_record_set',
       terraformGeneratorMetadata: {
         providerName: 'dns',
-        providerVersion: '3.2.3',
+        providerVersion: '3.2.4',
         providerVersionConstraint: '~> 3.2'
       },
       provider: config.provider,

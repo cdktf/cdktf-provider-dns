@@ -58,7 +58,7 @@ export class TxtRecordSet extends cdktf.TerraformResource {
       terraformResourceType: 'dns_txt_record_set',
       terraformGeneratorMetadata: {
         providerName: 'dns',
-        providerVersion: '3.2.3',
+        providerVersion: '3.2.4',
         providerVersionConstraint: '~> 3.2'
       },
       provider: config.provider,

@@ -58,7 +58,7 @@ export class PtrRecord extends cdktf.TerraformResource {
       terraformResourceType: 'dns_ptr_record',
       terraformGeneratorMetadata: {
         providerName: 'dns',
-        providerVersion: '3.2.3',
+        providerVersion: '3.2.4',
         providerVersionConstraint: '~> 3.2'
       },
       provider: config.provider,
