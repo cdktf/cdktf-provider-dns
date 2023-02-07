@@ -41,7 +41,7 @@ export class DnsProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'dns',
       terraformGeneratorMetadata: {
         providerName: 'dns',
-        providerVersion: '3.2.3',
+        providerVersion: '3.2.4',
         providerVersionConstraint: '~> 3.2'
       },
       terraformProviderSource: 'dns'
