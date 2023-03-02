@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/dns/d/mx_record_set 
 #### Initializers <a name="Initializers" id="@cdktf/provider-dns.dataDnsMxRecordSet.DataDnsMxRecordSet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/datadnsmxrecordset"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/v3/datadnsmxrecordset"
 
 datadnsmxrecordset.NewDataDnsMxRecordSet(scope Construct, id *string, config DataDnsMxRecordSetConfig) DataDnsMxRecordSet
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-dns.dataDnsMxRecordSet.DataDnsMxRecordSet.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/datadnsmxrecordset"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/v3/datadnsmxrecordset"
 
 datadnsmxrecordset.DataDnsMxRecordSet_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-dns.dataDnsMxRecordSet.DataDnsMxRecordSet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/datadnsmxrecordset"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/v3/datadnsmxrecordset"
 
 datadnsmxrecordset.DataDnsMxRecordSet_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ datadnsmxrecordset.DataDnsMxRecordSet_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-dns.dataDnsMxRecordSet.DataDnsMxRecordSet.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/datadnsmxrecordset"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/v3/datadnsmxrecordset"
 
 datadnsmxrecordset.DataDnsMxRecordSet_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -551,7 +551,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-dns.dataDnsMxRecordSet.DataDnsMxRecordSetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/datadnsmxrecordset"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/v3/datadnsmxrecordset"
 
 &datadnsmxrecordset.DataDnsMxRecordSetConfig {
 	Connection: interface{},
@@ -684,7 +684,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-dns.dataDnsMxRecordSet.DataDnsMxRecordSetMx.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/datadnsmxrecordset"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/v3/datadnsmxrecordset"
 
 &datadnsmxrecordset.DataDnsMxRecordSetMx {
 
@@ -699,7 +699,7 @@ import "github.com/cdktf/cdktf-provider-dns-go/dns/datadnsmxrecordset"
 #### Initializers <a name="Initializers" id="@cdktf/provider-dns.dataDnsMxRecordSet.DataDnsMxRecordSetMxList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/datadnsmxrecordset"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/v3/datadnsmxrecordset"
 
 datadnsmxrecordset.NewDataDnsMxRecordSetMxList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDnsMxRecordSetMxList
 ```
@@ -831,7 +831,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-dns.dataDnsMxRecordSet.DataDnsMxRecordSetMxOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/datadnsmxrecordset"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/v3/datadnsmxrecordset"
 
 datadnsmxrecordset.NewDataDnsMxRecordSetMxOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDnsMxRecordSetMxOutputReference
 ```
