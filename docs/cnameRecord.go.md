@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/dns/r/cname_record d
 #### Initializers <a name="Initializers" id="@cdktf/provider-dns.cnameRecord.CnameRecord.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/cnamerecord"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/v4/cnamerecord"
 
 cnamerecord.NewCnameRecord(scope Construct, id *string, config CnameRecordConfig) CnameRecord
 ```
@@ -280,7 +280,7 @@ func ResetTtl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-dns.cnameRecord.CnameRecord.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/cnamerecord"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/v4/cnamerecord"
 
 cnamerecord.CnameRecord_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-dns.cnameRecord.CnameRecord.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/cnamerecord"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/v4/cnamerecord"
 
 cnamerecord.CnameRecord_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ cnamerecord.CnameRecord_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-dns.cnameRecord.CnameRecord.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/cnamerecord"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/v4/cnamerecord"
 
 cnamerecord.CnameRecord_IsTerraformResource(x interface{}) *bool
 ```
@@ -635,7 +635,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-dns.cnameRecord.CnameRecordConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/cnamerecord"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/v4/cnamerecord"
 
 &cnamerecord.CnameRecordConfig {
 	Connection: interface{},
