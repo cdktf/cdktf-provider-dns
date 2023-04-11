@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/dns/d/cname_record_s
 #### Initializers <a name="Initializers" id="@cdktf/provider-dns.dataDnsCnameRecordSet.DataDnsCnameRecordSet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/v3/datadnscnamerecordset"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/datadnscnamerecordset"
 
 datadnscnamerecordset.NewDataDnsCnameRecordSet(scope Construct, id *string, config DataDnsCnameRecordSetConfig) DataDnsCnameRecordSet
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-dns.dataDnsCnameRecordSet.DataDnsCnameRecordSet.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/v3/datadnscnamerecordset"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/datadnscnamerecordset"
 
 datadnscnamerecordset.DataDnsCnameRecordSet_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-dns.dataDnsCnameRecordSet.DataDnsCnameRecordSet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/v3/datadnscnamerecordset"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/datadnscnamerecordset"
 
 datadnscnamerecordset.DataDnsCnameRecordSet_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ datadnscnamerecordset.DataDnsCnameRecordSet_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-dns.dataDnsCnameRecordSet.DataDnsCnameRecordSet.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/v3/datadnscnamerecordset"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/datadnscnamerecordset"
 
 datadnscnamerecordset.DataDnsCnameRecordSet_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -551,7 +551,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-dns.dataDnsCnameRecordSet.DataDnsCnameRecordSetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/v3/datadnscnamerecordset"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/datadnscnamerecordset"
 
 &datadnscnamerecordset.DataDnsCnameRecordSetConfig {
 	Connection: interface{},
