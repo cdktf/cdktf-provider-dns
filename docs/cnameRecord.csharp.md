@@ -1,3 +1,7 @@
+# `dns_cname_record`
+
+Refer to the Terraform Registory for docs: [`dns_cname_record`](https://www.terraform.io/docs/providers/dns/r/cname_record).
+
 # `cnameRecord` Submodule <a name="`cnameRecord` Submodule" id="@cdktf/provider-dns.cnameRecord"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

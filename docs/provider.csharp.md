@@ -1,3 +1,7 @@
+# `provider`
+
+Refer to the Terraform Registory for docs: [`dns`](https://www.terraform.io/docs/providers/dns).
+
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-dns.provider"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

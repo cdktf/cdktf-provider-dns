@@ -1,3 +1,7 @@
+# `dns_txt_record_set`
+
+Refer to the Terraform Registory for docs: [`dns_txt_record_set`](https://www.terraform.io/docs/providers/dns/r/txt_record_set).
+
 # `txtRecordSet` Submodule <a name="`txtRecordSet` Submodule" id="@cdktf/provider-dns.txtRecordSet"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
