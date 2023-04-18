@@ -1,3 +1,7 @@
+# `data_dns_ptr_record_set`
+
+Refer to the Terraform Registory for docs: [`data_dns_ptr_record_set`](https://www.terraform.io/docs/providers/dns/d/ptr_record_set).
+
 # `dataDnsPtrRecordSet` Submodule <a name="`dataDnsPtrRecordSet` Submodule" id="@cdktf/provider-dns.dataDnsPtrRecordSet"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
