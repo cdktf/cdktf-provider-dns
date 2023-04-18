@@ -1,6 +1,6 @@
 # `dns_mx_record_set`
 
-Refer to the Terraform Registory for docs: [`dns_mx_record_set`](https://www.terraform.io/docs/providers/dns/r/mx_record_set).
+Refer to the Terraform Registory for docs: [`dns_mx_record_set`](https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/mx_record_set).
 
 # `mxRecordSet` Submodule <a name="`mxRecordSet` Submodule" id="@cdktf/provider-dns.mxRecordSet"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`dns_mx_record_set`](https://www.ter
 
 ### MxRecordSet <a name="MxRecordSet" id="@cdktf/provider-dns.mxRecordSet.MxRecordSet"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/dns/r/mx_record_set dns_mx_record_set}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/mx_record_set dns_mx_record_set}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-dns.mxRecordSet.MxRecordSet.Initializer"></a>
 
@@ -71,7 +71,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSet.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSet.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSet.putMx">putMx</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSet.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSet.resetMx">resetMx</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSet.resetName">resetName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSet.resetTtl">resetTtl</a></code> | *No description.* |
 
@@ -273,10 +273,10 @@ public putMx(value: MxRecordSetMx[] | IResolvable): void
 
 ---
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-dns.mxRecordSet.MxRecordSet.resetId"></a>
+##### `resetMx` <a name="resetMx" id="@cdktf/provider-dns.mxRecordSet.MxRecordSet.resetMx"></a>
 
 ```typescript
-public resetId(): void
+public resetMx(): void
 ```
 
 ##### `resetName` <a name="resetName" id="@cdktf/provider-dns.mxRecordSet.MxRecordSet.resetName"></a>
@@ -373,19 +373,18 @@ mxRecordSet.MxRecordSet.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSet.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSet.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSet.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSet.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSet.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSet.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSet.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSet.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSet.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSet.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSet.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSet.property.mx">mx</a></code> | <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSetMxList">MxRecordSetMxList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSet.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSet.property.mxInput">mxInput</a></code> | <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSetMx">MxRecordSetMx</a>[] \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSet.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSet.property.ttlInput">ttlInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSet.property.zoneInput">zoneInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSet.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSet.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSet.property.ttl">ttl</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSet.property.zone">zone</a></code> | <code>string</code> | *No description.* |
@@ -477,10 +476,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-dns.mxRecordSet.MxRecordSet.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -534,6 +533,16 @@ public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExe
 
 ---
 
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-dns.mxRecordSet.MxRecordSet.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `mx`<sup>Required</sup> <a name="mx" id="@cdktf/provider-dns.mxRecordSet.MxRecordSet.property.mx"></a>
 
 ```typescript
@@ -541,16 +550,6 @@ public readonly mx: MxRecordSetMxList;
 ```
 
 - *Type:* <a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSetMxList">MxRecordSetMxList</a>
-
----
-
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-dns.mxRecordSet.MxRecordSet.property.idInput"></a>
-
-```typescript
-public readonly idInput: string;
-```
-
-- *Type:* string
 
 ---
 
@@ -588,16 +587,6 @@ public readonly ttlInput: number;
 
 ```typescript
 public readonly zoneInput: string;
-```
-
-- *Type:* string
-
----
-
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-dns.mxRecordSet.MxRecordSet.property.id"></a>
-
-```typescript
-public readonly id: string;
 ```
 
 - *Type:* string
@@ -669,17 +658,16 @@ const mxRecordSetConfig: mxRecordSet.MxRecordSetConfig = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSetConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSetConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSetConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSetConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSetConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSetConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSetConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSetConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSetConfig.property.zone">zone</a></code> | <code>string</code> | DNS zone the record set belongs to. It must be an FQDN, that is, include the trailing dot. |
 | <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSetConfig.property.mx">mx</a></code> | <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSetMx">MxRecordSetMx</a>[] \| cdktf.IResolvable</code> | mx block. |
-| <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSetConfig.property.zone">zone</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/mx_record_set#zone MxRecordSet#zone}. |
-| <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSetConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/mx_record_set#id MxRecordSet#id}. |
-| <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSetConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/mx_record_set#name MxRecordSet#name}. |
-| <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSetConfig.property.ttl">ttl</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/mx_record_set#ttl MxRecordSet#ttl}. |
+| <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSetConfig.property.name">name</a></code> | <code>string</code> | The name of the record set. |
+| <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSetConfig.property.ttl">ttl</a></code> | <code>number</code> | The TTL of the record set. Defaults to `3600`. |
 
 ---
 
@@ -696,10 +684,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-dns.mxRecordSet.MxRecordSetConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -753,7 +741,21 @@ public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExe
 
 ---
 
-##### `mx`<sup>Required</sup> <a name="mx" id="@cdktf/provider-dns.mxRecordSet.MxRecordSetConfig.property.mx"></a>
+##### `zone`<sup>Required</sup> <a name="zone" id="@cdktf/provider-dns.mxRecordSet.MxRecordSetConfig.property.zone"></a>
+
+```typescript
+public readonly zone: string;
+```
+
+- *Type:* string
+
+DNS zone the record set belongs to. It must be an FQDN, that is, include the trailing dot.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/mx_record_set#zone MxRecordSet#zone}
+
+---
+
+##### `mx`<sup>Optional</sup> <a name="mx" id="@cdktf/provider-dns.mxRecordSet.MxRecordSetConfig.property.mx"></a>
 
 ```typescript
 public readonly mx: MxRecordSetMx[] | IResolvable;
@@ -763,34 +765,7 @@ public readonly mx: MxRecordSetMx[] | IResolvable;
 
 mx block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/mx_record_set#mx MxRecordSet#mx}
-
----
-
-##### `zone`<sup>Required</sup> <a name="zone" id="@cdktf/provider-dns.mxRecordSet.MxRecordSetConfig.property.zone"></a>
-
-```typescript
-public readonly zone: string;
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/mx_record_set#zone MxRecordSet#zone}.
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-dns.mxRecordSet.MxRecordSetConfig.property.id"></a>
-
-```typescript
-public readonly id: string;
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/mx_record_set#id MxRecordSet#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/mx_record_set#mx MxRecordSet#mx}
 
 ---
 
@@ -802,7 +777,11 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/mx_record_set#name MxRecordSet#name}.
+The name of the record set.
+
+The `zone` argument will be appended to this value to create the full record path.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/mx_record_set#name MxRecordSet#name}
 
 ---
 
@@ -814,7 +793,9 @@ public readonly ttl: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/mx_record_set#ttl MxRecordSet#ttl}.
+The TTL of the record set. Defaults to `3600`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/mx_record_set#ttl MxRecordSet#ttl}
 
 ---
 
@@ -832,8 +813,8 @@ const mxRecordSetMx: mxRecordSet.MxRecordSetMx = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSetMx.property.exchange">exchange</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/mx_record_set#exchange MxRecordSet#exchange}. |
-| <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSetMx.property.preference">preference</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/mx_record_set#preference MxRecordSet#preference}. |
+| <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSetMx.property.exchange">exchange</a></code> | <code>string</code> | The FQDN of the mail exchange, include the trailing dot. |
+| <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSetMx.property.preference">preference</a></code> | <code>number</code> | The preference for the record. |
 
 ---
 
@@ -845,7 +826,9 @@ public readonly exchange: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/mx_record_set#exchange MxRecordSet#exchange}.
+The FQDN of the mail exchange, include the trailing dot.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/mx_record_set#exchange MxRecordSet#exchange}
 
 ---
 
@@ -857,7 +840,9 @@ public readonly preference: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/mx_record_set#preference MxRecordSet#preference}.
+The preference for the record.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/mx_record_set#preference MxRecordSet#preference}
 
 ---
 

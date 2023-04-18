@@ -1,6 +1,6 @@
 # `dns_srv_record_set`
 
-Refer to the Terraform Registory for docs: [`dns_srv_record_set`](https://www.terraform.io/docs/providers/dns/r/srv_record_set).
+Refer to the Terraform Registory for docs: [`dns_srv_record_set`](https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/srv_record_set).
 
 # `srvRecordSet` Submodule <a name="`srvRecordSet` Submodule" id="@cdktf/provider-dns.srvRecordSet"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`dns_srv_record_set`](https://www.te
 
 ### SrvRecordSet <a name="SrvRecordSet" id="@cdktf/provider-dns.srvRecordSet.SrvRecordSet"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/dns/r/srv_record_set dns_srv_record_set}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/srv_record_set dns_srv_record_set}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-dns.srvRecordSet.SrvRecordSet.Initializer"></a>
 
@@ -71,7 +71,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.putSrv">PutSrv</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.resetSrv">ResetSrv</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.resetTtl">ResetTtl</a></code> | *No description.* |
 
 ---
@@ -272,10 +272,10 @@ private void PutSrv(object Value)
 
 ---
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-dns.srvRecordSet.SrvRecordSet.resetId"></a>
+##### `ResetSrv` <a name="ResetSrv" id="@cdktf/provider-dns.srvRecordSet.SrvRecordSet.resetSrv"></a>
 
 ```csharp
-private void ResetId()
+private void ResetSrv()
 ```
 
 ##### `ResetTtl` <a name="ResetTtl" id="@cdktf/provider-dns.srvRecordSet.SrvRecordSet.resetTtl"></a>
@@ -366,19 +366,18 @@ SrvRecordSet.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.property.srv">Srv</a></code> | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetSrvList">SrvRecordSetSrvList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.property.srvInput">SrvInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.property.ttlInput">TtlInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.property.zoneInput">ZoneInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.property.ttl">Ttl</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.property.zone">Zone</a></code> | <code>string</code> | *No description.* |
@@ -470,10 +469,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-dns.srvRecordSet.SrvRecordSet.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -527,6 +526,16 @@ public object[] Provisioners { get; }
 
 ---
 
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-dns.srvRecordSet.SrvRecordSet.property.id"></a>
+
+```csharp
+public string Id { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `Srv`<sup>Required</sup> <a name="Srv" id="@cdktf/provider-dns.srvRecordSet.SrvRecordSet.property.srv"></a>
 
 ```csharp
@@ -534,16 +543,6 @@ public SrvRecordSetSrvList Srv { get; }
 ```
 
 - *Type:* <a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetSrvList">SrvRecordSetSrvList</a>
-
----
-
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-dns.srvRecordSet.SrvRecordSet.property.idInput"></a>
-
-```csharp
-public string IdInput { get; }
-```
-
-- *Type:* string
 
 ---
 
@@ -581,16 +580,6 @@ public double TtlInput { get; }
 
 ```csharp
 public string ZoneInput { get; }
-```
-
-- *Type:* string
-
----
-
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-dns.srvRecordSet.SrvRecordSet.property.id"></a>
-
-```csharp
-public string Id { get; }
 ```
 
 - *Type:* string
@@ -656,16 +645,15 @@ using HashiCorp.Cdktf.Providers.Dns;
 
 new SrvRecordSetConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
     object[] Provisioners = null,
     string Name,
-    object Srv,
     string Zone,
-    string Id = null,
+    object Srv = null,
     double Ttl = null
 };
 ```
@@ -675,17 +663,16 @@ new SrvRecordSetConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/srv_record_set#name SrvRecordSet#name}. |
+| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetConfig.property.name">Name</a></code> | <code>string</code> | The name of the record set. |
+| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetConfig.property.zone">Zone</a></code> | <code>string</code> | DNS zone the record set belongs to. It must be an FQDN, that is, include the trailing dot. |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetConfig.property.srv">Srv</a></code> | <code>object</code> | srv block. |
-| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetConfig.property.zone">Zone</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/srv_record_set#zone SrvRecordSet#zone}. |
-| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/srv_record_set#id SrvRecordSet#id}. |
-| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetConfig.property.ttl">Ttl</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/srv_record_set#ttl SrvRecordSet#ttl}. |
+| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetConfig.property.ttl">Ttl</a></code> | <code>double</code> | The TTL of the record set. Defaults to `3600`. |
 
 ---
 
@@ -702,10 +689,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-dns.srvRecordSet.SrvRecordSetConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -767,21 +754,11 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/srv_record_set#name SrvRecordSet#name}.
+The name of the record set.
 
----
+The `zone` argument will be appended to this value to create the full record path.
 
-##### `Srv`<sup>Required</sup> <a name="Srv" id="@cdktf/provider-dns.srvRecordSet.SrvRecordSetConfig.property.srv"></a>
-
-```csharp
-public object Srv { get; set; }
-```
-
-- *Type:* object
-
-srv block.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/srv_record_set#srv SrvRecordSet#srv}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/srv_record_set#name SrvRecordSet#name}
 
 ---
 
@@ -793,22 +770,23 @@ public string Zone { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/srv_record_set#zone SrvRecordSet#zone}.
+DNS zone the record set belongs to. It must be an FQDN, that is, include the trailing dot.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/srv_record_set#zone SrvRecordSet#zone}
 
 ---
 
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-dns.srvRecordSet.SrvRecordSetConfig.property.id"></a>
+##### `Srv`<sup>Optional</sup> <a name="Srv" id="@cdktf/provider-dns.srvRecordSet.SrvRecordSetConfig.property.srv"></a>
 
 ```csharp
-public string Id { get; set; }
+public object Srv { get; set; }
 ```
 
-- *Type:* string
+- *Type:* object
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/srv_record_set#id SrvRecordSet#id}.
+srv block.
 
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/srv_record_set#srv SrvRecordSet#srv}
 
 ---
 
@@ -820,7 +798,9 @@ public double Ttl { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/srv_record_set#ttl SrvRecordSet#ttl}.
+The TTL of the record set. Defaults to `3600`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/srv_record_set#ttl SrvRecordSet#ttl}
 
 ---
 
@@ -843,10 +823,10 @@ new SrvRecordSetSrv {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetSrv.property.port">Port</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/srv_record_set#port SrvRecordSet#port}. |
-| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetSrv.property.priority">Priority</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/srv_record_set#priority SrvRecordSet#priority}. |
-| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetSrv.property.target">Target</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/srv_record_set#target SrvRecordSet#target}. |
-| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetSrv.property.weight">Weight</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/srv_record_set#weight SrvRecordSet#weight}. |
+| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetSrv.property.port">Port</a></code> | <code>double</code> | The port for the service on the target. |
+| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetSrv.property.priority">Priority</a></code> | <code>double</code> | The priority for the record. |
+| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetSrv.property.target">Target</a></code> | <code>string</code> | The FQDN of the target, include the trailing dot. |
+| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetSrv.property.weight">Weight</a></code> | <code>double</code> | The weight for the record. |
 
 ---
 
@@ -858,7 +838,9 @@ public double Port { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/srv_record_set#port SrvRecordSet#port}.
+The port for the service on the target.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/srv_record_set#port SrvRecordSet#port}
 
 ---
 
@@ -870,7 +852,9 @@ public double Priority { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/srv_record_set#priority SrvRecordSet#priority}.
+The priority for the record.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/srv_record_set#priority SrvRecordSet#priority}
 
 ---
 
@@ -882,7 +866,9 @@ public string Target { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/srv_record_set#target SrvRecordSet#target}.
+The FQDN of the target, include the trailing dot.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/srv_record_set#target SrvRecordSet#target}
 
 ---
 
@@ -894,7 +880,9 @@ public double Weight { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/srv_record_set#weight SrvRecordSet#weight}.
+The weight for the record.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/srv_record_set#weight SrvRecordSet#weight}
 
 ---
 

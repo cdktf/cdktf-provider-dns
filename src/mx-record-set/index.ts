@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/dns/r/mx_record_set
+// https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/mx_record_set
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,38 +8,41 @@ import * as cdktf from 'cdktf';
 
 export interface MxRecordSetConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/mx_record_set#id MxRecordSet#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/mx_record_set#name MxRecordSet#name}
+  * The name of the record set. The `zone` argument will be appended to this value to create the full record path.
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/mx_record_set#name MxRecordSet#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/mx_record_set#ttl MxRecordSet#ttl}
+  * The TTL of the record set. Defaults to `3600`.
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/mx_record_set#ttl MxRecordSet#ttl}
   */
   readonly ttl?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/mx_record_set#zone MxRecordSet#zone}
+  * DNS zone the record set belongs to. It must be an FQDN, that is, include the trailing dot.
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/mx_record_set#zone MxRecordSet#zone}
   */
   readonly zone: string;
   /**
   * mx block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/mx_record_set#mx MxRecordSet#mx}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/mx_record_set#mx MxRecordSet#mx}
   */
-  readonly mx: MxRecordSetMx[] | cdktf.IResolvable;
+  readonly mx?: MxRecordSetMx[] | cdktf.IResolvable;
 }
 export interface MxRecordSetMx {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/mx_record_set#exchange MxRecordSet#exchange}
+  * The FQDN of the mail exchange, include the trailing dot.
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/mx_record_set#exchange MxRecordSet#exchange}
   */
   readonly exchange: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/mx_record_set#preference MxRecordSet#preference}
+  * The preference for the record.
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/mx_record_set#preference MxRecordSet#preference}
   */
   readonly preference: number;
 }
@@ -153,7 +156,7 @@ export class MxRecordSetMxList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/dns/r/mx_record_set dns_mx_record_set}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/mx_record_set dns_mx_record_set}
 */
 export class MxRecordSet extends cdktf.TerraformResource {
 
@@ -167,7 +170,7 @@ export class MxRecordSet extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/dns/r/mx_record_set dns_mx_record_set} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/mx_record_set dns_mx_record_set} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -178,7 +181,7 @@ export class MxRecordSet extends cdktf.TerraformResource {
       terraformResourceType: 'dns_mx_record_set',
       terraformGeneratorMetadata: {
         providerName: 'dns',
-        providerVersion: '3.2.4',
+        providerVersion: '3.3.0',
         providerVersionConstraint: '~> 3.2'
       },
       provider: config.provider,
@@ -189,7 +192,6 @@ export class MxRecordSet extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
-    this._id = config.id;
     this._name = config.name;
     this._ttl = config.ttl;
     this._zone = config.zone;
@@ -200,20 +202,9 @@ export class MxRecordSet extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
-  }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
   }
 
   // name - computed: false, optional: true, required: false
@@ -232,7 +223,7 @@ export class MxRecordSet extends cdktf.TerraformResource {
     return this._name;
   }
 
-  // ttl - computed: false, optional: true, required: false
+  // ttl - computed: true, optional: true, required: false
   private _ttl?: number; 
   public get ttl() {
     return this.getNumberAttribute('ttl');
@@ -261,13 +252,16 @@ export class MxRecordSet extends cdktf.TerraformResource {
     return this._zone;
   }
 
-  // mx - computed: false, optional: false, required: true
+  // mx - computed: false, optional: true, required: false
   private _mx = new MxRecordSetMxList(this, "mx", true);
   public get mx() {
     return this._mx;
   }
   public putMx(value: MxRecordSetMx[] | cdktf.IResolvable) {
     this._mx.internalValue = value;
+  }
+  public resetMx() {
+    this._mx.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get mxInput() {
@@ -280,7 +274,6 @@ export class MxRecordSet extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       ttl: cdktf.numberToTerraform(this._ttl),
       zone: cdktf.stringToTerraform(this._zone),

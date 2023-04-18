@@ -1,6 +1,6 @@
 # `provider`
 
-Refer to the Terraform Registory for docs: [`dns`](https://www.terraform.io/docs/providers/dns).
+Refer to the Terraform Registory for docs: [`dns`](https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs).
 
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-dns.provider"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`dns`](https://www.terraform.io/docs
 
 ### DnsProvider <a name="DnsProvider" id="@cdktf/provider-dns.provider.DnsProvider"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/dns dns}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs dns}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-dns.provider.DnsProvider.Initializer"></a>
 
@@ -17,6 +17,7 @@ import com.hashicorp.cdktf.providers.dns.provider.DnsProvider;
 
 DnsProvider.Builder.create(Construct scope, java.lang.String id)
 //  .alias(java.lang.String)
+//  .update(DnsProviderUpdate)
     .build();
 ```
 
@@ -25,6 +26,7 @@ DnsProvider.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-dns.provider.DnsProvider.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-dns.provider.DnsProvider.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-dns.provider.DnsProvider.Initializer.parameter.alias">alias</a></code> | <code>java.lang.String</code> | Alias name. |
+| <code><a href="#@cdktf/provider-dns.provider.DnsProvider.Initializer.parameter.update">update</a></code> | <code><a href="#@cdktf/provider-dns.provider.DnsProviderUpdate">DnsProviderUpdate</a></code> | update block. |
 
 ---
 
@@ -52,7 +54,17 @@ Must be unique amongst siblings in the same scope
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns#alias DnsProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs#alias DnsProvider#alias}
+
+---
+
+##### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-dns.provider.DnsProvider.Initializer.parameter.update"></a>
+
+- *Type:* <a href="#@cdktf/provider-dns.provider.DnsProviderUpdate">DnsProviderUpdate</a>
+
+update block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs#update DnsProvider#update}
 
 ---
 
@@ -67,6 +79,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns#a
 | <code><a href="#@cdktf/provider-dns.provider.DnsProvider.toMetadata">toMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.provider.DnsProvider.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-dns.provider.DnsProvider.resetAlias">resetAlias</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-dns.provider.DnsProvider.resetUpdate">resetUpdate</a></code> | *No description.* |
 
 ---
 
@@ -138,6 +151,12 @@ Adds this resource to the terraform JSON output.
 
 ```java
 public void resetAlias()
+```
+
+##### `resetUpdate` <a name="resetUpdate" id="@cdktf/provider-dns.provider.DnsProvider.resetUpdate"></a>
+
+```java
+public void resetUpdate()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -224,6 +243,8 @@ DnsProvider.isTerraformProvider(java.lang.Object x)
 | <code><a href="#@cdktf/provider-dns.provider.DnsProvider.property.terraformProviderSource">terraformProviderSource</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.provider.DnsProvider.property.alias">alias</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.provider.DnsProvider.property.aliasInput">aliasInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dns.provider.DnsProvider.property.updateInput">updateInput</a></code> | <code><a href="#@cdktf/provider-dns.provider.DnsProviderUpdate">DnsProviderUpdate</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-dns.provider.DnsProvider.property.update">update</a></code> | <code><a href="#@cdktf/provider-dns.provider.DnsProviderUpdate">DnsProviderUpdate</a></code> | *No description.* |
 
 ---
 
@@ -329,6 +350,26 @@ public java.lang.String getAliasInput();
 
 ---
 
+##### `updateInput`<sup>Optional</sup> <a name="updateInput" id="@cdktf/provider-dns.provider.DnsProvider.property.updateInput"></a>
+
+```java
+public DnsProviderUpdate getUpdateInput();
+```
+
+- *Type:* <a href="#@cdktf/provider-dns.provider.DnsProviderUpdate">DnsProviderUpdate</a>
+
+---
+
+##### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-dns.provider.DnsProvider.property.update"></a>
+
+```java
+public DnsProviderUpdate getUpdate();
+```
+
+- *Type:* <a href="#@cdktf/provider-dns.provider.DnsProviderUpdate">DnsProviderUpdate</a>
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -358,6 +399,7 @@ import com.hashicorp.cdktf.providers.dns.provider.DnsProviderConfig;
 
 DnsProviderConfig.builder()
 //  .alias(java.lang.String)
+//  .update(DnsProviderUpdate)
     .build();
 ```
 
@@ -366,6 +408,7 @@ DnsProviderConfig.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-dns.provider.DnsProviderConfig.property.alias">alias</a></code> | <code>java.lang.String</code> | Alias name. |
+| <code><a href="#@cdktf/provider-dns.provider.DnsProviderConfig.property.update">update</a></code> | <code><a href="#@cdktf/provider-dns.provider.DnsProviderUpdate">DnsProviderUpdate</a></code> | update block. |
 
 ---
 
@@ -379,7 +422,273 @@ public java.lang.String getAlias();
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns#alias DnsProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs#alias DnsProvider#alias}
+
+---
+
+##### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-dns.provider.DnsProviderConfig.property.update"></a>
+
+```java
+public DnsProviderUpdate getUpdate();
+```
+
+- *Type:* <a href="#@cdktf/provider-dns.provider.DnsProviderUpdate">DnsProviderUpdate</a>
+
+update block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs#update DnsProvider#update}
+
+---
+
+### DnsProviderUpdate <a name="DnsProviderUpdate" id="@cdktf/provider-dns.provider.DnsProviderUpdate"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-dns.provider.DnsProviderUpdate.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.dns.provider.DnsProviderUpdate;
+
+DnsProviderUpdate.builder()
+    .server(java.lang.String)
+//  .gssapi(DnsProviderUpdateGssapi)
+//  .keyAlgorithm(java.lang.String)
+//  .keyName(java.lang.String)
+//  .keySecret(java.lang.String)
+//  .port(java.lang.Number)
+//  .retries(java.lang.Number)
+//  .timeout(java.lang.String)
+//  .transport(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-dns.provider.DnsProviderUpdate.property.server">server</a></code> | <code>java.lang.String</code> | The hostname or IP address of the DNS server to send updates to. |
+| <code><a href="#@cdktf/provider-dns.provider.DnsProviderUpdate.property.gssapi">gssapi</a></code> | <code><a href="#@cdktf/provider-dns.provider.DnsProviderUpdateGssapi">DnsProviderUpdateGssapi</a></code> | gssapi block. |
+| <code><a href="#@cdktf/provider-dns.provider.DnsProviderUpdate.property.keyAlgorithm">keyAlgorithm</a></code> | <code>java.lang.String</code> | Required if `key_name` is set. |
+| <code><a href="#@cdktf/provider-dns.provider.DnsProviderUpdate.property.keyName">keyName</a></code> | <code>java.lang.String</code> | The name of the TSIG key used to sign the DNS update messages. |
+| <code><a href="#@cdktf/provider-dns.provider.DnsProviderUpdate.property.keySecret">keySecret</a></code> | <code>java.lang.String</code> | Required if `key_name` is set A Base64-encoded string containing the shared secret to be used for TSIG. |
+| <code><a href="#@cdktf/provider-dns.provider.DnsProviderUpdate.property.port">port</a></code> | <code>java.lang.Number</code> | The target UDP port on the server where updates are sent to. Defaults to `53`. |
+| <code><a href="#@cdktf/provider-dns.provider.DnsProviderUpdate.property.retries">retries</a></code> | <code>java.lang.Number</code> | How many times to retry on connection timeout. Defaults to `3`. |
+| <code><a href="#@cdktf/provider-dns.provider.DnsProviderUpdate.property.timeout">timeout</a></code> | <code>java.lang.String</code> | Timeout for DNS queries. |
+| <code><a href="#@cdktf/provider-dns.provider.DnsProviderUpdate.property.transport">transport</a></code> | <code>java.lang.String</code> | Transport to use for DNS queries. |
+
+---
+
+##### `server`<sup>Required</sup> <a name="server" id="@cdktf/provider-dns.provider.DnsProviderUpdate.property.server"></a>
+
+```java
+public java.lang.String getServer();
+```
+
+- *Type:* java.lang.String
+
+The hostname or IP address of the DNS server to send updates to.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs#server DnsProvider#server}
+
+---
+
+##### `gssapi`<sup>Optional</sup> <a name="gssapi" id="@cdktf/provider-dns.provider.DnsProviderUpdate.property.gssapi"></a>
+
+```java
+public DnsProviderUpdateGssapi getGssapi();
+```
+
+- *Type:* <a href="#@cdktf/provider-dns.provider.DnsProviderUpdateGssapi">DnsProviderUpdateGssapi</a>
+
+gssapi block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs#gssapi DnsProvider#gssapi}
+
+---
+
+##### `keyAlgorithm`<sup>Optional</sup> <a name="keyAlgorithm" id="@cdktf/provider-dns.provider.DnsProviderUpdate.property.keyAlgorithm"></a>
+
+```java
+public java.lang.String getKeyAlgorithm();
+```
+
+- *Type:* java.lang.String
+
+Required if `key_name` is set.
+
+When using TSIG authentication, the algorithm to use for HMAC. Valid values are `hmac-md5`, `hmac-sha1`, `hmac-sha256` or `hmac-sha512`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs#key_algorithm DnsProvider#key_algorithm}
+
+---
+
+##### `keyName`<sup>Optional</sup> <a name="keyName" id="@cdktf/provider-dns.provider.DnsProviderUpdate.property.keyName"></a>
+
+```java
+public java.lang.String getKeyName();
+```
+
+- *Type:* java.lang.String
+
+The name of the TSIG key used to sign the DNS update messages.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs#key_name DnsProvider#key_name}
+
+---
+
+##### `keySecret`<sup>Optional</sup> <a name="keySecret" id="@cdktf/provider-dns.provider.DnsProviderUpdate.property.keySecret"></a>
+
+```java
+public java.lang.String getKeySecret();
+```
+
+- *Type:* java.lang.String
+
+Required if `key_name` is set A Base64-encoded string containing the shared secret to be used for TSIG.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs#key_secret DnsProvider#key_secret}
+
+---
+
+##### `port`<sup>Optional</sup> <a name="port" id="@cdktf/provider-dns.provider.DnsProviderUpdate.property.port"></a>
+
+```java
+public java.lang.Number getPort();
+```
+
+- *Type:* java.lang.Number
+
+The target UDP port on the server where updates are sent to. Defaults to `53`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs#port DnsProvider#port}
+
+---
+
+##### `retries`<sup>Optional</sup> <a name="retries" id="@cdktf/provider-dns.provider.DnsProviderUpdate.property.retries"></a>
+
+```java
+public java.lang.Number getRetries();
+```
+
+- *Type:* java.lang.Number
+
+How many times to retry on connection timeout. Defaults to `3`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs#retries DnsProvider#retries}
+
+---
+
+##### `timeout`<sup>Optional</sup> <a name="timeout" id="@cdktf/provider-dns.provider.DnsProviderUpdate.property.timeout"></a>
+
+```java
+public java.lang.String getTimeout();
+```
+
+- *Type:* java.lang.String
+
+Timeout for DNS queries.
+
+Valid values are durations expressed as `500ms`, etc. or a plain number which is treated as whole seconds.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs#timeout DnsProvider#timeout}
+
+---
+
+##### `transport`<sup>Optional</sup> <a name="transport" id="@cdktf/provider-dns.provider.DnsProviderUpdate.property.transport"></a>
+
+```java
+public java.lang.String getTransport();
+```
+
+- *Type:* java.lang.String
+
+Transport to use for DNS queries.
+
+Valid values are `udp`, `udp4`, `udp6`, `tcp`, `tcp4`, or `tcp6`. Any UDP transport will retry automatically with the equivalent TCP transport in the event of a truncated response. Defaults to `udp`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs#transport DnsProvider#transport}
+
+---
+
+### DnsProviderUpdateGssapi <a name="DnsProviderUpdateGssapi" id="@cdktf/provider-dns.provider.DnsProviderUpdateGssapi"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-dns.provider.DnsProviderUpdateGssapi.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.dns.provider.DnsProviderUpdateGssapi;
+
+DnsProviderUpdateGssapi.builder()
+    .realm(java.lang.String)
+//  .keytab(java.lang.String)
+//  .password(java.lang.String)
+//  .username(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-dns.provider.DnsProviderUpdateGssapi.property.realm">realm</a></code> | <code>java.lang.String</code> | The Kerberos realm or Active Directory domain. |
+| <code><a href="#@cdktf/provider-dns.provider.DnsProviderUpdateGssapi.property.keytab">keytab</a></code> | <code>java.lang.String</code> | This or `password` is required if `username` is set, not supported on Windows. |
+| <code><a href="#@cdktf/provider-dns.provider.DnsProviderUpdateGssapi.property.password">password</a></code> | <code>java.lang.String</code> | This or `keytab` is required if `username` is set. The matching password for `username`. |
+| <code><a href="#@cdktf/provider-dns.provider.DnsProviderUpdateGssapi.property.username">username</a></code> | <code>java.lang.String</code> | The name of the user to authenticate as. If not set the current user session will be used. |
+
+---
+
+##### `realm`<sup>Required</sup> <a name="realm" id="@cdktf/provider-dns.provider.DnsProviderUpdateGssapi.property.realm"></a>
+
+```java
+public java.lang.String getRealm();
+```
+
+- *Type:* java.lang.String
+
+The Kerberos realm or Active Directory domain.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs#realm DnsProvider#realm}
+
+---
+
+##### `keytab`<sup>Optional</sup> <a name="keytab" id="@cdktf/provider-dns.provider.DnsProviderUpdateGssapi.property.keytab"></a>
+
+```java
+public java.lang.String getKeytab();
+```
+
+- *Type:* java.lang.String
+
+This or `password` is required if `username` is set, not supported on Windows.
+
+The path to a keytab file containing a key for `username`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs#keytab DnsProvider#keytab}
+
+---
+
+##### `password`<sup>Optional</sup> <a name="password" id="@cdktf/provider-dns.provider.DnsProviderUpdateGssapi.property.password"></a>
+
+```java
+public java.lang.String getPassword();
+```
+
+- *Type:* java.lang.String
+
+This or `keytab` is required if `username` is set. The matching password for `username`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs#password DnsProvider#password}
+
+---
+
+##### `username`<sup>Optional</sup> <a name="username" id="@cdktf/provider-dns.provider.DnsProviderUpdateGssapi.property.username"></a>
+
+```java
+public java.lang.String getUsername();
+```
+
+- *Type:* java.lang.String
+
+The name of the user to authenticate as. If not set the current user session will be used.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs#username DnsProvider#username}
 
 ---
 

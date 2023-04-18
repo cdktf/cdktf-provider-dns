@@ -1,6 +1,6 @@
 # `dns_ptr_record`
 
-Refer to the Terraform Registory for docs: [`dns_ptr_record`](https://www.terraform.io/docs/providers/dns/r/ptr_record).
+Refer to the Terraform Registory for docs: [`dns_ptr_record`](https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/ptr_record).
 
 # `ptrRecord` Submodule <a name="`ptrRecord` Submodule" id="@cdktf/provider-dns.ptrRecord"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`dns_ptr_record`](https://www.terraf
 
 ### PtrRecord <a name="PtrRecord" id="@cdktf/provider-dns.ptrRecord.PtrRecord"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/dns/r/ptr_record dns_ptr_record}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/ptr_record dns_ptr_record}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-dns.ptrRecord.PtrRecord.Initializer"></a>
 
@@ -19,6 +19,7 @@ PtrRecord.Builder.create(Construct scope, java.lang.String id)
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -28,7 +29,6 @@ PtrRecord.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(RemoteExecProvisioner>)
     .ptr(java.lang.String)
     .zone(java.lang.String)
-//  .id(java.lang.String)
 //  .name(java.lang.String)
 //  .ttl(java.lang.Number)
     .build();
@@ -39,17 +39,16 @@ PtrRecord.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecord.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecord.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecord.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecord.Initializer.parameter.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecord.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecord.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecord.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecord.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecord.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecord.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecord.Initializer.parameter.ptr">ptr</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/ptr_record#ptr PtrRecord#ptr}. |
-| <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecord.Initializer.parameter.zone">zone</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/ptr_record#zone PtrRecord#zone}. |
-| <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecord.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/ptr_record#id PtrRecord#id}. |
-| <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecord.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/ptr_record#name PtrRecord#name}. |
-| <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecord.Initializer.parameter.ttl">ttl</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/ptr_record#ttl PtrRecord#ttl}. |
+| <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecord.Initializer.parameter.ptr">ptr</a></code> | <code>java.lang.String</code> | The canonical name this record will point to. |
+| <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecord.Initializer.parameter.zone">zone</a></code> | <code>java.lang.String</code> | DNS zone the record set belongs to. It must be an FQDN, that is, include the trailing dot. |
+| <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecord.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The name of the record. |
+| <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecord.Initializer.parameter.ttl">ttl</a></code> | <code>java.lang.Number</code> | The TTL of the record. Defaults to `3600`. |
 
 ---
 
@@ -79,7 +78,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-dns.ptrRecord.PtrRecord.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -117,7 +116,9 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/ptr_record#ptr PtrRecord#ptr}.
+The canonical name this record will point to.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/ptr_record#ptr PtrRecord#ptr}
 
 ---
 
@@ -125,18 +126,9 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/ptr_record#zone PtrRecord#zone}.
+DNS zone the record set belongs to. It must be an FQDN, that is, include the trailing dot.
 
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-dns.ptrRecord.PtrRecord.Initializer.parameter.id"></a>
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/ptr_record#id PtrRecord#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/ptr_record#zone PtrRecord#zone}
 
 ---
 
@@ -144,7 +136,11 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/ptr_record#name PtrRecord#name}.
+The name of the record.
+
+The `zone` argument will be appended to this value to create the full record path.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/ptr_record#name PtrRecord#name}
 
 ---
 
@@ -152,7 +148,9 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/ptr_record#ttl PtrRecord#ttl}.
+The TTL of the record. Defaults to `3600`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/ptr_record#ttl PtrRecord#ttl}
 
 ---
 
@@ -176,7 +174,6 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r
 | <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecord.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecord.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecord.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecord.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecord.resetName">resetName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecord.resetTtl">resetTtl</a></code> | *No description.* |
 
@@ -366,12 +363,6 @@ public IResolvable interpolationForAttribute(java.lang.String terraformAttribute
 
 ---
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-dns.ptrRecord.PtrRecord.resetId"></a>
-
-```java
-public void resetId()
-```
-
 ##### `resetName` <a name="resetName" id="@cdktf/provider-dns.ptrRecord.PtrRecord.resetName"></a>
 
 ```java
@@ -466,18 +457,17 @@ PtrRecord.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecord.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecord.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecord.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecord.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecord.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecord.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecord.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecord.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecord.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecord.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecord.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecord.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecord.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecord.property.ptrInput">ptrInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecord.property.ttlInput">ttlInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecord.property.zoneInput">zoneInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecord.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecord.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecord.property.ptr">ptr</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecord.property.ttl">ttl</a></code> | <code>java.lang.Number</code> | *No description.* |
@@ -570,10 +560,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-dns.ptrRecord.PtrRecord.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -627,10 +617,10 @@ public java.lang.Object getProvisioners();
 
 ---
 
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-dns.ptrRecord.PtrRecord.property.idInput"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-dns.ptrRecord.PtrRecord.property.id"></a>
 
 ```java
-public java.lang.String getIdInput();
+public java.lang.String getId();
 ```
 
 - *Type:* java.lang.String
@@ -671,16 +661,6 @@ public java.lang.Number getTtlInput();
 
 ```java
 public java.lang.String getZoneInput();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-dns.ptrRecord.PtrRecord.property.id"></a>
-
-```java
-public java.lang.String getId();
 ```
 
 - *Type:* java.lang.String
@@ -758,6 +738,7 @@ PtrRecordConfig.builder()
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -767,7 +748,6 @@ PtrRecordConfig.builder()
 //  .provisioners(RemoteExecProvisioner>)
     .ptr(java.lang.String)
     .zone(java.lang.String)
-//  .id(java.lang.String)
 //  .name(java.lang.String)
 //  .ttl(java.lang.Number)
     .build();
@@ -778,17 +758,16 @@ PtrRecordConfig.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecordConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecordConfig.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecordConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecordConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecordConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecordConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecordConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecordConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecordConfig.property.ptr">ptr</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/ptr_record#ptr PtrRecord#ptr}. |
-| <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecordConfig.property.zone">zone</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/ptr_record#zone PtrRecord#zone}. |
-| <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecordConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/ptr_record#id PtrRecord#id}. |
-| <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecordConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/ptr_record#name PtrRecord#name}. |
-| <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecordConfig.property.ttl">ttl</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/ptr_record#ttl PtrRecord#ttl}. |
+| <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecordConfig.property.ptr">ptr</a></code> | <code>java.lang.String</code> | The canonical name this record will point to. |
+| <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecordConfig.property.zone">zone</a></code> | <code>java.lang.String</code> | DNS zone the record set belongs to. It must be an FQDN, that is, include the trailing dot. |
+| <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecordConfig.property.name">name</a></code> | <code>java.lang.String</code> | The name of the record. |
+| <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecordConfig.property.ttl">ttl</a></code> | <code>java.lang.Number</code> | The TTL of the record. Defaults to `3600`. |
 
 ---
 
@@ -805,10 +784,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-dns.ptrRecord.PtrRecordConfig.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -870,7 +849,9 @@ public java.lang.String getPtr();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/ptr_record#ptr PtrRecord#ptr}.
+The canonical name this record will point to.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/ptr_record#ptr PtrRecord#ptr}
 
 ---
 
@@ -882,22 +863,9 @@ public java.lang.String getZone();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/ptr_record#zone PtrRecord#zone}.
+DNS zone the record set belongs to. It must be an FQDN, that is, include the trailing dot.
 
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-dns.ptrRecord.PtrRecordConfig.property.id"></a>
-
-```java
-public java.lang.String getId();
-```
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/ptr_record#id PtrRecord#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/ptr_record#zone PtrRecord#zone}
 
 ---
 
@@ -909,7 +877,11 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/ptr_record#name PtrRecord#name}.
+The name of the record.
+
+The `zone` argument will be appended to this value to create the full record path.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/ptr_record#name PtrRecord#name}
 
 ---
 
@@ -921,7 +893,9 @@ public java.lang.Number getTtl();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/ptr_record#ttl PtrRecord#ttl}.
+The TTL of the record. Defaults to `3600`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/ptr_record#ttl PtrRecord#ttl}
 
 ---
 

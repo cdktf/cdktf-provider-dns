@@ -1,6 +1,6 @@
 # `dns_srv_record_set`
 
-Refer to the Terraform Registory for docs: [`dns_srv_record_set`](https://www.terraform.io/docs/providers/dns/r/srv_record_set).
+Refer to the Terraform Registory for docs: [`dns_srv_record_set`](https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/srv_record_set).
 
 # `srvRecordSet` Submodule <a name="`srvRecordSet` Submodule" id="@cdktf/provider-dns.srvRecordSet"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`dns_srv_record_set`](https://www.te
 
 ### SrvRecordSet <a name="SrvRecordSet" id="@cdktf/provider-dns.srvRecordSet.SrvRecordSet"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/dns/r/srv_record_set dns_srv_record_set}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/srv_record_set dns_srv_record_set}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-dns.srvRecordSet.SrvRecordSet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/v4/srvrecordset"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/srvrecordset"
 
 srvrecordset.NewSrvRecordSet(scope Construct, id *string, config SrvRecordSetConfig) SrvRecordSet
 ```
@@ -71,7 +71,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.putSrv">PutSrv</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.resetSrv">ResetSrv</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.resetTtl">ResetTtl</a></code> | *No description.* |
 
 ---
@@ -272,10 +272,10 @@ func PutSrv(value interface{})
 
 ---
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-dns.srvRecordSet.SrvRecordSet.resetId"></a>
+##### `ResetSrv` <a name="ResetSrv" id="@cdktf/provider-dns.srvRecordSet.SrvRecordSet.resetSrv"></a>
 
 ```go
-func ResetId()
+func ResetSrv()
 ```
 
 ##### `ResetTtl` <a name="ResetTtl" id="@cdktf/provider-dns.srvRecordSet.SrvRecordSet.resetTtl"></a>
@@ -297,7 +297,7 @@ func ResetTtl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-dns.srvRecordSet.SrvRecordSet.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/v4/srvrecordset"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/srvrecordset"
 
 srvrecordset.SrvRecordSet_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-dns.srvRecordSet.SrvRecordSet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/v4/srvrecordset"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/srvrecordset"
 
 srvrecordset.SrvRecordSet_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ srvrecordset.SrvRecordSet_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-dns.srvRecordSet.SrvRecordSet.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/v4/srvrecordset"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/srvrecordset"
 
 srvrecordset.SrvRecordSet_IsTerraformResource(x interface{}) *bool
 ```
@@ -366,19 +366,18 @@ srvrecordset.SrvRecordSet_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.property.srv">Srv</a></code> | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetSrvList">SrvRecordSetSrvList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.property.srvInput">SrvInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.property.ttlInput">TtlInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.property.zoneInput">ZoneInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.property.ttl">Ttl</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.property.zone">Zone</a></code> | <code>*string</code> | *No description.* |
@@ -470,10 +469,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-dns.srvRecordSet.SrvRecordSet.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -527,6 +526,16 @@ func Provisioners() *[]interface{}
 
 ---
 
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-dns.srvRecordSet.SrvRecordSet.property.id"></a>
+
+```go
+func Id() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `Srv`<sup>Required</sup> <a name="Srv" id="@cdktf/provider-dns.srvRecordSet.SrvRecordSet.property.srv"></a>
 
 ```go
@@ -534,16 +543,6 @@ func Srv() SrvRecordSetSrvList
 ```
 
 - *Type:* <a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetSrvList">SrvRecordSetSrvList</a>
-
----
-
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-dns.srvRecordSet.SrvRecordSet.property.idInput"></a>
-
-```go
-func IdInput() *string
-```
-
-- *Type:* *string
 
 ---
 
@@ -581,16 +580,6 @@ func TtlInput() *f64
 
 ```go
 func ZoneInput() *string
-```
-
-- *Type:* *string
-
----
-
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-dns.srvRecordSet.SrvRecordSet.property.id"></a>
-
-```go
-func Id() *string
 ```
 
 - *Type:* *string
@@ -652,20 +641,19 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-dns.srvRecordSet.SrvRecordSetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/v4/srvrecordset"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/srvrecordset"
 
 &srvrecordset.SrvRecordSetConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	Srv: interface{},
 	Zone: *string,
-	Id: *string,
+	Srv: interface{},
 	Ttl: *f64,
 }
 ```
@@ -675,17 +663,16 @@ import "github.com/cdktf/cdktf-provider-dns-go/dns/v4/srvrecordset"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/srv_record_set#name SrvRecordSet#name}. |
+| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetConfig.property.name">Name</a></code> | <code>*string</code> | The name of the record set. |
+| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetConfig.property.zone">Zone</a></code> | <code>*string</code> | DNS zone the record set belongs to. It must be an FQDN, that is, include the trailing dot. |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetConfig.property.srv">Srv</a></code> | <code>interface{}</code> | srv block. |
-| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetConfig.property.zone">Zone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/srv_record_set#zone SrvRecordSet#zone}. |
-| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/srv_record_set#id SrvRecordSet#id}. |
-| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetConfig.property.ttl">Ttl</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/srv_record_set#ttl SrvRecordSet#ttl}. |
+| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetConfig.property.ttl">Ttl</a></code> | <code>*f64</code> | The TTL of the record set. Defaults to `3600`. |
 
 ---
 
@@ -702,10 +689,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-dns.srvRecordSet.SrvRecordSetConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -767,21 +754,11 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/srv_record_set#name SrvRecordSet#name}.
+The name of the record set.
 
----
+The `zone` argument will be appended to this value to create the full record path.
 
-##### `Srv`<sup>Required</sup> <a name="Srv" id="@cdktf/provider-dns.srvRecordSet.SrvRecordSetConfig.property.srv"></a>
-
-```go
-Srv interface{}
-```
-
-- *Type:* interface{}
-
-srv block.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/srv_record_set#srv SrvRecordSet#srv}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/srv_record_set#name SrvRecordSet#name}
 
 ---
 
@@ -793,22 +770,23 @@ Zone *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/srv_record_set#zone SrvRecordSet#zone}.
+DNS zone the record set belongs to. It must be an FQDN, that is, include the trailing dot.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/srv_record_set#zone SrvRecordSet#zone}
 
 ---
 
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-dns.srvRecordSet.SrvRecordSetConfig.property.id"></a>
+##### `Srv`<sup>Optional</sup> <a name="Srv" id="@cdktf/provider-dns.srvRecordSet.SrvRecordSetConfig.property.srv"></a>
 
 ```go
-Id *string
+Srv interface{}
 ```
 
-- *Type:* *string
+- *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/srv_record_set#id SrvRecordSet#id}.
+srv block.
 
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/srv_record_set#srv SrvRecordSet#srv}
 
 ---
 
@@ -820,7 +798,9 @@ Ttl *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/srv_record_set#ttl SrvRecordSet#ttl}.
+The TTL of the record set. Defaults to `3600`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/srv_record_set#ttl SrvRecordSet#ttl}
 
 ---
 
@@ -829,7 +809,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-dns.srvRecordSet.SrvRecordSetSrv.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/v4/srvrecordset"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/srvrecordset"
 
 &srvrecordset.SrvRecordSetSrv {
 	Port: *f64,
@@ -843,10 +823,10 @@ import "github.com/cdktf/cdktf-provider-dns-go/dns/v4/srvrecordset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetSrv.property.port">Port</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/srv_record_set#port SrvRecordSet#port}. |
-| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetSrv.property.priority">Priority</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/srv_record_set#priority SrvRecordSet#priority}. |
-| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetSrv.property.target">Target</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/srv_record_set#target SrvRecordSet#target}. |
-| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetSrv.property.weight">Weight</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/srv_record_set#weight SrvRecordSet#weight}. |
+| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetSrv.property.port">Port</a></code> | <code>*f64</code> | The port for the service on the target. |
+| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetSrv.property.priority">Priority</a></code> | <code>*f64</code> | The priority for the record. |
+| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetSrv.property.target">Target</a></code> | <code>*string</code> | The FQDN of the target, include the trailing dot. |
+| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetSrv.property.weight">Weight</a></code> | <code>*f64</code> | The weight for the record. |
 
 ---
 
@@ -858,7 +838,9 @@ Port *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/srv_record_set#port SrvRecordSet#port}.
+The port for the service on the target.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/srv_record_set#port SrvRecordSet#port}
 
 ---
 
@@ -870,7 +852,9 @@ Priority *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/srv_record_set#priority SrvRecordSet#priority}.
+The priority for the record.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/srv_record_set#priority SrvRecordSet#priority}
 
 ---
 
@@ -882,7 +866,9 @@ Target *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/srv_record_set#target SrvRecordSet#target}.
+The FQDN of the target, include the trailing dot.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/srv_record_set#target SrvRecordSet#target}
 
 ---
 
@@ -894,7 +880,9 @@ Weight *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/srv_record_set#weight SrvRecordSet#weight}.
+The weight for the record.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/srv_record_set#weight SrvRecordSet#weight}
 
 ---
 
@@ -905,7 +893,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-dns.srvRecordSet.SrvRecordSetSrvList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/v4/srvrecordset"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/srvrecordset"
 
 srvrecordset.NewSrvRecordSetSrvList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SrvRecordSetSrvList
 ```
@@ -1048,7 +1036,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-dns.srvRecordSet.SrvRecordSetSrvOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/v4/srvrecordset"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/srvrecordset"
 
 srvrecordset.NewSrvRecordSetSrvOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SrvRecordSetSrvOutputReference
 ```

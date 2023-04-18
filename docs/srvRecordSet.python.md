@@ -1,6 +1,6 @@
 # `dns_srv_record_set`
 
-Refer to the Terraform Registory for docs: [`dns_srv_record_set`](https://www.terraform.io/docs/providers/dns/r/srv_record_set).
+Refer to the Terraform Registory for docs: [`dns_srv_record_set`](https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/srv_record_set).
 
 # `srvRecordSet` Submodule <a name="`srvRecordSet` Submodule" id="@cdktf/provider-dns.srvRecordSet"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`dns_srv_record_set`](https://www.te
 
 ### SrvRecordSet <a name="SrvRecordSet" id="@cdktf/provider-dns.srvRecordSet.SrvRecordSet"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/dns/r/srv_record_set dns_srv_record_set}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/srv_record_set dns_srv_record_set}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-dns.srvRecordSet.SrvRecordSet.Initializer"></a>
 
@@ -19,16 +19,15 @@ srvRecordSet.SrvRecordSet(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   name: str,
-  srv: typing.Union[IResolvable, typing.List[SrvRecordSetSrv]],
   zone: str,
-  id: str = None,
+  srv: typing.Union[IResolvable, typing.List[SrvRecordSetSrv]] = None,
   ttl: typing.Union[int, float] = None
 )
 ```
@@ -38,17 +37,16 @@ srvRecordSet.SrvRecordSet(
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/srv_record_set#name SrvRecordSet#name}. |
+| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of the record set. |
+| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.Initializer.parameter.zone">zone</a></code> | <code>str</code> | DNS zone the record set belongs to. It must be an FQDN, that is, include the trailing dot. |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.Initializer.parameter.srv">srv</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetSrv">SrvRecordSetSrv</a>]]</code> | srv block. |
-| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.Initializer.parameter.zone">zone</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/srv_record_set#zone SrvRecordSet#zone}. |
-| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/srv_record_set#id SrvRecordSet#id}. |
-| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.Initializer.parameter.ttl">ttl</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/srv_record_set#ttl SrvRecordSet#ttl}. |
+| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.Initializer.parameter.ttl">ttl</a></code> | <code>typing.Union[int, float]</code> | The TTL of the record set. Defaults to `3600`. |
 
 ---
 
@@ -78,7 +76,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-dns.srvRecordSet.SrvRecordSet.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -116,17 +114,11 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/srv_record_set#name SrvRecordSet#name}.
+The name of the record set.
 
----
+The `zone` argument will be appended to this value to create the full record path.
 
-##### `srv`<sup>Required</sup> <a name="srv" id="@cdktf/provider-dns.srvRecordSet.SrvRecordSet.Initializer.parameter.srv"></a>
-
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetSrv">SrvRecordSetSrv</a>]]
-
-srv block.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/srv_record_set#srv SrvRecordSet#srv}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/srv_record_set#name SrvRecordSet#name}
 
 ---
 
@@ -134,18 +126,19 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/srv_record_set#zone SrvRecordSet#zone}.
+DNS zone the record set belongs to. It must be an FQDN, that is, include the trailing dot.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/srv_record_set#zone SrvRecordSet#zone}
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-dns.srvRecordSet.SrvRecordSet.Initializer.parameter.id"></a>
+##### `srv`<sup>Optional</sup> <a name="srv" id="@cdktf/provider-dns.srvRecordSet.SrvRecordSet.Initializer.parameter.srv"></a>
 
-- *Type:* str
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetSrv">SrvRecordSetSrv</a>]]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/srv_record_set#id SrvRecordSet#id}.
+srv block.
 
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/srv_record_set#srv SrvRecordSet#srv}
 
 ---
 
@@ -153,7 +146,9 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/srv_record_set#ttl SrvRecordSet#ttl}.
+The TTL of the record set. Defaults to `3600`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/srv_record_set#ttl SrvRecordSet#ttl}
 
 ---
 
@@ -178,7 +173,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.putSrv">put_srv</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.resetSrv">reset_srv</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.resetTtl">reset_ttl</a></code> | *No description.* |
 
 ---
@@ -406,10 +401,10 @@ def put_srv(
 
 ---
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-dns.srvRecordSet.SrvRecordSet.resetId"></a>
+##### `reset_srv` <a name="reset_srv" id="@cdktf/provider-dns.srvRecordSet.SrvRecordSet.resetSrv"></a>
 
 ```python
-def reset_id() -> None
+def reset_srv() -> None
 ```
 
 ##### `reset_ttl` <a name="reset_ttl" id="@cdktf/provider-dns.srvRecordSet.SrvRecordSet.resetTtl"></a>
@@ -506,19 +501,18 @@ srvRecordSet.SrvRecordSet.is_terraform_resource(
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.property.srv">srv</a></code> | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetSrvList">SrvRecordSetSrvList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.property.srvInput">srv_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetSrv">SrvRecordSetSrv</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.property.ttlInput">ttl_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.property.zoneInput">zone_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.property.ttl">ttl</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSet.property.zone">zone</a></code> | <code>str</code> | *No description.* |
@@ -610,10 +604,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-dns.srvRecordSet.SrvRecordSet.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -667,6 +661,16 @@ provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, Re
 
 ---
 
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-dns.srvRecordSet.SrvRecordSet.property.id"></a>
+
+```python
+id: str
+```
+
+- *Type:* str
+
+---
+
 ##### `srv`<sup>Required</sup> <a name="srv" id="@cdktf/provider-dns.srvRecordSet.SrvRecordSet.property.srv"></a>
 
 ```python
@@ -674,16 +678,6 @@ srv: SrvRecordSetSrvList
 ```
 
 - *Type:* <a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetSrvList">SrvRecordSetSrvList</a>
-
----
-
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-dns.srvRecordSet.SrvRecordSet.property.idInput"></a>
-
-```python
-id_input: str
-```
-
-- *Type:* str
 
 ---
 
@@ -721,16 +715,6 @@ ttl_input: typing.Union[int, float]
 
 ```python
 zone_input: str
-```
-
-- *Type:* str
-
----
-
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-dns.srvRecordSet.SrvRecordSet.property.id"></a>
-
-```python
-id: str
 ```
 
 - *Type:* str
@@ -796,16 +780,15 @@ from cdktf_cdktf_provider_dns import srv_record_set
 
 srvRecordSet.SrvRecordSetConfig(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   name: str,
-  srv: typing.Union[IResolvable, typing.List[SrvRecordSetSrv]],
   zone: str,
-  id: str = None,
+  srv: typing.Union[IResolvable, typing.List[SrvRecordSetSrv]] = None,
   ttl: typing.Union[int, float] = None
 )
 ```
@@ -815,17 +798,16 @@ srvRecordSet.SrvRecordSetConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/srv_record_set#name SrvRecordSet#name}. |
+| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetConfig.property.name">name</a></code> | <code>str</code> | The name of the record set. |
+| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetConfig.property.zone">zone</a></code> | <code>str</code> | DNS zone the record set belongs to. It must be an FQDN, that is, include the trailing dot. |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetConfig.property.srv">srv</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetSrv">SrvRecordSetSrv</a>]]</code> | srv block. |
-| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetConfig.property.zone">zone</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/srv_record_set#zone SrvRecordSet#zone}. |
-| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/srv_record_set#id SrvRecordSet#id}. |
-| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetConfig.property.ttl">ttl</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/srv_record_set#ttl SrvRecordSet#ttl}. |
+| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetConfig.property.ttl">ttl</a></code> | <code>typing.Union[int, float]</code> | The TTL of the record set. Defaults to `3600`. |
 
 ---
 
@@ -842,10 +824,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-dns.srvRecordSet.SrvRecordSetConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -907,21 +889,11 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/srv_record_set#name SrvRecordSet#name}.
+The name of the record set.
 
----
+The `zone` argument will be appended to this value to create the full record path.
 
-##### `srv`<sup>Required</sup> <a name="srv" id="@cdktf/provider-dns.srvRecordSet.SrvRecordSetConfig.property.srv"></a>
-
-```python
-srv: typing.Union[IResolvable, typing.List[SrvRecordSetSrv]]
-```
-
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetSrv">SrvRecordSetSrv</a>]]
-
-srv block.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/srv_record_set#srv SrvRecordSet#srv}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/srv_record_set#name SrvRecordSet#name}
 
 ---
 
@@ -933,22 +905,23 @@ zone: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/srv_record_set#zone SrvRecordSet#zone}.
+DNS zone the record set belongs to. It must be an FQDN, that is, include the trailing dot.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/srv_record_set#zone SrvRecordSet#zone}
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-dns.srvRecordSet.SrvRecordSetConfig.property.id"></a>
+##### `srv`<sup>Optional</sup> <a name="srv" id="@cdktf/provider-dns.srvRecordSet.SrvRecordSetConfig.property.srv"></a>
 
 ```python
-id: str
+srv: typing.Union[IResolvable, typing.List[SrvRecordSetSrv]]
 ```
 
-- *Type:* str
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetSrv">SrvRecordSetSrv</a>]]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/srv_record_set#id SrvRecordSet#id}.
+srv block.
 
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/srv_record_set#srv SrvRecordSet#srv}
 
 ---
 
@@ -960,7 +933,9 @@ ttl: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/srv_record_set#ttl SrvRecordSet#ttl}.
+The TTL of the record set. Defaults to `3600`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/srv_record_set#ttl SrvRecordSet#ttl}
 
 ---
 
@@ -983,10 +958,10 @@ srvRecordSet.SrvRecordSetSrv(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetSrv.property.port">port</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/srv_record_set#port SrvRecordSet#port}. |
-| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetSrv.property.priority">priority</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/srv_record_set#priority SrvRecordSet#priority}. |
-| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetSrv.property.target">target</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/srv_record_set#target SrvRecordSet#target}. |
-| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetSrv.property.weight">weight</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/srv_record_set#weight SrvRecordSet#weight}. |
+| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetSrv.property.port">port</a></code> | <code>typing.Union[int, float]</code> | The port for the service on the target. |
+| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetSrv.property.priority">priority</a></code> | <code>typing.Union[int, float]</code> | The priority for the record. |
+| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetSrv.property.target">target</a></code> | <code>str</code> | The FQDN of the target, include the trailing dot. |
+| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetSrv.property.weight">weight</a></code> | <code>typing.Union[int, float]</code> | The weight for the record. |
 
 ---
 
@@ -998,7 +973,9 @@ port: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/srv_record_set#port SrvRecordSet#port}.
+The port for the service on the target.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/srv_record_set#port SrvRecordSet#port}
 
 ---
 
@@ -1010,7 +987,9 @@ priority: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/srv_record_set#priority SrvRecordSet#priority}.
+The priority for the record.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/srv_record_set#priority SrvRecordSet#priority}
 
 ---
 
@@ -1022,7 +1001,9 @@ target: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/srv_record_set#target SrvRecordSet#target}.
+The FQDN of the target, include the trailing dot.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/srv_record_set#target SrvRecordSet#target}
 
 ---
 
@@ -1034,7 +1015,9 @@ weight: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/srv_record_set#weight SrvRecordSet#weight}.
+The weight for the record.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/srv_record_set#weight SrvRecordSet#weight}
 
 ---
 

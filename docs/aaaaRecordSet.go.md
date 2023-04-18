@@ -1,6 +1,6 @@
 # `dns_aaaa_record_set`
 
-Refer to the Terraform Registory for docs: [`dns_aaaa_record_set`](https://www.terraform.io/docs/providers/dns/r/aaaa_record_set).
+Refer to the Terraform Registory for docs: [`dns_aaaa_record_set`](https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/aaaa_record_set).
 
 # `aaaaRecordSet` Submodule <a name="`aaaaRecordSet` Submodule" id="@cdktf/provider-dns.aaaaRecordSet"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`dns_aaaa_record_set`](https://www.t
 
 ### AaaaRecordSet <a name="AaaaRecordSet" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/dns/r/aaaa_record_set dns_aaaa_record_set}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/aaaa_record_set dns_aaaa_record_set}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/v4/aaaarecordset"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/aaaarecordset"
 
 aaaarecordset.NewAaaaRecordSet(scope Construct, id *string, config AaaaRecordSetConfig) AaaaRecordSet
 ```
@@ -291,7 +291,7 @@ func ResetTtl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/v4/aaaarecordset"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/aaaarecordset"
 
 aaaarecordset.AaaaRecordSet_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/v4/aaaarecordset"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/aaaarecordset"
 
 aaaarecordset.AaaaRecordSet_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ aaaarecordset.AaaaRecordSet_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/v4/aaaarecordset"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/aaaarecordset"
 
 aaaarecordset.AaaaRecordSet_IsTerraformResource(x interface{}) *bool
 ```
@@ -360,7 +360,7 @@ aaaarecordset.AaaaRecordSet_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -464,10 +464,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -646,11 +646,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/v4/aaaarecordset"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/aaaarecordset"
 
 &aaaarecordset.AaaaRecordSetConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -669,17 +669,17 @@ import "github.com/cdktf/cdktf-provider-dns-go/dns/v4/aaaarecordset"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSetConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSetConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSetConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSetConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSetConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSetConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSetConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSetConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSetConfig.property.addresses">Addresses</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/aaaa_record_set#addresses AaaaRecordSet#addresses}. |
-| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSetConfig.property.zone">Zone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/aaaa_record_set#zone AaaaRecordSet#zone}. |
-| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/aaaa_record_set#id AaaaRecordSet#id}. |
-| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSetConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/aaaa_record_set#name AaaaRecordSet#name}. |
-| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSetConfig.property.ttl">Ttl</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/aaaa_record_set#ttl AaaaRecordSet#ttl}. |
+| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSetConfig.property.addresses">Addresses</a></code> | <code>*[]*string</code> | The IPv6 addresses this record set will point to. |
+| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSetConfig.property.zone">Zone</a></code> | <code>*string</code> | DNS zone the record set belongs to. It must be an FQDN, that is, include the trailing dot. |
+| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/aaaa_record_set#id AaaaRecordSet#id}. |
+| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSetConfig.property.name">Name</a></code> | <code>*string</code> | The name of the record set. |
+| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSetConfig.property.ttl">Ttl</a></code> | <code>*f64</code> | The TTL of the record set. Defaults to `3600`. |
 
 ---
 
@@ -696,10 +696,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSetConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -761,7 +761,9 @@ Addresses *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/aaaa_record_set#addresses AaaaRecordSet#addresses}.
+The IPv6 addresses this record set will point to.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/aaaa_record_set#addresses AaaaRecordSet#addresses}
 
 ---
 
@@ -773,7 +775,9 @@ Zone *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/aaaa_record_set#zone AaaaRecordSet#zone}.
+DNS zone the record set belongs to. It must be an FQDN, that is, include the trailing dot.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/aaaa_record_set#zone AaaaRecordSet#zone}
 
 ---
 
@@ -785,7 +789,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/aaaa_record_set#id AaaaRecordSet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/aaaa_record_set#id AaaaRecordSet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -800,7 +804,11 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/aaaa_record_set#name AaaaRecordSet#name}.
+The name of the record set.
+
+The `zone` argument will be appended to this value to create the full record path.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/aaaa_record_set#name AaaaRecordSet#name}
 
 ---
 
@@ -812,7 +820,9 @@ Ttl *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/aaaa_record_set#ttl AaaaRecordSet#ttl}.
+The TTL of the record set. Defaults to `3600`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/aaaa_record_set#ttl AaaaRecordSet#ttl}
 
 ---
 

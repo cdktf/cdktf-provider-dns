@@ -1,6 +1,6 @@
 # `dns_mx_record_set`
 
-Refer to the Terraform Registory for docs: [`dns_mx_record_set`](https://www.terraform.io/docs/providers/dns/r/mx_record_set).
+Refer to the Terraform Registory for docs: [`dns_mx_record_set`](https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/mx_record_set).
 
 # `mxRecordSet` Submodule <a name="`mxRecordSet` Submodule" id="@cdktf/provider-dns.mxRecordSet"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`dns_mx_record_set`](https://www.ter
 
 ### MxRecordSet <a name="MxRecordSet" id="@cdktf/provider-dns.mxRecordSet.MxRecordSet"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/dns/r/mx_record_set dns_mx_record_set}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/mx_record_set dns_mx_record_set}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-dns.mxRecordSet.MxRecordSet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/v4/mxrecordset"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/mxrecordset"
 
 mxrecordset.NewMxRecordSet(scope Construct, id *string, config MxRecordSetConfig) MxRecordSet
 ```
@@ -71,7 +71,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSet.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSet.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSet.putMx">PutMx</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSet.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSet.resetMx">ResetMx</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSet.resetName">ResetName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSet.resetTtl">ResetTtl</a></code> | *No description.* |
 
@@ -273,10 +273,10 @@ func PutMx(value interface{})
 
 ---
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-dns.mxRecordSet.MxRecordSet.resetId"></a>
+##### `ResetMx` <a name="ResetMx" id="@cdktf/provider-dns.mxRecordSet.MxRecordSet.resetMx"></a>
 
 ```go
-func ResetId()
+func ResetMx()
 ```
 
 ##### `ResetName` <a name="ResetName" id="@cdktf/provider-dns.mxRecordSet.MxRecordSet.resetName"></a>
@@ -304,7 +304,7 @@ func ResetTtl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-dns.mxRecordSet.MxRecordSet.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/v4/mxrecordset"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/mxrecordset"
 
 mxrecordset.MxRecordSet_IsConstruct(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-dns.mxRecordSet.MxRecordSet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/v4/mxrecordset"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/mxrecordset"
 
 mxrecordset.MxRecordSet_IsTerraformElement(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ mxrecordset.MxRecordSet_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-dns.mxRecordSet.MxRecordSet.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/v4/mxrecordset"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/mxrecordset"
 
 mxrecordset.MxRecordSet_IsTerraformResource(x interface{}) *bool
 ```
@@ -373,19 +373,18 @@ mxrecordset.MxRecordSet_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSet.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSet.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSet.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSet.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSet.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSet.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSet.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSet.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSet.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSet.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSet.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSet.property.mx">Mx</a></code> | <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSetMxList">MxRecordSetMxList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSet.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSet.property.mxInput">MxInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSet.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSet.property.ttlInput">TtlInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSet.property.zoneInput">ZoneInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSet.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSet.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSet.property.ttl">Ttl</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSet.property.zone">Zone</a></code> | <code>*string</code> | *No description.* |
@@ -477,10 +476,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-dns.mxRecordSet.MxRecordSet.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -534,6 +533,16 @@ func Provisioners() *[]interface{}
 
 ---
 
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-dns.mxRecordSet.MxRecordSet.property.id"></a>
+
+```go
+func Id() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `Mx`<sup>Required</sup> <a name="Mx" id="@cdktf/provider-dns.mxRecordSet.MxRecordSet.property.mx"></a>
 
 ```go
@@ -541,16 +550,6 @@ func Mx() MxRecordSetMxList
 ```
 
 - *Type:* <a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSetMxList">MxRecordSetMxList</a>
-
----
-
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-dns.mxRecordSet.MxRecordSet.property.idInput"></a>
-
-```go
-func IdInput() *string
-```
-
-- *Type:* *string
 
 ---
 
@@ -588,16 +587,6 @@ func TtlInput() *f64
 
 ```go
 func ZoneInput() *string
-```
-
-- *Type:* *string
-
----
-
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-dns.mxRecordSet.MxRecordSet.property.id"></a>
-
-```go
-func Id() *string
 ```
 
 - *Type:* *string
@@ -659,19 +648,18 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-dns.mxRecordSet.MxRecordSetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/v4/mxrecordset"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/mxrecordset"
 
 &mxrecordset.MxRecordSetConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Mx: interface{},
 	Zone: *string,
-	Id: *string,
+	Mx: interface{},
 	Name: *string,
 	Ttl: *f64,
 }
@@ -682,17 +670,16 @@ import "github.com/cdktf/cdktf-provider-dns-go/dns/v4/mxrecordset"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSetConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSetConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSetConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSetConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSetConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSetConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSetConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSetConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSetConfig.property.zone">Zone</a></code> | <code>*string</code> | DNS zone the record set belongs to. It must be an FQDN, that is, include the trailing dot. |
 | <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSetConfig.property.mx">Mx</a></code> | <code>interface{}</code> | mx block. |
-| <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSetConfig.property.zone">Zone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/mx_record_set#zone MxRecordSet#zone}. |
-| <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/mx_record_set#id MxRecordSet#id}. |
-| <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSetConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/mx_record_set#name MxRecordSet#name}. |
-| <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSetConfig.property.ttl">Ttl</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/mx_record_set#ttl MxRecordSet#ttl}. |
+| <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSetConfig.property.name">Name</a></code> | <code>*string</code> | The name of the record set. |
+| <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSetConfig.property.ttl">Ttl</a></code> | <code>*f64</code> | The TTL of the record set. Defaults to `3600`. |
 
 ---
 
@@ -709,10 +696,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-dns.mxRecordSet.MxRecordSetConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -766,7 +753,21 @@ Provisioners *[]interface{}
 
 ---
 
-##### `Mx`<sup>Required</sup> <a name="Mx" id="@cdktf/provider-dns.mxRecordSet.MxRecordSetConfig.property.mx"></a>
+##### `Zone`<sup>Required</sup> <a name="Zone" id="@cdktf/provider-dns.mxRecordSet.MxRecordSetConfig.property.zone"></a>
+
+```go
+Zone *string
+```
+
+- *Type:* *string
+
+DNS zone the record set belongs to. It must be an FQDN, that is, include the trailing dot.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/mx_record_set#zone MxRecordSet#zone}
+
+---
+
+##### `Mx`<sup>Optional</sup> <a name="Mx" id="@cdktf/provider-dns.mxRecordSet.MxRecordSetConfig.property.mx"></a>
 
 ```go
 Mx interface{}
@@ -776,34 +777,7 @@ Mx interface{}
 
 mx block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/mx_record_set#mx MxRecordSet#mx}
-
----
-
-##### `Zone`<sup>Required</sup> <a name="Zone" id="@cdktf/provider-dns.mxRecordSet.MxRecordSetConfig.property.zone"></a>
-
-```go
-Zone *string
-```
-
-- *Type:* *string
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/mx_record_set#zone MxRecordSet#zone}.
-
----
-
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-dns.mxRecordSet.MxRecordSetConfig.property.id"></a>
-
-```go
-Id *string
-```
-
-- *Type:* *string
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/mx_record_set#id MxRecordSet#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/mx_record_set#mx MxRecordSet#mx}
 
 ---
 
@@ -815,7 +789,11 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/mx_record_set#name MxRecordSet#name}.
+The name of the record set.
+
+The `zone` argument will be appended to this value to create the full record path.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/mx_record_set#name MxRecordSet#name}
 
 ---
 
@@ -827,7 +805,9 @@ Ttl *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/mx_record_set#ttl MxRecordSet#ttl}.
+The TTL of the record set. Defaults to `3600`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/mx_record_set#ttl MxRecordSet#ttl}
 
 ---
 
@@ -836,7 +816,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r
 #### Initializer <a name="Initializer" id="@cdktf/provider-dns.mxRecordSet.MxRecordSetMx.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/v4/mxrecordset"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/mxrecordset"
 
 &mxrecordset.MxRecordSetMx {
 	Exchange: *string,
@@ -848,8 +828,8 @@ import "github.com/cdktf/cdktf-provider-dns-go/dns/v4/mxrecordset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSetMx.property.exchange">Exchange</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/mx_record_set#exchange MxRecordSet#exchange}. |
-| <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSetMx.property.preference">Preference</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/mx_record_set#preference MxRecordSet#preference}. |
+| <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSetMx.property.exchange">Exchange</a></code> | <code>*string</code> | The FQDN of the mail exchange, include the trailing dot. |
+| <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSetMx.property.preference">Preference</a></code> | <code>*f64</code> | The preference for the record. |
 
 ---
 
@@ -861,7 +841,9 @@ Exchange *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/mx_record_set#exchange MxRecordSet#exchange}.
+The FQDN of the mail exchange, include the trailing dot.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/mx_record_set#exchange MxRecordSet#exchange}
 
 ---
 
@@ -873,7 +855,9 @@ Preference *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/mx_record_set#preference MxRecordSet#preference}.
+The preference for the record.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/mx_record_set#preference MxRecordSet#preference}
 
 ---
 
@@ -884,7 +868,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-dns.mxRecordSet.MxRecordSetMxList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/v4/mxrecordset"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/mxrecordset"
 
 mxrecordset.NewMxRecordSetMxList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MxRecordSetMxList
 ```
@@ -1027,7 +1011,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-dns.mxRecordSet.MxRecordSetMxOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/v4/mxrecordset"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/mxrecordset"
 
 mxrecordset.NewMxRecordSetMxOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MxRecordSetMxOutputReference
 ```

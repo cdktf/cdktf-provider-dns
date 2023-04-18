@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/dns/r/srv_record_set
+// https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/srv_record_set
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,46 +8,53 @@ import * as cdktf from 'cdktf';
 
 export interface SrvRecordSetConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/srv_record_set#id SrvRecordSet#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/srv_record_set#name SrvRecordSet#name}
+  * The name of the record set. The `zone` argument will be appended to this value to create the full record path.
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/srv_record_set#name SrvRecordSet#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/srv_record_set#ttl SrvRecordSet#ttl}
+  * The TTL of the record set. Defaults to `3600`.
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/srv_record_set#ttl SrvRecordSet#ttl}
   */
   readonly ttl?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/srv_record_set#zone SrvRecordSet#zone}
+  * DNS zone the record set belongs to. It must be an FQDN, that is, include the trailing dot.
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/srv_record_set#zone SrvRecordSet#zone}
   */
   readonly zone: string;
   /**
   * srv block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/srv_record_set#srv SrvRecordSet#srv}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/srv_record_set#srv SrvRecordSet#srv}
   */
-  readonly srv: SrvRecordSetSrv[] | cdktf.IResolvable;
+  readonly srv?: SrvRecordSetSrv[] | cdktf.IResolvable;
 }
 export interface SrvRecordSetSrv {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/srv_record_set#port SrvRecordSet#port}
+  * The port for the service on the target.
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/srv_record_set#port SrvRecordSet#port}
   */
   readonly port: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/srv_record_set#priority SrvRecordSet#priority}
+  * The priority for the record.
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/srv_record_set#priority SrvRecordSet#priority}
   */
   readonly priority: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/srv_record_set#target SrvRecordSet#target}
+  * The FQDN of the target, include the trailing dot.
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/srv_record_set#target SrvRecordSet#target}
   */
   readonly target: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/srv_record_set#weight SrvRecordSet#weight}
+  * The weight for the record.
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/srv_record_set#weight SrvRecordSet#weight}
   */
   readonly weight: number;
 }
@@ -201,7 +208,7 @@ export class SrvRecordSetSrvList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/dns/r/srv_record_set dns_srv_record_set}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/srv_record_set dns_srv_record_set}
 */
 export class SrvRecordSet extends cdktf.TerraformResource {
 
@@ -215,7 +222,7 @@ export class SrvRecordSet extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/dns/r/srv_record_set dns_srv_record_set} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/srv_record_set dns_srv_record_set} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -226,7 +233,7 @@ export class SrvRecordSet extends cdktf.TerraformResource {
       terraformResourceType: 'dns_srv_record_set',
       terraformGeneratorMetadata: {
         providerName: 'dns',
-        providerVersion: '3.2.4',
+        providerVersion: '3.3.0',
         providerVersionConstraint: '~> 3.2'
       },
       provider: config.provider,
@@ -237,7 +244,6 @@ export class SrvRecordSet extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
-    this._id = config.id;
     this._name = config.name;
     this._ttl = config.ttl;
     this._zone = config.zone;
@@ -248,20 +254,9 @@ export class SrvRecordSet extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
-  }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -277,7 +272,7 @@ export class SrvRecordSet extends cdktf.TerraformResource {
     return this._name;
   }
 
-  // ttl - computed: false, optional: true, required: false
+  // ttl - computed: true, optional: true, required: false
   private _ttl?: number; 
   public get ttl() {
     return this.getNumberAttribute('ttl');
@@ -306,13 +301,16 @@ export class SrvRecordSet extends cdktf.TerraformResource {
     return this._zone;
   }
 
-  // srv - computed: false, optional: false, required: true
+  // srv - computed: false, optional: true, required: false
   private _srv = new SrvRecordSetSrvList(this, "srv", true);
   public get srv() {
     return this._srv;
   }
   public putSrv(value: SrvRecordSetSrv[] | cdktf.IResolvable) {
     this._srv.internalValue = value;
+  }
+  public resetSrv() {
+    this._srv.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get srvInput() {
@@ -325,7 +323,6 @@ export class SrvRecordSet extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       ttl: cdktf.numberToTerraform(this._ttl),
       zone: cdktf.stringToTerraform(this._zone),

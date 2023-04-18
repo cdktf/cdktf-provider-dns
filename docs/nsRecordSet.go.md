@@ -1,6 +1,6 @@
 # `dns_ns_record_set`
 
-Refer to the Terraform Registory for docs: [`dns_ns_record_set`](https://www.terraform.io/docs/providers/dns/r/ns_record_set).
+Refer to the Terraform Registory for docs: [`dns_ns_record_set`](https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/ns_record_set).
 
 # `nsRecordSet` Submodule <a name="`nsRecordSet` Submodule" id="@cdktf/provider-dns.nsRecordSet"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`dns_ns_record_set`](https://www.ter
 
 ### NsRecordSet <a name="NsRecordSet" id="@cdktf/provider-dns.nsRecordSet.NsRecordSet"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/dns/r/ns_record_set dns_ns_record_set}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/ns_record_set dns_ns_record_set}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-dns.nsRecordSet.NsRecordSet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/v4/nsrecordset"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/nsrecordset"
 
 nsrecordset.NewNsRecordSet(scope Construct, id *string, config NsRecordSetConfig) NsRecordSet
 ```
@@ -70,7 +70,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-dns.nsRecordSet.NsRecordSet.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.nsRecordSet.NsRecordSet.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.nsRecordSet.NsRecordSet.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.nsRecordSet.NsRecordSet.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.nsRecordSet.NsRecordSet.resetTtl">ResetTtl</a></code> | *No description.* |
 
 ---
@@ -259,12 +258,6 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 
 ---
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-dns.nsRecordSet.NsRecordSet.resetId"></a>
-
-```go
-func ResetId()
-```
-
 ##### `ResetTtl` <a name="ResetTtl" id="@cdktf/provider-dns.nsRecordSet.NsRecordSet.resetTtl"></a>
 
 ```go
@@ -284,7 +277,7 @@ func ResetTtl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-dns.nsRecordSet.NsRecordSet.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/v4/nsrecordset"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/nsrecordset"
 
 nsrecordset.NsRecordSet_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-dns.nsRecordSet.NsRecordSet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/v4/nsrecordset"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/nsrecordset"
 
 nsrecordset.NsRecordSet_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +323,7 @@ nsrecordset.NsRecordSet_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-dns.nsRecordSet.NsRecordSet.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/v4/nsrecordset"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/nsrecordset"
 
 nsrecordset.NsRecordSet_IsTerraformResource(x interface{}) *bool
 ```
@@ -353,18 +346,17 @@ nsrecordset.NsRecordSet_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-dns.nsRecordSet.NsRecordSet.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.nsRecordSet.NsRecordSet.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.nsRecordSet.NsRecordSet.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.nsRecordSet.NsRecordSet.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dns.nsRecordSet.NsRecordSet.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.nsRecordSet.NsRecordSet.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.nsRecordSet.NsRecordSet.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.nsRecordSet.NsRecordSet.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.nsRecordSet.NsRecordSet.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.nsRecordSet.NsRecordSet.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.nsRecordSet.NsRecordSet.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dns.nsRecordSet.NsRecordSet.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.nsRecordSet.NsRecordSet.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.nsRecordSet.NsRecordSet.property.nameserversInput">NameserversInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.nsRecordSet.NsRecordSet.property.ttlInput">TtlInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.nsRecordSet.NsRecordSet.property.zoneInput">ZoneInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.nsRecordSet.NsRecordSet.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.nsRecordSet.NsRecordSet.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.nsRecordSet.NsRecordSet.property.nameservers">Nameservers</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.nsRecordSet.NsRecordSet.property.ttl">Ttl</a></code> | <code>*f64</code> | *No description.* |
@@ -457,10 +449,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-dns.nsRecordSet.NsRecordSet.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -514,10 +506,10 @@ func Provisioners() *[]interface{}
 
 ---
 
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-dns.nsRecordSet.NsRecordSet.property.idInput"></a>
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-dns.nsRecordSet.NsRecordSet.property.id"></a>
 
 ```go
-func IdInput() *string
+func Id() *string
 ```
 
 - *Type:* *string
@@ -558,16 +550,6 @@ func TtlInput() *f64
 
 ```go
 func ZoneInput() *string
-```
-
-- *Type:* *string
-
----
-
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-dns.nsRecordSet.NsRecordSet.property.id"></a>
-
-```go
-func Id() *string
 ```
 
 - *Type:* *string
@@ -639,11 +621,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-dns.nsRecordSet.NsRecordSetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/v4/nsrecordset"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/nsrecordset"
 
 &nsrecordset.NsRecordSetConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -652,7 +634,6 @@ import "github.com/cdktf/cdktf-provider-dns-go/dns/v4/nsrecordset"
 	Name: *string,
 	Nameservers: *[]*string,
 	Zone: *string,
-	Id: *string,
 	Ttl: *f64,
 }
 ```
@@ -662,17 +643,16 @@ import "github.com/cdktf/cdktf-provider-dns-go/dns/v4/nsrecordset"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-dns.nsRecordSet.NsRecordSetConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.nsRecordSet.NsRecordSetConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dns.nsRecordSet.NsRecordSetConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.nsRecordSet.NsRecordSetConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.nsRecordSet.NsRecordSetConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.nsRecordSet.NsRecordSetConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.nsRecordSet.NsRecordSetConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.nsRecordSet.NsRecordSetConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.nsRecordSet.NsRecordSetConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/ns_record_set#name NsRecordSet#name}. |
-| <code><a href="#@cdktf/provider-dns.nsRecordSet.NsRecordSetConfig.property.nameservers">Nameservers</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/ns_record_set#nameservers NsRecordSet#nameservers}. |
-| <code><a href="#@cdktf/provider-dns.nsRecordSet.NsRecordSetConfig.property.zone">Zone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/ns_record_set#zone NsRecordSet#zone}. |
-| <code><a href="#@cdktf/provider-dns.nsRecordSet.NsRecordSetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/ns_record_set#id NsRecordSet#id}. |
-| <code><a href="#@cdktf/provider-dns.nsRecordSet.NsRecordSetConfig.property.ttl">Ttl</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/ns_record_set#ttl NsRecordSet#ttl}. |
+| <code><a href="#@cdktf/provider-dns.nsRecordSet.NsRecordSetConfig.property.name">Name</a></code> | <code>*string</code> | The name of the record set. |
+| <code><a href="#@cdktf/provider-dns.nsRecordSet.NsRecordSetConfig.property.nameservers">Nameservers</a></code> | <code>*[]*string</code> | The nameservers this record set will point to. |
+| <code><a href="#@cdktf/provider-dns.nsRecordSet.NsRecordSetConfig.property.zone">Zone</a></code> | <code>*string</code> | DNS zone the record set belongs to. It must be an FQDN, that is, include the trailing dot. |
+| <code><a href="#@cdktf/provider-dns.nsRecordSet.NsRecordSetConfig.property.ttl">Ttl</a></code> | <code>*f64</code> | The TTL of the record set. Defaults to `3600`. |
 
 ---
 
@@ -689,10 +669,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-dns.nsRecordSet.NsRecordSetConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -754,7 +734,11 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/ns_record_set#name NsRecordSet#name}.
+The name of the record set.
+
+The `zone` argument will be appended to this value to create the full record path.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/ns_record_set#name NsRecordSet#name}
 
 ---
 
@@ -766,7 +750,9 @@ Nameservers *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/ns_record_set#nameservers NsRecordSet#nameservers}.
+The nameservers this record set will point to.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/ns_record_set#nameservers NsRecordSet#nameservers}
 
 ---
 
@@ -778,22 +764,9 @@ Zone *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/ns_record_set#zone NsRecordSet#zone}.
+DNS zone the record set belongs to. It must be an FQDN, that is, include the trailing dot.
 
----
-
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-dns.nsRecordSet.NsRecordSetConfig.property.id"></a>
-
-```go
-Id *string
-```
-
-- *Type:* *string
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/ns_record_set#id NsRecordSet#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/ns_record_set#zone NsRecordSet#zone}
 
 ---
 
@@ -805,7 +778,9 @@ Ttl *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/ns_record_set#ttl NsRecordSet#ttl}.
+The TTL of the record set. Defaults to `3600`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/ns_record_set#ttl NsRecordSet#ttl}
 
 ---
 
