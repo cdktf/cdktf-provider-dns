@@ -1,6 +1,6 @@
 # `dns_ptr_record`
 
-Refer to the Terraform Registory for docs: [`dns_ptr_record`](https://www.terraform.io/docs/providers/dns/r/ptr_record).
+Refer to the Terraform Registory for docs: [`dns_ptr_record`](https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/ptr_record).
 
 # `ptrRecord` Submodule <a name="`ptrRecord` Submodule" id="@cdktf/provider-dns.ptrRecord"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`dns_ptr_record`](https://www.terraf
 
 ### PtrRecord <a name="PtrRecord" id="@cdktf/provider-dns.ptrRecord.PtrRecord"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/dns/r/ptr_record dns_ptr_record}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/ptr_record dns_ptr_record}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-dns.ptrRecord.PtrRecord.Initializer"></a>
 
@@ -70,7 +70,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecord.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecord.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecord.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecord.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecord.resetName">ResetName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecord.resetTtl">ResetTtl</a></code> | *No description.* |
 
@@ -260,12 +259,6 @@ private IResolvable InterpolationForAttribute(string TerraformAttribute)
 
 ---
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-dns.ptrRecord.PtrRecord.resetId"></a>
-
-```csharp
-private void ResetId()
-```
-
 ##### `ResetName` <a name="ResetName" id="@cdktf/provider-dns.ptrRecord.PtrRecord.resetName"></a>
 
 ```csharp
@@ -360,18 +353,17 @@ PtrRecord.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecord.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecord.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecord.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecord.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecord.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecord.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecord.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecord.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecord.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecord.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecord.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecord.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecord.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecord.property.ptrInput">PtrInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecord.property.ttlInput">TtlInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecord.property.zoneInput">ZoneInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecord.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecord.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecord.property.ptr">Ptr</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecord.property.ttl">Ttl</a></code> | <code>double</code> | *No description.* |
@@ -464,10 +456,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-dns.ptrRecord.PtrRecord.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -521,10 +513,10 @@ public object[] Provisioners { get; }
 
 ---
 
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-dns.ptrRecord.PtrRecord.property.idInput"></a>
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-dns.ptrRecord.PtrRecord.property.id"></a>
 
 ```csharp
-public string IdInput { get; }
+public string Id { get; }
 ```
 
 - *Type:* string
@@ -565,16 +557,6 @@ public double TtlInput { get; }
 
 ```csharp
 public string ZoneInput { get; }
-```
-
-- *Type:* string
-
----
-
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-dns.ptrRecord.PtrRecord.property.id"></a>
-
-```csharp
-public string Id { get; }
 ```
 
 - *Type:* string
@@ -650,7 +632,7 @@ using HashiCorp.Cdktf.Providers.Dns;
 
 new PtrRecordConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -658,7 +640,6 @@ new PtrRecordConfig {
     object[] Provisioners = null,
     string Ptr,
     string Zone,
-    string Id = null,
     string Name = null,
     double Ttl = null
 };
@@ -669,17 +650,16 @@ new PtrRecordConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecordConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecordConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecordConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecordConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecordConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecordConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecordConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecordConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecordConfig.property.ptr">Ptr</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/ptr_record#ptr PtrRecord#ptr}. |
-| <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecordConfig.property.zone">Zone</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/ptr_record#zone PtrRecord#zone}. |
-| <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecordConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/ptr_record#id PtrRecord#id}. |
-| <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecordConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/ptr_record#name PtrRecord#name}. |
-| <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecordConfig.property.ttl">Ttl</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/ptr_record#ttl PtrRecord#ttl}. |
+| <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecordConfig.property.ptr">Ptr</a></code> | <code>string</code> | The canonical name this record will point to. |
+| <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecordConfig.property.zone">Zone</a></code> | <code>string</code> | DNS zone the record set belongs to. It must be an FQDN, that is, include the trailing dot. |
+| <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecordConfig.property.name">Name</a></code> | <code>string</code> | The name of the record. |
+| <code><a href="#@cdktf/provider-dns.ptrRecord.PtrRecordConfig.property.ttl">Ttl</a></code> | <code>double</code> | The TTL of the record. Defaults to `3600`. |
 
 ---
 
@@ -696,10 +676,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-dns.ptrRecord.PtrRecordConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -761,7 +741,9 @@ public string Ptr { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/ptr_record#ptr PtrRecord#ptr}.
+The canonical name this record will point to.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/ptr_record#ptr PtrRecord#ptr}
 
 ---
 
@@ -773,22 +755,9 @@ public string Zone { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/ptr_record#zone PtrRecord#zone}.
+DNS zone the record set belongs to. It must be an FQDN, that is, include the trailing dot.
 
----
-
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-dns.ptrRecord.PtrRecordConfig.property.id"></a>
-
-```csharp
-public string Id { get; set; }
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/ptr_record#id PtrRecord#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/ptr_record#zone PtrRecord#zone}
 
 ---
 
@@ -800,7 +769,11 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/ptr_record#name PtrRecord#name}.
+The name of the record.
+
+The `zone` argument will be appended to this value to create the full record path.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/ptr_record#name PtrRecord#name}
 
 ---
 
@@ -812,7 +785,9 @@ public double Ttl { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/ptr_record#ttl PtrRecord#ttl}.
+The TTL of the record. Defaults to `3600`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/ptr_record#ttl PtrRecord#ttl}
 
 ---
 

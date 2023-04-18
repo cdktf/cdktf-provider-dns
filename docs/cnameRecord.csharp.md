@@ -1,6 +1,6 @@
 # `dns_cname_record`
 
-Refer to the Terraform Registory for docs: [`dns_cname_record`](https://www.terraform.io/docs/providers/dns/r/cname_record).
+Refer to the Terraform Registory for docs: [`dns_cname_record`](https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/cname_record).
 
 # `cnameRecord` Submodule <a name="`cnameRecord` Submodule" id="@cdktf/provider-dns.cnameRecord"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`dns_cname_record`](https://www.terr
 
 ### CnameRecord <a name="CnameRecord" id="@cdktf/provider-dns.cnameRecord.CnameRecord"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/dns/r/cname_record dns_cname_record}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/cname_record dns_cname_record}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-dns.cnameRecord.CnameRecord.Initializer"></a>
 
@@ -70,7 +70,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-dns.cnameRecord.CnameRecord.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.cnameRecord.CnameRecord.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.cnameRecord.CnameRecord.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.cnameRecord.CnameRecord.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.cnameRecord.CnameRecord.resetTtl">ResetTtl</a></code> | *No description.* |
 
 ---
@@ -259,12 +258,6 @@ private IResolvable InterpolationForAttribute(string TerraformAttribute)
 
 ---
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-dns.cnameRecord.CnameRecord.resetId"></a>
-
-```csharp
-private void ResetId()
-```
-
 ##### `ResetTtl` <a name="ResetTtl" id="@cdktf/provider-dns.cnameRecord.CnameRecord.resetTtl"></a>
 
 ```csharp
@@ -353,19 +346,18 @@ CnameRecord.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-dns.cnameRecord.CnameRecord.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.cnameRecord.CnameRecord.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.cnameRecord.CnameRecord.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.cnameRecord.CnameRecord.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dns.cnameRecord.CnameRecord.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.cnameRecord.CnameRecord.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.cnameRecord.CnameRecord.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.cnameRecord.CnameRecord.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.cnameRecord.CnameRecord.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.cnameRecord.CnameRecord.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dns.cnameRecord.CnameRecord.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.cnameRecord.CnameRecord.property.cnameInput">CnameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.cnameRecord.CnameRecord.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.cnameRecord.CnameRecord.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.cnameRecord.CnameRecord.property.ttlInput">TtlInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.cnameRecord.CnameRecord.property.zoneInput">ZoneInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.cnameRecord.CnameRecord.property.cname">Cname</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.cnameRecord.CnameRecord.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.cnameRecord.CnameRecord.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.cnameRecord.CnameRecord.property.ttl">Ttl</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.cnameRecord.CnameRecord.property.zone">Zone</a></code> | <code>string</code> | *No description.* |
@@ -457,10 +449,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-dns.cnameRecord.CnameRecord.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -514,20 +506,20 @@ public object[] Provisioners { get; }
 
 ---
 
-##### `CnameInput`<sup>Optional</sup> <a name="CnameInput" id="@cdktf/provider-dns.cnameRecord.CnameRecord.property.cnameInput"></a>
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-dns.cnameRecord.CnameRecord.property.id"></a>
 
 ```csharp
-public string CnameInput { get; }
+public string Id { get; }
 ```
 
 - *Type:* string
 
 ---
 
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-dns.cnameRecord.CnameRecord.property.idInput"></a>
+##### `CnameInput`<sup>Optional</sup> <a name="CnameInput" id="@cdktf/provider-dns.cnameRecord.CnameRecord.property.cnameInput"></a>
 
 ```csharp
-public string IdInput { get; }
+public string CnameInput { get; }
 ```
 
 - *Type:* string
@@ -568,16 +560,6 @@ public string ZoneInput { get; }
 
 ```csharp
 public string Cname { get; }
-```
-
-- *Type:* string
-
----
-
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-dns.cnameRecord.CnameRecord.property.id"></a>
-
-```csharp
-public string Id { get; }
 ```
 
 - *Type:* string
@@ -643,7 +625,7 @@ using HashiCorp.Cdktf.Providers.Dns;
 
 new CnameRecordConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -652,7 +634,6 @@ new CnameRecordConfig {
     string Cname,
     string Name,
     string Zone,
-    string Id = null,
     double Ttl = null
 };
 ```
@@ -662,17 +643,16 @@ new CnameRecordConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-dns.cnameRecord.CnameRecordConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.cnameRecord.CnameRecordConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dns.cnameRecord.CnameRecordConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.cnameRecord.CnameRecordConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.cnameRecord.CnameRecordConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.cnameRecord.CnameRecordConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.cnameRecord.CnameRecordConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.cnameRecord.CnameRecordConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.cnameRecord.CnameRecordConfig.property.cname">Cname</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/cname_record#cname CnameRecord#cname}. |
-| <code><a href="#@cdktf/provider-dns.cnameRecord.CnameRecordConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/cname_record#name CnameRecord#name}. |
-| <code><a href="#@cdktf/provider-dns.cnameRecord.CnameRecordConfig.property.zone">Zone</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/cname_record#zone CnameRecord#zone}. |
-| <code><a href="#@cdktf/provider-dns.cnameRecord.CnameRecordConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/cname_record#id CnameRecord#id}. |
-| <code><a href="#@cdktf/provider-dns.cnameRecord.CnameRecordConfig.property.ttl">Ttl</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/cname_record#ttl CnameRecord#ttl}. |
+| <code><a href="#@cdktf/provider-dns.cnameRecord.CnameRecordConfig.property.cname">Cname</a></code> | <code>string</code> | The canonical name this record will point to. |
+| <code><a href="#@cdktf/provider-dns.cnameRecord.CnameRecordConfig.property.name">Name</a></code> | <code>string</code> | The name of the record. |
+| <code><a href="#@cdktf/provider-dns.cnameRecord.CnameRecordConfig.property.zone">Zone</a></code> | <code>string</code> | DNS zone the record belongs to. It must be an FQDN, that is, include the trailing dot. |
+| <code><a href="#@cdktf/provider-dns.cnameRecord.CnameRecordConfig.property.ttl">Ttl</a></code> | <code>double</code> | The TTL of the record set. Defaults to `3600`. |
 
 ---
 
@@ -689,10 +669,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-dns.cnameRecord.CnameRecordConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -754,7 +734,9 @@ public string Cname { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/cname_record#cname CnameRecord#cname}.
+The canonical name this record will point to.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/cname_record#cname CnameRecord#cname}
 
 ---
 
@@ -766,7 +748,11 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/cname_record#name CnameRecord#name}.
+The name of the record.
+
+The `zone` argument will be appended to this value to create the full record path.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/cname_record#name CnameRecord#name}
 
 ---
 
@@ -778,22 +764,9 @@ public string Zone { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/cname_record#zone CnameRecord#zone}.
+DNS zone the record belongs to. It must be an FQDN, that is, include the trailing dot.
 
----
-
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-dns.cnameRecord.CnameRecordConfig.property.id"></a>
-
-```csharp
-public string Id { get; set; }
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/cname_record#id CnameRecord#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/cname_record#zone CnameRecord#zone}
 
 ---
 
@@ -805,7 +778,9 @@ public double Ttl { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/cname_record#ttl CnameRecord#ttl}.
+The TTL of the record set. Defaults to `3600`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/cname_record#ttl CnameRecord#ttl}
 
 ---
 

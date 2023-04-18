@@ -1,6 +1,6 @@
 # `data_dns_txt_record_set`
 
-Refer to the Terraform Registory for docs: [`data_dns_txt_record_set`](https://www.terraform.io/docs/providers/dns/d/txt_record_set).
+Refer to the Terraform Registory for docs: [`data_dns_txt_record_set`](https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/data-sources/txt_record_set).
 
 # `dataDnsTxtRecordSet` Submodule <a name="`dataDnsTxtRecordSet` Submodule" id="@cdktf/provider-dns.dataDnsTxtRecordSet"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_dns_txt_record_set`](https://w
 
 ### DataDnsTxtRecordSet <a name="DataDnsTxtRecordSet" id="@cdktf/provider-dns.dataDnsTxtRecordSet.DataDnsTxtRecordSet"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/dns/d/txt_record_set dns_txt_record_set}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/data-sources/txt_record_set dns_txt_record_set}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-dns.dataDnsTxtRecordSet.DataDnsTxtRecordSet.Initializer"></a>
 
@@ -70,7 +70,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-dns.dataDnsTxtRecordSet.DataDnsTxtRecordSet.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.dataDnsTxtRecordSet.DataDnsTxtRecordSet.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.dataDnsTxtRecordSet.DataDnsTxtRecordSet.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.dataDnsTxtRecordSet.DataDnsTxtRecordSet.resetId">resetId</a></code> | *No description.* |
 
 ---
 
@@ -258,12 +257,6 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-dns.dataDnsTxtRecordSet.DataDnsTxtRecordSet.resetId"></a>
-
-```typescript
-public resetId(): void
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -345,17 +338,16 @@ dataDnsTxtRecordSet.DataDnsTxtRecordSet.isTerraformDataSource(x: any)
 | <code><a href="#@cdktf/provider-dns.dataDnsTxtRecordSet.DataDnsTxtRecordSet.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.dataDnsTxtRecordSet.DataDnsTxtRecordSet.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.dataDnsTxtRecordSet.DataDnsTxtRecordSet.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.dataDnsTxtRecordSet.DataDnsTxtRecordSet.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dns.dataDnsTxtRecordSet.DataDnsTxtRecordSet.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.dataDnsTxtRecordSet.DataDnsTxtRecordSet.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.dataDnsTxtRecordSet.DataDnsTxtRecordSet.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.dataDnsTxtRecordSet.DataDnsTxtRecordSet.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.dataDnsTxtRecordSet.DataDnsTxtRecordSet.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dns.dataDnsTxtRecordSet.DataDnsTxtRecordSet.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.dataDnsTxtRecordSet.DataDnsTxtRecordSet.property.record">record</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.dataDnsTxtRecordSet.DataDnsTxtRecordSet.property.records">records</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.dataDnsTxtRecordSet.DataDnsTxtRecordSet.property.hostInput">hostInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.dataDnsTxtRecordSet.DataDnsTxtRecordSet.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.dataDnsTxtRecordSet.DataDnsTxtRecordSet.property.host">host</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.dataDnsTxtRecordSet.DataDnsTxtRecordSet.property.id">id</a></code> | <code>string</code> | *No description.* |
 
 ---
 
@@ -434,10 +426,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-dns.dataDnsTxtRecordSet.DataDnsTxtRecordSet.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -481,6 +473,16 @@ public readonly provider: TerraformProvider;
 
 ---
 
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-dns.dataDnsTxtRecordSet.DataDnsTxtRecordSet.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `record`<sup>Required</sup> <a name="record" id="@cdktf/provider-dns.dataDnsTxtRecordSet.DataDnsTxtRecordSet.property.record"></a>
 
 ```typescript
@@ -511,30 +513,10 @@ public readonly hostInput: string;
 
 ---
 
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-dns.dataDnsTxtRecordSet.DataDnsTxtRecordSet.property.idInput"></a>
-
-```typescript
-public readonly idInput: string;
-```
-
-- *Type:* string
-
----
-
 ##### `host`<sup>Required</sup> <a name="host" id="@cdktf/provider-dns.dataDnsTxtRecordSet.DataDnsTxtRecordSet.property.host"></a>
 
 ```typescript
 public readonly host: string;
-```
-
-- *Type:* string
-
----
-
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-dns.dataDnsTxtRecordSet.DataDnsTxtRecordSet.property.id"></a>
-
-```typescript
-public readonly id: string;
 ```
 
 - *Type:* string
@@ -576,14 +558,13 @@ const dataDnsTxtRecordSetConfig: dataDnsTxtRecordSet.DataDnsTxtRecordSetConfig =
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-dns.dataDnsTxtRecordSet.DataDnsTxtRecordSetConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.dataDnsTxtRecordSet.DataDnsTxtRecordSetConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dns.dataDnsTxtRecordSet.DataDnsTxtRecordSetConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.dataDnsTxtRecordSet.DataDnsTxtRecordSetConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.dataDnsTxtRecordSet.DataDnsTxtRecordSetConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.dataDnsTxtRecordSet.DataDnsTxtRecordSetConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.dataDnsTxtRecordSet.DataDnsTxtRecordSetConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.dataDnsTxtRecordSet.DataDnsTxtRecordSetConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.dataDnsTxtRecordSet.DataDnsTxtRecordSetConfig.property.host">host</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/d/txt_record_set#host DataDnsTxtRecordSet#host}. |
-| <code><a href="#@cdktf/provider-dns.dataDnsTxtRecordSet.DataDnsTxtRecordSetConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/d/txt_record_set#id DataDnsTxtRecordSet#id}. |
+| <code><a href="#@cdktf/provider-dns.dataDnsTxtRecordSet.DataDnsTxtRecordSetConfig.property.host">host</a></code> | <code>string</code> | Host to look up. |
 
 ---
 
@@ -600,10 +581,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-dns.dataDnsTxtRecordSet.DataDnsTxtRecordSetConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -665,22 +646,9 @@ public readonly host: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/d/txt_record_set#host DataDnsTxtRecordSet#host}.
+Host to look up.
 
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-dns.dataDnsTxtRecordSet.DataDnsTxtRecordSetConfig.property.id"></a>
-
-```typescript
-public readonly id: string;
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/d/txt_record_set#id DataDnsTxtRecordSet#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/data-sources/txt_record_set#host DataDnsTxtRecordSet#host}
 
 ---
 

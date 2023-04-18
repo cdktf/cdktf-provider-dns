@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/dns/d/ptr_record_set
+// https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/data-sources/ptr_record_set
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,20 +8,15 @@ import * as cdktf from 'cdktf';
 
 export interface DataDnsPtrRecordSetConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/d/ptr_record_set#id DataDnsPtrRecordSet#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/d/ptr_record_set#ip_address DataDnsPtrRecordSet#ip_address}
+  * IP address to look up.
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/data-sources/ptr_record_set#ip_address DataDnsPtrRecordSet#ip_address}
   */
   readonly ipAddress: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/dns/d/ptr_record_set dns_ptr_record_set}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/data-sources/ptr_record_set dns_ptr_record_set}
 */
 export class DataDnsPtrRecordSet extends cdktf.TerraformDataSource {
 
@@ -35,7 +30,7 @@ export class DataDnsPtrRecordSet extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/dns/d/ptr_record_set dns_ptr_record_set} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/data-sources/ptr_record_set dns_ptr_record_set} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -46,7 +41,7 @@ export class DataDnsPtrRecordSet extends cdktf.TerraformDataSource {
       terraformResourceType: 'dns_ptr_record_set',
       terraformGeneratorMetadata: {
         providerName: 'dns',
-        providerVersion: '3.2.4',
+        providerVersion: '3.3.0',
         providerVersionConstraint: '~> 3.2'
       },
       provider: config.provider,
@@ -57,7 +52,6 @@ export class DataDnsPtrRecordSet extends cdktf.TerraformDataSource {
       connection: config.connection,
       forEach: config.forEach
     });
-    this._id = config.id;
     this._ipAddress = config.ipAddress;
   }
 
@@ -65,20 +59,9 @@ export class DataDnsPtrRecordSet extends cdktf.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
-  }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
   }
 
   // ip_address - computed: false, optional: false, required: true
@@ -105,7 +88,6 @@ export class DataDnsPtrRecordSet extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
       ip_address: cdktf.stringToTerraform(this._ipAddress),
     };
   }

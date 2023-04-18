@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/dns/r/cname_record
+// https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/cname_record
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,32 +8,33 @@ import * as cdktf from 'cdktf';
 
 export interface CnameRecordConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/cname_record#cname CnameRecord#cname}
+  * The canonical name this record will point to.
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/cname_record#cname CnameRecord#cname}
   */
   readonly cname: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/cname_record#id CnameRecord#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/cname_record#name CnameRecord#name}
+  * The name of the record. The `zone` argument will be appended to this value to create the full record path.
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/cname_record#name CnameRecord#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/cname_record#ttl CnameRecord#ttl}
+  * The TTL of the record set. Defaults to `3600`.
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/cname_record#ttl CnameRecord#ttl}
   */
   readonly ttl?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns/r/cname_record#zone CnameRecord#zone}
+  * DNS zone the record belongs to. It must be an FQDN, that is, include the trailing dot.
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/cname_record#zone CnameRecord#zone}
   */
   readonly zone: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/dns/r/cname_record dns_cname_record}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/cname_record dns_cname_record}
 */
 export class CnameRecord extends cdktf.TerraformResource {
 
@@ -47,7 +48,7 @@ export class CnameRecord extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/dns/r/cname_record dns_cname_record} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/cname_record dns_cname_record} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -58,7 +59,7 @@ export class CnameRecord extends cdktf.TerraformResource {
       terraformResourceType: 'dns_cname_record',
       terraformGeneratorMetadata: {
         providerName: 'dns',
-        providerVersion: '3.2.4',
+        providerVersion: '3.3.0',
         providerVersionConstraint: '~> 3.2'
       },
       provider: config.provider,
@@ -70,7 +71,6 @@ export class CnameRecord extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._cname = config.cname;
-    this._id = config.id;
     this._name = config.name;
     this._ttl = config.ttl;
     this._zone = config.zone;
@@ -93,20 +93,9 @@ export class CnameRecord extends cdktf.TerraformResource {
     return this._cname;
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
-  }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -122,7 +111,7 @@ export class CnameRecord extends cdktf.TerraformResource {
     return this._name;
   }
 
-  // ttl - computed: false, optional: true, required: false
+  // ttl - computed: true, optional: true, required: false
   private _ttl?: number; 
   public get ttl() {
     return this.getNumberAttribute('ttl');
@@ -158,7 +147,6 @@ export class CnameRecord extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       cname: cdktf.stringToTerraform(this._cname),
-      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       ttl: cdktf.numberToTerraform(this._ttl),
       zone: cdktf.stringToTerraform(this._zone),

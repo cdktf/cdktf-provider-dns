@@ -1,6 +1,6 @@
 # `provider`
 
-Refer to the Terraform Registory for docs: [`dns`](https://www.terraform.io/docs/providers/dns).
+Refer to the Terraform Registory for docs: [`dns`](https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs).
 
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-dns.provider"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`dns`](https://www.terraform.io/docs
 
 ### DnsProvider <a name="DnsProvider" id="@cdktf/provider-dns.provider.DnsProvider"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/dns dns}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs dns}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-dns.provider.DnsProvider.Initializer"></a>
 
@@ -61,6 +61,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-dns.provider.DnsProvider.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.provider.DnsProvider.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-dns.provider.DnsProvider.resetAlias">ResetAlias</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-dns.provider.DnsProvider.resetUpdate">ResetUpdate</a></code> | *No description.* |
 
 ---
 
@@ -132,6 +133,12 @@ Adds this resource to the terraform JSON output.
 
 ```go
 func ResetAlias()
+```
+
+##### `ResetUpdate` <a name="ResetUpdate" id="@cdktf/provider-dns.provider.DnsProvider.resetUpdate"></a>
+
+```go
+func ResetUpdate()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -218,6 +225,8 @@ provider.DnsProvider_IsTerraformProvider(x interface{}) *bool
 | <code><a href="#@cdktf/provider-dns.provider.DnsProvider.property.terraformProviderSource">TerraformProviderSource</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.provider.DnsProvider.property.alias">Alias</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.provider.DnsProvider.property.aliasInput">AliasInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dns.provider.DnsProvider.property.updateInput">UpdateInput</a></code> | <code><a href="#@cdktf/provider-dns.provider.DnsProviderUpdate">DnsProviderUpdate</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-dns.provider.DnsProvider.property.update">Update</a></code> | <code><a href="#@cdktf/provider-dns.provider.DnsProviderUpdate">DnsProviderUpdate</a></code> | *No description.* |
 
 ---
 
@@ -323,6 +332,26 @@ func AliasInput() *string
 
 ---
 
+##### `UpdateInput`<sup>Optional</sup> <a name="UpdateInput" id="@cdktf/provider-dns.provider.DnsProvider.property.updateInput"></a>
+
+```go
+func UpdateInput() DnsProviderUpdate
+```
+
+- *Type:* <a href="#@cdktf/provider-dns.provider.DnsProviderUpdate">DnsProviderUpdate</a>
+
+---
+
+##### `Update`<sup>Optional</sup> <a name="Update" id="@cdktf/provider-dns.provider.DnsProvider.property.update"></a>
+
+```go
+func Update() DnsProviderUpdate
+```
+
+- *Type:* <a href="#@cdktf/provider-dns.provider.DnsProviderUpdate">DnsProviderUpdate</a>
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -352,6 +381,7 @@ import "github.com/cdktf/cdktf-provider-dns-go/dns/v4/provider"
 
 &provider.DnsProviderConfig {
 	Alias: *string,
+	Update: github.com/cdktf/cdktf-provider-dns-go/dns/v4.provider.DnsProviderUpdate,
 }
 ```
 
@@ -360,6 +390,7 @@ import "github.com/cdktf/cdktf-provider-dns-go/dns/v4/provider"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-dns.provider.DnsProviderConfig.property.alias">Alias</a></code> | <code>*string</code> | Alias name. |
+| <code><a href="#@cdktf/provider-dns.provider.DnsProviderConfig.property.update">Update</a></code> | <code><a href="#@cdktf/provider-dns.provider.DnsProviderUpdate">DnsProviderUpdate</a></code> | update block. |
 
 ---
 
@@ -373,7 +404,273 @@ Alias *string
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/dns#alias DnsProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs#alias DnsProvider#alias}
+
+---
+
+##### `Update`<sup>Optional</sup> <a name="Update" id="@cdktf/provider-dns.provider.DnsProviderConfig.property.update"></a>
+
+```go
+Update DnsProviderUpdate
+```
+
+- *Type:* <a href="#@cdktf/provider-dns.provider.DnsProviderUpdate">DnsProviderUpdate</a>
+
+update block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs#update DnsProvider#update}
+
+---
+
+### DnsProviderUpdate <a name="DnsProviderUpdate" id="@cdktf/provider-dns.provider.DnsProviderUpdate"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-dns.provider.DnsProviderUpdate.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-dns-go/dns/v4/provider"
+
+&provider.DnsProviderUpdate {
+	Server: *string,
+	Gssapi: github.com/cdktf/cdktf-provider-dns-go/dns/v4.provider.DnsProviderUpdateGssapi,
+	KeyAlgorithm: *string,
+	KeyName: *string,
+	KeySecret: *string,
+	Port: *f64,
+	Retries: *f64,
+	Timeout: *string,
+	Transport: *string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-dns.provider.DnsProviderUpdate.property.server">Server</a></code> | <code>*string</code> | The hostname or IP address of the DNS server to send updates to. |
+| <code><a href="#@cdktf/provider-dns.provider.DnsProviderUpdate.property.gssapi">Gssapi</a></code> | <code><a href="#@cdktf/provider-dns.provider.DnsProviderUpdateGssapi">DnsProviderUpdateGssapi</a></code> | gssapi block. |
+| <code><a href="#@cdktf/provider-dns.provider.DnsProviderUpdate.property.keyAlgorithm">KeyAlgorithm</a></code> | <code>*string</code> | Required if `key_name` is set. |
+| <code><a href="#@cdktf/provider-dns.provider.DnsProviderUpdate.property.keyName">KeyName</a></code> | <code>*string</code> | The name of the TSIG key used to sign the DNS update messages. |
+| <code><a href="#@cdktf/provider-dns.provider.DnsProviderUpdate.property.keySecret">KeySecret</a></code> | <code>*string</code> | Required if `key_name` is set A Base64-encoded string containing the shared secret to be used for TSIG. |
+| <code><a href="#@cdktf/provider-dns.provider.DnsProviderUpdate.property.port">Port</a></code> | <code>*f64</code> | The target UDP port on the server where updates are sent to. Defaults to `53`. |
+| <code><a href="#@cdktf/provider-dns.provider.DnsProviderUpdate.property.retries">Retries</a></code> | <code>*f64</code> | How many times to retry on connection timeout. Defaults to `3`. |
+| <code><a href="#@cdktf/provider-dns.provider.DnsProviderUpdate.property.timeout">Timeout</a></code> | <code>*string</code> | Timeout for DNS queries. |
+| <code><a href="#@cdktf/provider-dns.provider.DnsProviderUpdate.property.transport">Transport</a></code> | <code>*string</code> | Transport to use for DNS queries. |
+
+---
+
+##### `Server`<sup>Required</sup> <a name="Server" id="@cdktf/provider-dns.provider.DnsProviderUpdate.property.server"></a>
+
+```go
+Server *string
+```
+
+- *Type:* *string
+
+The hostname or IP address of the DNS server to send updates to.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs#server DnsProvider#server}
+
+---
+
+##### `Gssapi`<sup>Optional</sup> <a name="Gssapi" id="@cdktf/provider-dns.provider.DnsProviderUpdate.property.gssapi"></a>
+
+```go
+Gssapi DnsProviderUpdateGssapi
+```
+
+- *Type:* <a href="#@cdktf/provider-dns.provider.DnsProviderUpdateGssapi">DnsProviderUpdateGssapi</a>
+
+gssapi block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs#gssapi DnsProvider#gssapi}
+
+---
+
+##### `KeyAlgorithm`<sup>Optional</sup> <a name="KeyAlgorithm" id="@cdktf/provider-dns.provider.DnsProviderUpdate.property.keyAlgorithm"></a>
+
+```go
+KeyAlgorithm *string
+```
+
+- *Type:* *string
+
+Required if `key_name` is set.
+
+When using TSIG authentication, the algorithm to use for HMAC. Valid values are `hmac-md5`, `hmac-sha1`, `hmac-sha256` or `hmac-sha512`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs#key_algorithm DnsProvider#key_algorithm}
+
+---
+
+##### `KeyName`<sup>Optional</sup> <a name="KeyName" id="@cdktf/provider-dns.provider.DnsProviderUpdate.property.keyName"></a>
+
+```go
+KeyName *string
+```
+
+- *Type:* *string
+
+The name of the TSIG key used to sign the DNS update messages.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs#key_name DnsProvider#key_name}
+
+---
+
+##### `KeySecret`<sup>Optional</sup> <a name="KeySecret" id="@cdktf/provider-dns.provider.DnsProviderUpdate.property.keySecret"></a>
+
+```go
+KeySecret *string
+```
+
+- *Type:* *string
+
+Required if `key_name` is set A Base64-encoded string containing the shared secret to be used for TSIG.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs#key_secret DnsProvider#key_secret}
+
+---
+
+##### `Port`<sup>Optional</sup> <a name="Port" id="@cdktf/provider-dns.provider.DnsProviderUpdate.property.port"></a>
+
+```go
+Port *f64
+```
+
+- *Type:* *f64
+
+The target UDP port on the server where updates are sent to. Defaults to `53`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs#port DnsProvider#port}
+
+---
+
+##### `Retries`<sup>Optional</sup> <a name="Retries" id="@cdktf/provider-dns.provider.DnsProviderUpdate.property.retries"></a>
+
+```go
+Retries *f64
+```
+
+- *Type:* *f64
+
+How many times to retry on connection timeout. Defaults to `3`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs#retries DnsProvider#retries}
+
+---
+
+##### `Timeout`<sup>Optional</sup> <a name="Timeout" id="@cdktf/provider-dns.provider.DnsProviderUpdate.property.timeout"></a>
+
+```go
+Timeout *string
+```
+
+- *Type:* *string
+
+Timeout for DNS queries.
+
+Valid values are durations expressed as `500ms`, etc. or a plain number which is treated as whole seconds.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs#timeout DnsProvider#timeout}
+
+---
+
+##### `Transport`<sup>Optional</sup> <a name="Transport" id="@cdktf/provider-dns.provider.DnsProviderUpdate.property.transport"></a>
+
+```go
+Transport *string
+```
+
+- *Type:* *string
+
+Transport to use for DNS queries.
+
+Valid values are `udp`, `udp4`, `udp6`, `tcp`, `tcp4`, or `tcp6`. Any UDP transport will retry automatically with the equivalent TCP transport in the event of a truncated response. Defaults to `udp`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs#transport DnsProvider#transport}
+
+---
+
+### DnsProviderUpdateGssapi <a name="DnsProviderUpdateGssapi" id="@cdktf/provider-dns.provider.DnsProviderUpdateGssapi"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-dns.provider.DnsProviderUpdateGssapi.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-dns-go/dns/v4/provider"
+
+&provider.DnsProviderUpdateGssapi {
+	Realm: *string,
+	Keytab: *string,
+	Password: *string,
+	Username: *string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-dns.provider.DnsProviderUpdateGssapi.property.realm">Realm</a></code> | <code>*string</code> | The Kerberos realm or Active Directory domain. |
+| <code><a href="#@cdktf/provider-dns.provider.DnsProviderUpdateGssapi.property.keytab">Keytab</a></code> | <code>*string</code> | This or `password` is required if `username` is set, not supported on Windows. |
+| <code><a href="#@cdktf/provider-dns.provider.DnsProviderUpdateGssapi.property.password">Password</a></code> | <code>*string</code> | This or `keytab` is required if `username` is set. The matching password for `username`. |
+| <code><a href="#@cdktf/provider-dns.provider.DnsProviderUpdateGssapi.property.username">Username</a></code> | <code>*string</code> | The name of the user to authenticate as. If not set the current user session will be used. |
+
+---
+
+##### `Realm`<sup>Required</sup> <a name="Realm" id="@cdktf/provider-dns.provider.DnsProviderUpdateGssapi.property.realm"></a>
+
+```go
+Realm *string
+```
+
+- *Type:* *string
+
+The Kerberos realm or Active Directory domain.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs#realm DnsProvider#realm}
+
+---
+
+##### `Keytab`<sup>Optional</sup> <a name="Keytab" id="@cdktf/provider-dns.provider.DnsProviderUpdateGssapi.property.keytab"></a>
+
+```go
+Keytab *string
+```
+
+- *Type:* *string
+
+This or `password` is required if `username` is set, not supported on Windows.
+
+The path to a keytab file containing a key for `username`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs#keytab DnsProvider#keytab}
+
+---
+
+##### `Password`<sup>Optional</sup> <a name="Password" id="@cdktf/provider-dns.provider.DnsProviderUpdateGssapi.property.password"></a>
+
+```go
+Password *string
+```
+
+- *Type:* *string
+
+This or `keytab` is required if `username` is set. The matching password for `username`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs#password DnsProvider#password}
+
+---
+
+##### `Username`<sup>Optional</sup> <a name="Username" id="@cdktf/provider-dns.provider.DnsProviderUpdateGssapi.property.username"></a>
+
+```go
+Username *string
+```
+
+- *Type:* *string
+
+The name of the user to authenticate as. If not set the current user session will be used.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs#username DnsProvider#username}
 
 ---
 
