@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.1/
 #### Initializers <a name="Initializers" id="@cdktf/provider-dns.dataDnsPtrRecordSet.DataDnsPtrRecordSet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/datadnsptrrecordset"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/v4/datadnsptrrecordset"
 
 datadnsptrrecordset.NewDataDnsPtrRecordSet(scope Construct, id *string, config DataDnsPtrRecordSetConfig) DataDnsPtrRecordSet
 ```
@@ -270,7 +270,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-dns.dataDnsPtrRecordSet.DataDnsPtrRecordSet.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/datadnsptrrecordset"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/v4/datadnsptrrecordset"
 
 datadnsptrrecordset.DataDnsPtrRecordSet_IsConstruct(x interface{}) *bool
 ```
@@ -302,7 +302,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-dns.dataDnsPtrRecordSet.DataDnsPtrRecordSet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/datadnsptrrecordset"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/v4/datadnsptrrecordset"
 
 datadnsptrrecordset.DataDnsPtrRecordSet_IsTerraformElement(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ datadnsptrrecordset.DataDnsPtrRecordSet_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-dns.dataDnsPtrRecordSet.DataDnsPtrRecordSet.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/datadnsptrrecordset"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/v4/datadnsptrrecordset"
 
 datadnsptrrecordset.DataDnsPtrRecordSet_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -537,7 +537,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-dns.dataDnsPtrRecordSet.DataDnsPtrRecordSetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/datadnsptrrecordset"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/v4/datadnsptrrecordset"
 
 &datadnsptrrecordset.DataDnsPtrRecordSetConfig {
 	Connection: interface{},
