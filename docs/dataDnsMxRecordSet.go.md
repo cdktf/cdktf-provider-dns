@@ -1,6 +1,6 @@
 # `data_dns_mx_record_set`
 
-Refer to the Terraform Registory for docs: [`data_dns_mx_record_set`](https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/data-sources/mx_record_set).
+Refer to the Terraform Registory for docs: [`data_dns_mx_record_set`](https://registry.terraform.io/providers/hashicorp/dns/3.3.1/docs/data-sources/mx_record_set).
 
 # `dataDnsMxRecordSet` Submodule <a name="`dataDnsMxRecordSet` Submodule" id="@cdktf/provider-dns.dataDnsMxRecordSet"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_dns_mx_record_set`](https://re
 
 ### DataDnsMxRecordSet <a name="DataDnsMxRecordSet" id="@cdktf/provider-dns.dataDnsMxRecordSet.DataDnsMxRecordSet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/data-sources/mx_record_set dns_mx_record_set}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.1/docs/data-sources/mx_record_set dns_mx_record_set}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-dns.dataDnsMxRecordSet.DataDnsMxRecordSet.Initializer"></a>
 
@@ -646,7 +646,7 @@ Domain *string
 
 Domain to look up.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/data-sources/mx_record_set#domain DataDnsMxRecordSet#domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.1/docs/data-sources/mx_record_set#domain DataDnsMxRecordSet#domain}
 
 ---
 
