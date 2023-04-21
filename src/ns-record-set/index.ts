@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/ns_record_set
+// https://registry.terraform.io/providers/hashicorp/dns/3.3.1/docs/resources/ns_record_set
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,31 +10,31 @@ export interface NsRecordSetConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the record set. The `zone` argument will be appended to this value to create the full record path.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/ns_record_set#name NsRecordSet#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.1/docs/resources/ns_record_set#name NsRecordSet#name}
   */
   readonly name: string;
   /**
   * The nameservers this record set will point to.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/ns_record_set#nameservers NsRecordSet#nameservers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.1/docs/resources/ns_record_set#nameservers NsRecordSet#nameservers}
   */
   readonly nameservers: string[];
   /**
   * The TTL of the record set. Defaults to `3600`.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/ns_record_set#ttl NsRecordSet#ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.1/docs/resources/ns_record_set#ttl NsRecordSet#ttl}
   */
   readonly ttl?: number;
   /**
   * DNS zone the record set belongs to. It must be an FQDN, that is, include the trailing dot.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/ns_record_set#zone NsRecordSet#zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.1/docs/resources/ns_record_set#zone NsRecordSet#zone}
   */
   readonly zone: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/ns_record_set dns_ns_record_set}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.1/docs/resources/ns_record_set dns_ns_record_set}
 */
 export class NsRecordSet extends cdktf.TerraformResource {
 
@@ -48,7 +48,7 @@ export class NsRecordSet extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.0/docs/resources/ns_record_set dns_ns_record_set} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.1/docs/resources/ns_record_set dns_ns_record_set} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -59,7 +59,7 @@ export class NsRecordSet extends cdktf.TerraformResource {
       terraformResourceType: 'dns_ns_record_set',
       terraformGeneratorMetadata: {
         providerName: 'dns',
-        providerVersion: '3.3.0',
+        providerVersion: '3.3.1',
         providerVersionConstraint: '~> 3.2'
       },
       provider: config.provider,
