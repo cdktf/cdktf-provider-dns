@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.1/
 #### Initializers <a name="Initializers" id="@cdktf/provider-dns.provider.DnsProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/v4/provider"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/provider"
 
 provider.NewDnsProvider(scope Construct, id *string, config DnsProviderConfig) DnsProvider
 ```
@@ -154,7 +154,7 @@ func ResetUpdate()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-dns.provider.DnsProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/v4/provider"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/provider"
 
 provider.DnsProvider_IsConstruct(x interface{}) *bool
 ```
@@ -186,7 +186,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-dns.provider.DnsProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/v4/provider"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/provider"
 
 provider.DnsProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -200,7 +200,7 @@ provider.DnsProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktf/provider-dns.provider.DnsProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/v4/provider"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/provider"
 
 provider.DnsProvider_IsTerraformProvider(x interface{}) *bool
 ```
@@ -377,11 +377,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-dns.provider.DnsProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/v4/provider"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/provider"
 
 &provider.DnsProviderConfig {
 	Alias: *string,
-	Update: github.com/cdktf/cdktf-provider-dns-go/dns/v4.provider.DnsProviderUpdate,
+	Update: github.com/cdktf/cdktf-provider-dns-go/dns.provider.DnsProviderUpdate,
 }
 ```
 
@@ -427,11 +427,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-dns.provider.DnsProviderUpdate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/v4/provider"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/provider"
 
 &provider.DnsProviderUpdate {
 	Server: *string,
-	Gssapi: github.com/cdktf/cdktf-provider-dns-go/dns/v4.provider.DnsProviderUpdateGssapi,
+	Gssapi: github.com/cdktf/cdktf-provider-dns-go/dns.provider.DnsProviderUpdateGssapi,
 	KeyAlgorithm: *string,
 	KeyName: *string,
 	KeySecret: *string,
@@ -595,7 +595,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-dns.provider.DnsProviderUpdateGssapi.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/v4/provider"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/provider"
 
 &provider.DnsProviderUpdateGssapi {
 	Realm: *string,
