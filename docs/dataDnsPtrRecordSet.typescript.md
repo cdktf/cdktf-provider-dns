@@ -1,6 +1,6 @@
 # `data_dns_ptr_record_set`
 
-Refer to the Terraform Registory for docs: [`data_dns_ptr_record_set`](https://registry.terraform.io/providers/hashicorp/dns/3.3.1/docs/data-sources/ptr_record_set).
+Refer to the Terraform Registory for docs: [`data_dns_ptr_record_set`](https://registry.terraform.io/providers/hashicorp/dns/3.3.2/docs/data-sources/ptr_record_set).
 
 # `dataDnsPtrRecordSet` Submodule <a name="`dataDnsPtrRecordSet` Submodule" id="@cdktf/provider-dns.dataDnsPtrRecordSet"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_dns_ptr_record_set`](https://r
 
 ### DataDnsPtrRecordSet <a name="DataDnsPtrRecordSet" id="@cdktf/provider-dns.dataDnsPtrRecordSet.DataDnsPtrRecordSet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.1/docs/data-sources/ptr_record_set dns_ptr_record_set}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.2/docs/data-sources/ptr_record_set dns_ptr_record_set}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-dns.dataDnsPtrRecordSet.DataDnsPtrRecordSet.Initializer"></a>
 
@@ -637,7 +637,7 @@ public readonly ipAddress: string;
 
 IP address to look up.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.1/docs/data-sources/ptr_record_set#ip_address DataDnsPtrRecordSet#ip_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.2/docs/data-sources/ptr_record_set#ip_address DataDnsPtrRecordSet#ip_address}
 
 ---
 

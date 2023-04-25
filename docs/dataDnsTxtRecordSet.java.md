@@ -1,6 +1,6 @@
 # `data_dns_txt_record_set`
 
-Refer to the Terraform Registory for docs: [`data_dns_txt_record_set`](https://registry.terraform.io/providers/hashicorp/dns/3.3.1/docs/data-sources/txt_record_set).
+Refer to the Terraform Registory for docs: [`data_dns_txt_record_set`](https://registry.terraform.io/providers/hashicorp/dns/3.3.2/docs/data-sources/txt_record_set).
 
 # `dataDnsTxtRecordSet` Submodule <a name="`dataDnsTxtRecordSet` Submodule" id="@cdktf/provider-dns.dataDnsTxtRecordSet"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_dns_txt_record_set`](https://r
 
 ### DataDnsTxtRecordSet <a name="DataDnsTxtRecordSet" id="@cdktf/provider-dns.dataDnsTxtRecordSet.DataDnsTxtRecordSet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.1/docs/data-sources/txt_record_set dns_txt_record_set}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.2/docs/data-sources/txt_record_set dns_txt_record_set}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-dns.dataDnsTxtRecordSet.DataDnsTxtRecordSet.Initializer"></a>
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 Host to look up.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.1/docs/data-sources/txt_record_set#host DataDnsTxtRecordSet#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.2/docs/data-sources/txt_record_set#host DataDnsTxtRecordSet#host}
 
 ---
 
@@ -727,7 +727,7 @@ public java.lang.String getHost();
 
 Host to look up.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.1/docs/data-sources/txt_record_set#host DataDnsTxtRecordSet#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.2/docs/data-sources/txt_record_set#host DataDnsTxtRecordSet#host}
 
 ---
 

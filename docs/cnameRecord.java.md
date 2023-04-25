@@ -1,6 +1,6 @@
 # `dns_cname_record`
 
-Refer to the Terraform Registory for docs: [`dns_cname_record`](https://registry.terraform.io/providers/hashicorp/dns/3.3.1/docs/resources/cname_record).
+Refer to the Terraform Registory for docs: [`dns_cname_record`](https://registry.terraform.io/providers/hashicorp/dns/3.3.2/docs/resources/cname_record).
 
 # `cnameRecord` Submodule <a name="`cnameRecord` Submodule" id="@cdktf/provider-dns.cnameRecord"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`dns_cname_record`](https://registry
 
 ### CnameRecord <a name="CnameRecord" id="@cdktf/provider-dns.cnameRecord.CnameRecord"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.1/docs/resources/cname_record dns_cname_record}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.2/docs/resources/cname_record dns_cname_record}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-dns.cnameRecord.CnameRecord.Initializer"></a>
 
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 The canonical name this record will point to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.1/docs/resources/cname_record#cname CnameRecord#cname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.2/docs/resources/cname_record#cname CnameRecord#cname}
 
 ---
 
@@ -130,7 +130,7 @@ The name of the record.
 
 The `zone` argument will be appended to this value to create the full record path.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.1/docs/resources/cname_record#name CnameRecord#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.2/docs/resources/cname_record#name CnameRecord#name}
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 DNS zone the record belongs to. It must be an FQDN, that is, include the trailing dot.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.1/docs/resources/cname_record#zone CnameRecord#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.2/docs/resources/cname_record#zone CnameRecord#zone}
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The TTL of the record set. Defaults to `3600`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.1/docs/resources/cname_record#ttl CnameRecord#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.2/docs/resources/cname_record#ttl CnameRecord#ttl}
 
 ---
 
@@ -844,7 +844,7 @@ public java.lang.String getCname();
 
 The canonical name this record will point to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.1/docs/resources/cname_record#cname CnameRecord#cname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.2/docs/resources/cname_record#cname CnameRecord#cname}
 
 ---
 
@@ -860,7 +860,7 @@ The name of the record.
 
 The `zone` argument will be appended to this value to create the full record path.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.1/docs/resources/cname_record#name CnameRecord#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.2/docs/resources/cname_record#name CnameRecord#name}
 
 ---
 
@@ -874,7 +874,7 @@ public java.lang.String getZone();
 
 DNS zone the record belongs to. It must be an FQDN, that is, include the trailing dot.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.1/docs/resources/cname_record#zone CnameRecord#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.2/docs/resources/cname_record#zone CnameRecord#zone}
 
 ---
 
@@ -888,7 +888,7 @@ public java.lang.Number getTtl();
 
 The TTL of the record set. Defaults to `3600`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.1/docs/resources/cname_record#ttl CnameRecord#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.2/docs/resources/cname_record#ttl CnameRecord#ttl}
 
 ---
 

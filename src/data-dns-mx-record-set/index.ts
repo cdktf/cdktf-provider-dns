@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/dns/3.3.1/docs/data-sources/mx_record_set
+// https://registry.terraform.io/providers/hashicorp/dns/3.3.2/docs/data-sources/mx_record_set
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,7 +10,7 @@ export interface DataDnsMxRecordSetConfig extends cdktf.TerraformMetaArguments {
   /**
   * Domain to look up.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.1/docs/data-sources/mx_record_set#domain DataDnsMxRecordSet#domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.2/docs/data-sources/mx_record_set#domain DataDnsMxRecordSet#domain}
   */
   readonly domain: string;
 }
@@ -85,7 +85,7 @@ export class DataDnsMxRecordSetMxList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.1/docs/data-sources/mx_record_set dns_mx_record_set}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.2/docs/data-sources/mx_record_set dns_mx_record_set}
 */
 export class DataDnsMxRecordSet extends cdktf.TerraformDataSource {
 
@@ -99,7 +99,7 @@ export class DataDnsMxRecordSet extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.1/docs/data-sources/mx_record_set dns_mx_record_set} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.2/docs/data-sources/mx_record_set dns_mx_record_set} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -110,7 +110,7 @@ export class DataDnsMxRecordSet extends cdktf.TerraformDataSource {
       terraformResourceType: 'dns_mx_record_set',
       terraformGeneratorMetadata: {
         providerName: 'dns',
-        providerVersion: '3.3.1',
+        providerVersion: '3.3.2',
         providerVersionConstraint: '~> 3.2'
       },
       provider: config.provider,
