@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/dns/3.3.1/docs/data-sources/aaaa_record_set
+// https://registry.terraform.io/providers/hashicorp/dns/3.3.2/docs/data-sources/aaaa_record_set
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,13 +10,13 @@ export interface DataDnsAaaaRecordSetConfig extends cdktf.TerraformMetaArguments
   /**
   * Host to look up.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.1/docs/data-sources/aaaa_record_set#host DataDnsAaaaRecordSet#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.2/docs/data-sources/aaaa_record_set#host DataDnsAaaaRecordSet#host}
   */
   readonly host: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.1/docs/data-sources/aaaa_record_set dns_aaaa_record_set}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.2/docs/data-sources/aaaa_record_set dns_aaaa_record_set}
 */
 export class DataDnsAaaaRecordSet extends cdktf.TerraformDataSource {
 
@@ -30,7 +30,7 @@ export class DataDnsAaaaRecordSet extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.1/docs/data-sources/aaaa_record_set dns_aaaa_record_set} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.2/docs/data-sources/aaaa_record_set dns_aaaa_record_set} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -41,7 +41,7 @@ export class DataDnsAaaaRecordSet extends cdktf.TerraformDataSource {
       terraformResourceType: 'dns_aaaa_record_set',
       terraformGeneratorMetadata: {
         providerName: 'dns',
-        providerVersion: '3.3.1',
+        providerVersion: '3.3.2',
         providerVersionConstraint: '~> 3.2'
       },
       provider: config.provider,
