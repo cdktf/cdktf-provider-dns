@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.2/
 #### Initializers <a name="Initializers" id="@cdktf/provider-dns.txtRecordSet.TxtRecordSet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/v4/txtrecordset"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/txtrecordset"
 
 txtrecordset.NewTxtRecordSet(scope Construct, id *string, config TxtRecordSetConfig) TxtRecordSet
 ```
@@ -284,7 +284,7 @@ func ResetTtl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-dns.txtRecordSet.TxtRecordSet.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/v4/txtrecordset"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/txtrecordset"
 
 txtrecordset.TxtRecordSet_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-dns.txtRecordSet.TxtRecordSet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/v4/txtrecordset"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/txtrecordset"
 
 txtrecordset.TxtRecordSet_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ txtrecordset.TxtRecordSet_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-dns.txtRecordSet.TxtRecordSet.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/v4/txtrecordset"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/txtrecordset"
 
 txtrecordset.TxtRecordSet_IsTerraformResource(x interface{}) *bool
 ```
@@ -628,7 +628,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-dns.txtRecordSet.TxtRecordSetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/v4/txtrecordset"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/txtrecordset"
 
 &txtrecordset.TxtRecordSetConfig {
 	Connection: interface{},
