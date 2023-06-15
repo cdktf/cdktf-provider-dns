@@ -26,7 +26,7 @@ mxRecordSet.MxRecordSet(
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   zone: str,
-  mx: typing.Union[typing.List[MxRecordSetMx], IResolvable] = None,
+  mx: typing.Union[IResolvable, typing.List[MxRecordSetMx]] = None,
   name: str = None,
   ttl: typing.Union[int, float] = None
 )
@@ -44,7 +44,7 @@ mxRecordSet.MxRecordSet(
 | <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSet.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSet.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSet.Initializer.parameter.zone">zone</a></code> | <code>str</code> | DNS zone the record set belongs to. It must be an FQDN, that is, include the trailing dot. |
-| <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSet.Initializer.parameter.mx">mx</a></code> | <code>typing.Union[typing.List[<a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSetMx">MxRecordSetMx</a>], cdktf.IResolvable]</code> | mx block. |
+| <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSet.Initializer.parameter.mx">mx</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSetMx">MxRecordSetMx</a>]]</code> | mx block. |
 | <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSet.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of the record set. |
 | <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSet.Initializer.parameter.ttl">ttl</a></code> | <code>typing.Union[int, float]</code> | The TTL of the record set. Defaults to `3600`. |
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `mx`<sup>Optional</sup> <a name="mx" id="@cdktf/provider-dns.mxRecordSet.MxRecordSet.Initializer.parameter.mx"></a>
 
-- *Type:* typing.Union[typing.List[<a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSetMx">MxRecordSetMx</a>], cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSetMx">MxRecordSetMx</a>]]
 
 mx block.
 
@@ -392,13 +392,13 @@ def interpolation_for_attribute(
 
 ```python
 def put_mx(
-  value: typing.Union[typing.List[MxRecordSetMx], IResolvable]
+  value: typing.Union[IResolvable, typing.List[MxRecordSetMx]]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-dns.mxRecordSet.MxRecordSet.putMx.parameter.value"></a>
 
-- *Type:* typing.Union[typing.List[<a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSetMx">MxRecordSetMx</a>], cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSetMx">MxRecordSetMx</a>]]
 
 ---
 
@@ -516,7 +516,7 @@ mxRecordSet.MxRecordSet.is_terraform_resource(
 | <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSet.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSet.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSet.property.mx">mx</a></code> | <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSetMxList">MxRecordSetMxList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSet.property.mxInput">mx_input</a></code> | <code>typing.Union[typing.List[<a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSetMx">MxRecordSetMx</a>], cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSet.property.mxInput">mx_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSetMx">MxRecordSetMx</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSet.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSet.property.ttlInput">ttl_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSet.property.zoneInput">zone_input</a></code> | <code>str</code> | *No description.* |
@@ -691,10 +691,10 @@ mx: MxRecordSetMxList
 ##### `mx_input`<sup>Optional</sup> <a name="mx_input" id="@cdktf/provider-dns.mxRecordSet.MxRecordSet.property.mxInput"></a>
 
 ```python
-mx_input: typing.Union[typing.List[MxRecordSetMx], IResolvable]
+mx_input: typing.Union[IResolvable, typing.List[MxRecordSetMx]]
 ```
 
-- *Type:* typing.Union[typing.List[<a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSetMx">MxRecordSetMx</a>], cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSetMx">MxRecordSetMx</a>]]
 
 ---
 
@@ -794,7 +794,7 @@ mxRecordSet.MxRecordSetConfig(
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   zone: str,
-  mx: typing.Union[typing.List[MxRecordSetMx], IResolvable] = None,
+  mx: typing.Union[IResolvable, typing.List[MxRecordSetMx]] = None,
   name: str = None,
   ttl: typing.Union[int, float] = None
 )
@@ -812,7 +812,7 @@ mxRecordSet.MxRecordSetConfig(
 | <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSetConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSetConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSetConfig.property.zone">zone</a></code> | <code>str</code> | DNS zone the record set belongs to. It must be an FQDN, that is, include the trailing dot. |
-| <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSetConfig.property.mx">mx</a></code> | <code>typing.Union[typing.List[<a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSetMx">MxRecordSetMx</a>], cdktf.IResolvable]</code> | mx block. |
+| <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSetConfig.property.mx">mx</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSetMx">MxRecordSetMx</a>]]</code> | mx block. |
 | <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSetConfig.property.name">name</a></code> | <code>str</code> | The name of the record set. |
 | <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSetConfig.property.ttl">ttl</a></code> | <code>typing.Union[int, float]</code> | The TTL of the record set. Defaults to `3600`. |
 
@@ -905,10 +905,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `mx`<sup>Optional</sup> <a name="mx" id="@cdktf/provider-dns.mxRecordSet.MxRecordSetConfig.property.mx"></a>
 
 ```python
-mx: typing.Union[typing.List[MxRecordSetMx], IResolvable]
+mx: typing.Union[IResolvable, typing.List[MxRecordSetMx]]
 ```
 
-- *Type:* typing.Union[typing.List[<a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSetMx">MxRecordSetMx</a>], cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSetMx">MxRecordSetMx</a>]]
 
 mx block.
 
@@ -1110,7 +1110,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSetMxList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSetMxList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSetMxList.property.internalValue">internal_value</a></code> | <code>typing.Union[typing.List[<a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSetMx">MxRecordSetMx</a>], cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSetMxList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSetMx">MxRecordSetMx</a>]]</code> | *No description.* |
 
 ---
 
@@ -1141,10 +1141,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-dns.mxRecordSet.MxRecordSetMxList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[typing.List[MxRecordSetMx], IResolvable]
+internal_value: typing.Union[IResolvable, typing.List[MxRecordSetMx]]
 ```
 
-- *Type:* typing.Union[typing.List[<a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSetMx">MxRecordSetMx</a>], cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-dns.mxRecordSet.MxRecordSetMx">MxRecordSetMx</a>]]
 
 ---
 

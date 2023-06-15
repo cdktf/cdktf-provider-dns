@@ -1250,7 +1250,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetSrvOutputReference.property.priority">priority</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetSrvOutputReference.property.target">target</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetSrvOutputReference.property.weight">weight</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetSrvOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetSrv">SrvRecordSetSrv</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetSrvOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetSrv">SrvRecordSetSrv</a></code> | *No description.* |
 
 ---
 
@@ -1361,10 +1361,10 @@ public readonly weight: number;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-dns.srvRecordSet.SrvRecordSetSrvOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SrvRecordSetSrv | IResolvable;
+public readonly internalValue: IResolvable | SrvRecordSetSrv;
 ```
 
-- *Type:* <a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetSrv">SrvRecordSetSrv</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-dns.srvRecordSet.SrvRecordSetSrv">SrvRecordSetSrv</a>
 
 ---
 
