@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface DataDnsNsRecordSetConfig extends cdktf.TerraformMetaArguments {
   /**
   * Host to look up.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.2/docs/data-sources/ns_record_set#host DataDnsNsRecordSet#host}
   */
   readonly host: string;

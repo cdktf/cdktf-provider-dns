@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface DataDnsSrvRecordSetConfig extends cdktf.TerraformMetaArguments {
   /**
   * Service to look up.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.2/docs/data-sources/srv_record_set#service DataDnsSrvRecordSet#service}
   */
   readonly service: string;

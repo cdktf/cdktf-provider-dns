@@ -14,25 +14,25 @@ import * as cdktf from 'cdktf';
 export interface TxtRecordSetConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the record set. The `zone` argument will be appended to this value to create the full record path.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.2/docs/resources/txt_record_set#name TxtRecordSet#name}
   */
   readonly name?: string;
   /**
   * The TTL of the record set. Defaults to `3600`.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.2/docs/resources/txt_record_set#ttl TxtRecordSet#ttl}
   */
   readonly ttl?: number;
   /**
   * The text records this record set will be set to.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.2/docs/resources/txt_record_set#txt TxtRecordSet#txt}
   */
   readonly txt: string[];
   /**
   * DNS zone the record set belongs to. It must be an FQDN, that is, include the trailing dot.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.2/docs/resources/txt_record_set#zone TxtRecordSet#zone}
   */
   readonly zone: string;
