@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/dns/3.3.2/docs/resources/cname_record
 // generated from terraform resource schema
 
@@ -14,25 +9,25 @@ import * as cdktf from 'cdktf';
 export interface CnameRecordConfig extends cdktf.TerraformMetaArguments {
   /**
   * The canonical name this record will point to.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.2/docs/resources/cname_record#cname CnameRecord#cname}
   */
   readonly cname: string;
   /**
   * The name of the record. The `zone` argument will be appended to this value to create the full record path.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.2/docs/resources/cname_record#name CnameRecord#name}
   */
   readonly name: string;
   /**
   * The TTL of the record set. Defaults to `3600`.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.2/docs/resources/cname_record#ttl CnameRecord#ttl}
   */
   readonly ttl?: number;
   /**
   * DNS zone the record belongs to. It must be an FQDN, that is, include the trailing dot.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.2/docs/resources/cname_record#zone CnameRecord#zone}
   */
   readonly zone: string;

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/dns/3.3.2/docs/data-sources/aaaa_record_set
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface DataDnsAaaaRecordSetConfig extends cdktf.TerraformMetaArguments {
   /**
   * Host to look up.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.2/docs/data-sources/aaaa_record_set#host DataDnsAaaaRecordSet#host}
   */
   readonly host: string;

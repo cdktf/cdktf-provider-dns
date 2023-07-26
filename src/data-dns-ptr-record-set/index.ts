@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/dns/3.3.2/docs/data-sources/ptr_record_set
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface DataDnsPtrRecordSetConfig extends cdktf.TerraformMetaArguments {
   /**
   * IP address to look up.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.2/docs/data-sources/ptr_record_set#ip_address DataDnsPtrRecordSet#ip_address}
   */
   readonly ipAddress: string;

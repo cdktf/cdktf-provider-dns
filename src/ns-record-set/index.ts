@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/dns/3.3.2/docs/resources/ns_record_set
 // generated from terraform resource schema
 
@@ -14,25 +9,25 @@ import * as cdktf from 'cdktf';
 export interface NsRecordSetConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the record set. The `zone` argument will be appended to this value to create the full record path.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.2/docs/resources/ns_record_set#name NsRecordSet#name}
   */
   readonly name: string;
   /**
   * The nameservers this record set will point to.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.2/docs/resources/ns_record_set#nameservers NsRecordSet#nameservers}
   */
   readonly nameservers: string[];
   /**
   * The TTL of the record set. Defaults to `3600`.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.2/docs/resources/ns_record_set#ttl NsRecordSet#ttl}
   */
   readonly ttl?: number;
   /**
   * DNS zone the record set belongs to. It must be an FQDN, that is, include the trailing dot.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.2/docs/resources/ns_record_set#zone NsRecordSet#zone}
   */
   readonly zone: string;
