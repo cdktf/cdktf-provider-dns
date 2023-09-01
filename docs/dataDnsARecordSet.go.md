@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.2/
 #### Initializers <a name="Initializers" id="@cdktf/provider-dns.dataDnsARecordSet.DataDnsARecordSet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/datadnsarecordset"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/v6/datadnsarecordset"
 
 datadnsarecordset.NewDataDnsARecordSet(scope Construct, id *string, config DataDnsARecordSetConfig) DataDnsARecordSet
 ```
@@ -270,7 +270,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-dns.dataDnsARecordSet.DataDnsARecordSet.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/datadnsarecordset"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/v6/datadnsarecordset"
 
 datadnsarecordset.DataDnsARecordSet_IsConstruct(x interface{}) *bool
 ```
@@ -302,7 +302,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-dns.dataDnsARecordSet.DataDnsARecordSet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/datadnsarecordset"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/v6/datadnsarecordset"
 
 datadnsarecordset.DataDnsARecordSet_IsTerraformElement(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ datadnsarecordset.DataDnsARecordSet_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-dns.dataDnsARecordSet.DataDnsARecordSet.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/datadnsarecordset"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/v6/datadnsarecordset"
 
 datadnsarecordset.DataDnsARecordSet_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -537,7 +537,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-dns.dataDnsARecordSet.DataDnsARecordSetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/datadnsarecordset"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/v6/datadnsarecordset"
 
 &datadnsarecordset.DataDnsARecordSetConfig {
 	Connection: interface{},
