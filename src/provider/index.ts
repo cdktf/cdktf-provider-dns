@@ -80,7 +80,7 @@ export interface DnsProviderUpdate {
   readonly keyName?: string;
   /**
   * Required if `key_name` is set
-A Base64-encoded string containing the shared secret to be used for TSIG. Value can also be sourced from the DNS_UPDATE_KEYSECRET environment variable.
+  * A Base64-encoded string containing the shared secret to be used for TSIG. Value can also be sourced from the DNS_UPDATE_KEYSECRET environment variable.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.2/docs#key_secret DnsProvider#key_secret}
   */
