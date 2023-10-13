@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.2/
 #### Initializers <a name="Initializers" id="@cdktf/provider-dns.dataDnsNsRecordSet.DataDnsNsRecordSet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/v6/datadnsnsrecordset"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/v7/datadnsnsrecordset"
 
 datadnsnsrecordset.NewDataDnsNsRecordSet(scope Construct, id *string, config DataDnsNsRecordSetConfig) DataDnsNsRecordSet
 ```
@@ -270,7 +270,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-dns.dataDnsNsRecordSet.DataDnsNsRecordSet.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/v6/datadnsnsrecordset"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/v7/datadnsnsrecordset"
 
 datadnsnsrecordset.DataDnsNsRecordSet_IsConstruct(x interface{}) *bool
 ```
@@ -302,7 +302,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-dns.dataDnsNsRecordSet.DataDnsNsRecordSet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/v6/datadnsnsrecordset"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/v7/datadnsnsrecordset"
 
 datadnsnsrecordset.DataDnsNsRecordSet_IsTerraformElement(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ datadnsnsrecordset.DataDnsNsRecordSet_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-dns.dataDnsNsRecordSet.DataDnsNsRecordSet.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/v6/datadnsnsrecordset"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/v7/datadnsnsrecordset"
 
 datadnsnsrecordset.DataDnsNsRecordSet_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -537,7 +537,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-dns.dataDnsNsRecordSet.DataDnsNsRecordSetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/v6/datadnsnsrecordset"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/v7/datadnsnsrecordset"
 
 &datadnsnsrecordset.DataDnsNsRecordSetConfig {
 	Connection: interface{},
