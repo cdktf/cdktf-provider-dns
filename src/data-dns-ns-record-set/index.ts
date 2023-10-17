@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/dns/3.3.2/docs/data-sources/ns_record_set
 // generated from terraform resource schema
 
@@ -29,6 +24,20 @@ export class DataDnsNsRecordSet extends cdktf.TerraformDataSource {
   // STATIC PROPERTIES
   // =================
   public static readonly tfResourceType = "dns_ns_record_set";
+
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a DataDnsNsRecordSet resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the DataDnsNsRecordSet to import
+  * @param importFromId The id of the existing DataDnsNsRecordSet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.2/docs/data-sources/ns_record_set#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the DataDnsNsRecordSet to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "dns_ns_record_set", importId: importFromId, provider });
+      }
 
   // ===========
   // INITIALIZER

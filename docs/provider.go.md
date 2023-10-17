@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.2/
 #### Initializers <a name="Initializers" id="@cdktf/provider-dns.provider.DnsProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/v7/provider"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/provider"
 
 provider.NewDnsProvider(scope Construct, id *string, config DnsProviderConfig) DnsProvider
 ```
@@ -148,13 +148,14 @@ func ResetUpdate()
 | <code><a href="#@cdktf/provider-dns.provider.DnsProvider.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-dns.provider.DnsProvider.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.provider.DnsProvider.isTerraformProvider">IsTerraformProvider</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-dns.provider.DnsProvider.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DnsProvider resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-dns.provider.DnsProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/v7/provider"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/provider"
 
 provider.DnsProvider_IsConstruct(x interface{}) *bool
 ```
@@ -186,7 +187,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-dns.provider.DnsProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/v7/provider"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/provider"
 
 provider.DnsProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -200,7 +201,7 @@ provider.DnsProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktf/provider-dns.provider.DnsProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/v7/provider"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/provider"
 
 provider.DnsProvider_IsTerraformProvider(x interface{}) *bool
 ```
@@ -208,6 +209,50 @@ provider.DnsProvider_IsTerraformProvider(x interface{}) *bool
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-dns.provider.DnsProvider.isTerraformProvider.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-dns.provider.DnsProvider.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-dns-go/dns/provider"
+
+provider.DnsProvider_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a DnsProvider resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-dns.provider.DnsProvider.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-dns.provider.DnsProvider.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the DnsProvider to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-dns.provider.DnsProvider.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing DnsProvider that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.2/docs#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-dns.provider.DnsProvider.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the DnsProvider to import is found.
 
 ---
 
@@ -377,7 +422,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-dns.provider.DnsProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/v7/provider"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/provider"
 
 &provider.DnsProviderConfig {
 	Alias: *string,
@@ -427,7 +472,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-dns.provider.DnsProviderUpdate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/v7/provider"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/provider"
 
 &provider.DnsProviderUpdate {
 	Gssapi: interface{},
@@ -605,7 +650,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-dns.provider.DnsProviderUpdateGssapi.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/v7/provider"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/provider"
 
 &provider.DnsProviderUpdateGssapi {
 	Keytab: *string,
