@@ -48,6 +48,20 @@ export class CnameRecord extends cdktf.TerraformResource {
   // =================
   public static readonly tfResourceType = "dns_cname_record";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a CnameRecord resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the CnameRecord to import
+  * @param importFromId The id of the existing CnameRecord that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.2/docs/resources/cname_record#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the CnameRecord to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "dns_cname_record", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========
