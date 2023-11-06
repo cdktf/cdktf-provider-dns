@@ -1,7 +1,9 @@
 
-# Terraform CDK dns Provider ~> 3.2
+# Terraform CDK dns Provider tracks ~> 3.2
 
 This repo builds and publishes the Terraform dns Provider bindings for [CDK for Terraform](https://cdk.tf).
+
+Is based directly on dns 3.3.2
 
 ## Available Packages
 
@@ -61,7 +63,7 @@ This project is explicitly not tracking the Terraform dns Provider version 1:1. 
 These are the upstream dependencies:
 
 - [Terraform CDK](https://cdk.tf)
-- [Terraform dns Provider](https://registry.terraform.io/providers/hashicorp/dns/3.2.0)
+- [Terraform dns Provider](https://registry.terraform.io/providers/hashicorp/dns/3.3.2)
     - This links to the minimum version being tracked, you can find the latest released version [in our releases](https://github.com/cdktf/cdktf-provider-dns/releases)
 - [Terraform Engine](https://terraform.io)
 
