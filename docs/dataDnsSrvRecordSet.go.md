@@ -1,7 +1,3 @@
-# `data_dns_srv_record_set`
-
-Refer to the Terraform Registory for docs: [`data_dns_srv_record_set`](https://registry.terraform.io/providers/hashicorp/dns/3.3.2/docs/data-sources/srv_record_set).
-
 # `dataDnsSrvRecordSet` Submodule <a name="`dataDnsSrvRecordSet` Submodule" id="@cdktf/provider-dns.dataDnsSrvRecordSet"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

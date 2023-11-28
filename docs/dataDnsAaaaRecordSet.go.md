@@ -1,7 +1,3 @@
-# `data_dns_aaaa_record_set`
-
-Refer to the Terraform Registory for docs: [`data_dns_aaaa_record_set`](https://registry.terraform.io/providers/hashicorp/dns/3.3.2/docs/data-sources/aaaa_record_set).
-
 # `dataDnsAaaaRecordSet` Submodule <a name="`dataDnsAaaaRecordSet` Submodule" id="@cdktf/provider-dns.dataDnsAaaaRecordSet"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
