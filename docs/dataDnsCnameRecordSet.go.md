@@ -1,7 +1,3 @@
-# `data_dns_cname_record_set`
-
-Refer to the Terraform Registory for docs: [`data_dns_cname_record_set`](https://registry.terraform.io/providers/hashicorp/dns/3.3.2/docs/data-sources/cname_record_set).
-
 # `dataDnsCnameRecordSet` Submodule <a name="`dataDnsCnameRecordSet` Submodule" id="@cdktf/provider-dns.dataDnsCnameRecordSet"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.2/
 #### Initializers <a name="Initializers" id="@cdktf/provider-dns.dataDnsCnameRecordSet.DataDnsCnameRecordSet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/v7/datadnscnamerecordset"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/datadnscnamerecordset"
 
 datadnscnamerecordset.NewDataDnsCnameRecordSet(scope Construct, id *string, config DataDnsCnameRecordSetConfig) DataDnsCnameRecordSet
 ```
@@ -271,7 +267,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-dns.dataDnsCnameRecordSet.DataDnsCnameRecordSet.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/v7/datadnscnamerecordset"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/datadnscnamerecordset"
 
 datadnscnamerecordset.DataDnsCnameRecordSet_IsConstruct(x interface{}) *bool
 ```
@@ -303,7 +299,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-dns.dataDnsCnameRecordSet.DataDnsCnameRecordSet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/v7/datadnscnamerecordset"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/datadnscnamerecordset"
 
 datadnscnamerecordset.DataDnsCnameRecordSet_IsTerraformElement(x interface{}) *bool
 ```
@@ -317,7 +313,7 @@ datadnscnamerecordset.DataDnsCnameRecordSet_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-dns.dataDnsCnameRecordSet.DataDnsCnameRecordSet.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/v7/datadnscnamerecordset"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/datadnscnamerecordset"
 
 datadnscnamerecordset.DataDnsCnameRecordSet_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -331,7 +327,7 @@ datadnscnamerecordset.DataDnsCnameRecordSet_IsTerraformDataSource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-dns.dataDnsCnameRecordSet.DataDnsCnameRecordSet.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/v7/datadnscnamerecordset"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/datadnscnamerecordset"
 
 datadnscnamerecordset.DataDnsCnameRecordSet_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -582,7 +578,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-dns.dataDnsCnameRecordSet.DataDnsCnameRecordSetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/v7/datadnscnamerecordset"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/datadnscnamerecordset"
 
 &datadnscnamerecordset.DataDnsCnameRecordSetConfig {
 	Connection: interface{},
