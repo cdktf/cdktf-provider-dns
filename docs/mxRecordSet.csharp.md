@@ -4,7 +4,7 @@
 
 ### MxRecordSet <a name="MxRecordSet" id="@cdktf/provider-dns.mxRecordSet.MxRecordSet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.2/docs/resources/mx_record_set dns_mx_record_set}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.0/docs/resources/mx_record_set dns_mx_record_set}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-dns.mxRecordSet.MxRecordSet.Initializer"></a>
 
@@ -494,7 +494,7 @@ The construct id used in the generated config for the MxRecordSet to import.
 
 The id of the existing MxRecordSet that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.2/docs/resources/mx_record_set#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.0/docs/resources/mx_record_set#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -908,7 +908,7 @@ public string Zone { get; set; }
 
 DNS zone the record set belongs to. It must be an FQDN, that is, include the trailing dot.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.2/docs/resources/mx_record_set#zone MxRecordSet#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.0/docs/resources/mx_record_set#zone MxRecordSet#zone}
 
 ---
 
@@ -922,7 +922,7 @@ public object Mx { get; set; }
 
 mx block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.2/docs/resources/mx_record_set#mx MxRecordSet#mx}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.0/docs/resources/mx_record_set#mx MxRecordSet#mx}
 
 ---
 
@@ -938,7 +938,7 @@ The name of the record set.
 
 The `zone` argument will be appended to this value to create the full record path.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.2/docs/resources/mx_record_set#name MxRecordSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.0/docs/resources/mx_record_set#name MxRecordSet#name}
 
 ---
 
@@ -952,7 +952,7 @@ public double Ttl { get; set; }
 
 The TTL of the record set. Defaults to `3600`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.2/docs/resources/mx_record_set#ttl MxRecordSet#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.0/docs/resources/mx_record_set#ttl MxRecordSet#ttl}
 
 ---
 
@@ -988,7 +988,7 @@ public string Exchange { get; set; }
 
 The FQDN of the mail exchange, include the trailing dot.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.2/docs/resources/mx_record_set#exchange MxRecordSet#exchange}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.0/docs/resources/mx_record_set#exchange MxRecordSet#exchange}
 
 ---
 
@@ -1002,7 +1002,7 @@ public double Preference { get; set; }
 
 The preference for the record.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.2/docs/resources/mx_record_set#preference MxRecordSet#preference}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.0/docs/resources/mx_record_set#preference MxRecordSet#preference}
 
 ---
 
