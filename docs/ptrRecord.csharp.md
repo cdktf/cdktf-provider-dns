@@ -4,7 +4,7 @@
 
 ### PtrRecord <a name="PtrRecord" id="@cdktf/provider-dns.ptrRecord.PtrRecord"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.2/docs/resources/ptr_record dns_ptr_record}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.0/docs/resources/ptr_record dns_ptr_record}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-dns.ptrRecord.PtrRecord.Initializer"></a>
 
@@ -474,7 +474,7 @@ The construct id used in the generated config for the PtrRecord to import.
 
 The id of the existing PtrRecord that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.2/docs/resources/ptr_record#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.0/docs/resources/ptr_record#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -888,7 +888,7 @@ public string Ptr { get; set; }
 
 The canonical name this record will point to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.2/docs/resources/ptr_record#ptr PtrRecord#ptr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.0/docs/resources/ptr_record#ptr PtrRecord#ptr}
 
 ---
 
@@ -902,7 +902,7 @@ public string Zone { get; set; }
 
 DNS zone the record set belongs to. It must be an FQDN, that is, include the trailing dot.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.2/docs/resources/ptr_record#zone PtrRecord#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.0/docs/resources/ptr_record#zone PtrRecord#zone}
 
 ---
 
@@ -918,7 +918,7 @@ The name of the record.
 
 The `zone` argument will be appended to this value to create the full record path.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.2/docs/resources/ptr_record#name PtrRecord#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.0/docs/resources/ptr_record#name PtrRecord#name}
 
 ---
 
@@ -932,7 +932,7 @@ public double Ttl { get; set; }
 
 The TTL of the record. Defaults to `3600`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.3.2/docs/resources/ptr_record#ttl PtrRecord#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.0/docs/resources/ptr_record#ttl PtrRecord#ttl}
 
 ---
 
