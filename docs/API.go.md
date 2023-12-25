@@ -1,6 +1,9 @@
-# Submodules <a name="Submodules" id="submodules"></a>
+# API Reference <a name="API Reference" id="api-reference"></a>
+
+## Submodules <a name="Submodules" id="submodules"></a>
 
 The following submodules are available:
+
 - [aRecordSet](./aRecordSet.go.md)
 - [aaaaRecordSet](./aaaaRecordSet.go.md)
 - [cnameRecord](./cnameRecord.go.md)
@@ -18,3 +21,8 @@ The following submodules are available:
 - [ptrRecord](./ptrRecord.go.md)
 - [srvRecordSet](./srvRecordSet.go.md)
 - [txtRecordSet](./txtRecordSet.go.md)
+
+
+
+
+
