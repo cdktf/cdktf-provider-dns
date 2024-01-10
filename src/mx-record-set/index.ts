@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/dns/3.4.0/docs/resources/mx_record_set
 // generated from terraform resource schema
 
@@ -61,6 +56,31 @@ export function mxRecordSetMxToTerraform(struct?: MxRecordSetMx | cdktf.IResolva
     exchange: cdktf.stringToTerraform(struct!.exchange),
     preference: cdktf.numberToTerraform(struct!.preference),
   }
+}
+
+
+export function mxRecordSetMxToHclTerraform(struct?: MxRecordSetMx | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    exchange: {
+      value: cdktf.stringToHclTerraform(struct!.exchange),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    preference: {
+      value: cdktf.numberToHclTerraform(struct!.preference),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class MxRecordSetMxOutputReference extends cdktf.ComplexObject {
@@ -298,5 +318,37 @@ export class MxRecordSet extends cdktf.TerraformResource {
       zone: cdktf.stringToTerraform(this._zone),
       mx: cdktf.listMapper(mxRecordSetMxToTerraform, true)(this._mx.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ttl: {
+        value: cdktf.numberToHclTerraform(this._ttl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      zone: {
+        value: cdktf.stringToHclTerraform(this._zone),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      mx: {
+        value: cdktf.listMapperHcl(mxRecordSetMxToHclTerraform, true)(this._mx.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "MxRecordSetMxList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

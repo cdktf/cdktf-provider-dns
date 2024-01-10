@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.0/
 #### Initializers <a name="Initializers" id="@cdktf/provider-dns.dataDnsCnameRecordSet.DataDnsCnameRecordSet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/v7/datadnscnamerecordset"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/datadnscnamerecordset"
 
 datadnscnamerecordset.NewDataDnsCnameRecordSet(scope Construct, id *string, config DataDnsCnameRecordSetConfig) DataDnsCnameRecordSet
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-dns.dataDnsCnameRecordSet.DataDnsCnameRecordSet.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.dataDnsCnameRecordSet.DataDnsCnameRecordSet.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-dns.dataDnsCnameRecordSet.DataDnsCnameRecordSet.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-dns.dataDnsCnameRecordSet.DataDnsCnameRecordSet.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-dns.dataDnsCnameRecordSet.DataDnsCnameRecordSet.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.dataDnsCnameRecordSet.DataDnsCnameRecordSet.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-dns.dataDnsCnameRecordSet.DataDnsCnameRecordSet.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -118,6 +119,14 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-dns.dataDnsCnameRecordSet.DataDnsCnameRecordSet.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-dns.dataDnsCnameRecordSet.DataDnsCnameRecordSet.toMetadata"></a>
 
@@ -267,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-dns.dataDnsCnameRecordSet.DataDnsCnameRecordSet.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/v7/datadnscnamerecordset"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/datadnscnamerecordset"
 
 datadnscnamerecordset.DataDnsCnameRecordSet_IsConstruct(x interface{}) *bool
 ```
@@ -299,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-dns.dataDnsCnameRecordSet.DataDnsCnameRecordSet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/v7/datadnscnamerecordset"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/datadnscnamerecordset"
 
 datadnscnamerecordset.DataDnsCnameRecordSet_IsTerraformElement(x interface{}) *bool
 ```
@@ -313,7 +322,7 @@ datadnscnamerecordset.DataDnsCnameRecordSet_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-dns.dataDnsCnameRecordSet.DataDnsCnameRecordSet.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/v7/datadnscnamerecordset"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/datadnscnamerecordset"
 
 datadnscnamerecordset.DataDnsCnameRecordSet_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -327,7 +336,7 @@ datadnscnamerecordset.DataDnsCnameRecordSet_IsTerraformDataSource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-dns.dataDnsCnameRecordSet.DataDnsCnameRecordSet.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/v7/datadnscnamerecordset"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/datadnscnamerecordset"
 
 datadnscnamerecordset.DataDnsCnameRecordSet_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -578,7 +587,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-dns.dataDnsCnameRecordSet.DataDnsCnameRecordSetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/v7/datadnscnamerecordset"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/datadnscnamerecordset"
 
 &datadnscnamerecordset.DataDnsCnameRecordSetConfig {
 	Connection: interface{},

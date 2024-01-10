@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/dns/3.4.0/docs/resources/srv_record_set
 // generated from terraform resource schema
 
@@ -75,6 +70,43 @@ export function srvRecordSetSrvToTerraform(struct?: SrvRecordSetSrv | cdktf.IRes
     target: cdktf.stringToTerraform(struct!.target),
     weight: cdktf.numberToTerraform(struct!.weight),
   }
+}
+
+
+export function srvRecordSetSrvToHclTerraform(struct?: SrvRecordSetSrv | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    port: {
+      value: cdktf.numberToHclTerraform(struct!.port),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    priority: {
+      value: cdktf.numberToHclTerraform(struct!.priority),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    target: {
+      value: cdktf.stringToHclTerraform(struct!.target),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    weight: {
+      value: cdktf.numberToHclTerraform(struct!.weight),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SrvRecordSetSrvOutputReference extends cdktf.ComplexObject {
@@ -347,5 +379,37 @@ export class SrvRecordSet extends cdktf.TerraformResource {
       zone: cdktf.stringToTerraform(this._zone),
       srv: cdktf.listMapper(srvRecordSetSrvToTerraform, true)(this._srv.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ttl: {
+        value: cdktf.numberToHclTerraform(this._ttl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      zone: {
+        value: cdktf.stringToHclTerraform(this._zone),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      srv: {
+        value: cdktf.listMapperHcl(srvRecordSetSrvToHclTerraform, true)(this._srv.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "SrvRecordSetSrvList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }
