@@ -65,6 +65,43 @@ export function dnsProviderUpdateGssapiToTerraform(struct?: DnsProviderUpdateGss
   }
 }
 
+
+export function dnsProviderUpdateGssapiToHclTerraform(struct?: DnsProviderUpdateGssapi | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    keytab: {
+      value: cdktf.stringToHclTerraform(struct!.keytab),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    password: {
+      value: cdktf.stringToHclTerraform(struct!.password),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    realm: {
+      value: cdktf.stringToHclTerraform(struct!.realm),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    username: {
+      value: cdktf.stringToHclTerraform(struct!.username),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export interface DnsProviderUpdate {
   /**
   * Required if `key_name` is set. When using TSIG authentication, the algorithm to use for HMAC. Valid values are `hmac-md5`, `hmac-sha1`, `hmac-sha256` or `hmac-sha512`. Value can also be sourced from the DNS_UPDATE_KEYALGORITHM environment variable.
@@ -139,6 +176,73 @@ export function dnsProviderUpdateToTerraform(struct?: DnsProviderUpdate | cdktf.
     transport: cdktf.stringToTerraform(struct!.transport),
     gssapi: cdktf.listMapper(dnsProviderUpdateGssapiToTerraform, true)(struct!.gssapi),
   }
+}
+
+
+export function dnsProviderUpdateToHclTerraform(struct?: DnsProviderUpdate | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key_algorithm: {
+      value: cdktf.stringToHclTerraform(struct!.keyAlgorithm),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    key_name: {
+      value: cdktf.stringToHclTerraform(struct!.keyName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    key_secret: {
+      value: cdktf.stringToHclTerraform(struct!.keySecret),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    port: {
+      value: cdktf.numberToHclTerraform(struct!.port),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    retries: {
+      value: cdktf.numberToHclTerraform(struct!.retries),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    server: {
+      value: cdktf.stringToHclTerraform(struct!.server),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    timeout: {
+      value: cdktf.stringToHclTerraform(struct!.timeout),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    transport: {
+      value: cdktf.stringToHclTerraform(struct!.transport),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    gssapi: {
+      value: cdktf.listMapperHcl(dnsProviderUpdateGssapiToHclTerraform, true)(struct!.gssapi),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DnsProviderUpdateGssapiList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 
@@ -236,5 +340,25 @@ export class DnsProvider extends cdktf.TerraformProvider {
       alias: cdktf.stringToTerraform(this._alias),
       update: cdktf.listMapper(dnsProviderUpdateToTerraform, true)(this._update),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      alias: {
+        value: cdktf.stringToHclTerraform(this._alias),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      update: {
+        value: cdktf.listMapperHcl(dnsProviderUpdateToHclTerraform, true)(this._update),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DnsProviderUpdateList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

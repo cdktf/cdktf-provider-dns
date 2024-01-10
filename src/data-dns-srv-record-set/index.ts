@@ -31,6 +31,17 @@ export function dataDnsSrvRecordSetSrvToTerraform(struct?: DataDnsSrvRecordSetSr
   }
 }
 
+
+export function dataDnsSrvRecordSetSrvToHclTerraform(struct?: DataDnsSrvRecordSetSrv): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataDnsSrvRecordSetSrvOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -189,5 +200,19 @@ export class DataDnsSrvRecordSet extends cdktf.TerraformDataSource {
     return {
       service: cdktf.stringToTerraform(this._service),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      service: {
+        value: cdktf.stringToHclTerraform(this._service),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }
