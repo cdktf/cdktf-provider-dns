@@ -4,12 +4,12 @@
 
 ### DataDnsPtrRecordSet <a name="DataDnsPtrRecordSet" id="@cdktf/provider-dns.dataDnsPtrRecordSet.DataDnsPtrRecordSet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.0/docs/data-sources/ptr_record_set dns_ptr_record_set}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.1/docs/data-sources/ptr_record_set dns_ptr_record_set}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-dns.dataDnsPtrRecordSet.DataDnsPtrRecordSet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/v8/datadnsptrrecordset"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/datadnsptrrecordset"
 
 datadnsptrrecordset.NewDataDnsPtrRecordSet(scope Construct, id *string, config DataDnsPtrRecordSetConfig) DataDnsPtrRecordSet
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-dns.dataDnsPtrRecordSet.DataDnsPtrRecordSet.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/v8/datadnsptrrecordset"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/datadnsptrrecordset"
 
 datadnsptrrecordset.DataDnsPtrRecordSet_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-dns.dataDnsPtrRecordSet.DataDnsPtrRecordSet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/v8/datadnsptrrecordset"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/datadnsptrrecordset"
 
 datadnsptrrecordset.DataDnsPtrRecordSet_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datadnsptrrecordset.DataDnsPtrRecordSet_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-dns.dataDnsPtrRecordSet.DataDnsPtrRecordSet.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/v8/datadnsptrrecordset"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/datadnsptrrecordset"
 
 datadnsptrrecordset.DataDnsPtrRecordSet_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datadnsptrrecordset.DataDnsPtrRecordSet_IsTerraformDataSource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-dns.dataDnsPtrRecordSet.DataDnsPtrRecordSet.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/v8/datadnsptrrecordset"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/datadnsptrrecordset"
 
 datadnsptrrecordset.DataDnsPtrRecordSet_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataDnsPtrRecordSet to imp
 
 The id of the existing DataDnsPtrRecordSet that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.0/docs/data-sources/ptr_record_set#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.1/docs/data-sources/ptr_record_set#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -587,7 +587,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-dns.dataDnsPtrRecordSet.DataDnsPtrRecordSetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-dns-go/dns/v8/datadnsptrrecordset"
+import "github.com/cdktf/cdktf-provider-dns-go/dns/datadnsptrrecordset"
 
 &datadnsptrrecordset.DataDnsPtrRecordSetConfig {
 	Connection: interface{},
@@ -696,7 +696,7 @@ IpAddress *string
 
 IP address to look up.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.0/docs/data-sources/ptr_record_set#ip_address DataDnsPtrRecordSet#ip_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.1/docs/data-sources/ptr_record_set#ip_address DataDnsPtrRecordSet#ip_address}
 
 ---
 
