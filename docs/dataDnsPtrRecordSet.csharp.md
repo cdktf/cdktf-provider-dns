@@ -4,7 +4,7 @@
 
 ### DataDnsPtrRecordSet <a name="DataDnsPtrRecordSet" id="@cdktf/provider-dns.dataDnsPtrRecordSet.DataDnsPtrRecordSet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.1/docs/data-sources/ptr_record_set dns_ptr_record_set}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.2/docs/data-sources/ptr_record_set dns_ptr_record_set}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-dns.dataDnsPtrRecordSet.DataDnsPtrRecordSet.Initializer"></a>
 
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataDnsPtrRecordSet to imp
 
 The id of the existing DataDnsPtrRecordSet that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.1/docs/data-sources/ptr_record_set#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.2/docs/data-sources/ptr_record_set#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -696,7 +696,7 @@ public string IpAddress { get; set; }
 
 IP address to look up.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.1/docs/data-sources/ptr_record_set#ip_address DataDnsPtrRecordSet#ip_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.2/docs/data-sources/ptr_record_set#ip_address DataDnsPtrRecordSet#ip_address}
 
 ---
 
