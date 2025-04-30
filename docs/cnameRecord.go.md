@@ -4,7 +4,7 @@
 
 ### CnameRecord <a name="CnameRecord" id="@cdktf/provider-dns.cnameRecord.CnameRecord"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.2/docs/resources/cname_record dns_cname_record}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/resources/cname_record dns_cname_record}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-dns.cnameRecord.CnameRecord.Initializer"></a>
 
@@ -474,7 +474,7 @@ The construct id used in the generated config for the CnameRecord to import.
 
 The id of the existing CnameRecord that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.2/docs/resources/cname_record#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/resources/cname_record#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -888,7 +888,7 @@ Cname *string
 
 The canonical name this record will point to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.2/docs/resources/cname_record#cname CnameRecord#cname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/resources/cname_record#cname CnameRecord#cname}
 
 ---
 
@@ -904,7 +904,7 @@ The name of the record.
 
 The `zone` argument will be appended to this value to create the full record path.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.2/docs/resources/cname_record#name CnameRecord#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/resources/cname_record#name CnameRecord#name}
 
 ---
 
@@ -918,7 +918,7 @@ Zone *string
 
 DNS zone the record belongs to. It must be an FQDN, that is, include the trailing dot.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.2/docs/resources/cname_record#zone CnameRecord#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/resources/cname_record#zone CnameRecord#zone}
 
 ---
 
@@ -932,7 +932,7 @@ Ttl *f64
 
 The TTL of the record set. Defaults to `3600`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.2/docs/resources/cname_record#ttl CnameRecord#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/resources/cname_record#ttl CnameRecord#ttl}
 
 ---
 
