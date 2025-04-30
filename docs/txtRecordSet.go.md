@@ -4,7 +4,7 @@
 
 ### TxtRecordSet <a name="TxtRecordSet" id="@cdktf/provider-dns.txtRecordSet.TxtRecordSet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.2/docs/resources/txt_record_set dns_txt_record_set}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/resources/txt_record_set dns_txt_record_set}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-dns.txtRecordSet.TxtRecordSet.Initializer"></a>
 
@@ -481,7 +481,7 @@ The construct id used in the generated config for the TxtRecordSet to import.
 
 The id of the existing TxtRecordSet that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.2/docs/resources/txt_record_set#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/resources/txt_record_set#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -895,7 +895,7 @@ Txt *[]*string
 
 The text records this record set will be set to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.2/docs/resources/txt_record_set#txt TxtRecordSet#txt}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/resources/txt_record_set#txt TxtRecordSet#txt}
 
 ---
 
@@ -909,7 +909,7 @@ Zone *string
 
 DNS zone the record set belongs to. It must be an FQDN, that is, include the trailing dot.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.2/docs/resources/txt_record_set#zone TxtRecordSet#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/resources/txt_record_set#zone TxtRecordSet#zone}
 
 ---
 
@@ -925,7 +925,7 @@ The name of the record set.
 
 The `zone` argument will be appended to this value to create the full record path.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.2/docs/resources/txt_record_set#name TxtRecordSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/resources/txt_record_set#name TxtRecordSet#name}
 
 ---
 
@@ -939,7 +939,7 @@ Ttl *f64
 
 The TTL of the record set. Defaults to `3600`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.2/docs/resources/txt_record_set#ttl TxtRecordSet#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/resources/txt_record_set#ttl TxtRecordSet#ttl}
 
 ---
 
