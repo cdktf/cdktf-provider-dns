@@ -15,7 +15,7 @@ provider.DnsProvider(
   scope: Construct,
   id: str,
   alias: str = None,
-  update: typing.Union[IResolvable, typing.List[DnsProviderUpdate]] = None
+  update: IResolvable | typing.List[DnsProviderUpdate] = None
 )
 ```
 
@@ -24,7 +24,7 @@ provider.DnsProvider(
 | <code><a href="#@cdktf/provider-dns.provider.DnsProvider.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-dns.provider.DnsProvider.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-dns.provider.DnsProvider.Initializer.parameter.alias">alias</a></code> | <code>str</code> | Alias name. |
-| <code><a href="#@cdktf/provider-dns.provider.DnsProvider.Initializer.parameter.update">update</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-dns.provider.DnsProviderUpdate">DnsProviderUpdate</a>]]</code> | update block. |
+| <code><a href="#@cdktf/provider-dns.provider.DnsProvider.Initializer.parameter.update">update</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-dns.provider.DnsProviderUpdate">DnsProviderUpdate</a>]</code> | update block. |
 
 ---
 
@@ -58,7 +58,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-dns.provider.DnsProvider.Initializer.parameter.update"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-dns.provider.DnsProviderUpdate">DnsProviderUpdate</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-dns.provider.DnsProviderUpdate">DnsProviderUpdate</a>]
 
 update block.
 
@@ -309,8 +309,8 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/
 | <code><a href="#@cdktf/provider-dns.provider.DnsProvider.property.terraformProviderSource">terraform_provider_source</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.provider.DnsProvider.property.alias">alias</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.provider.DnsProvider.property.aliasInput">alias_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.provider.DnsProvider.property.updateInput">update_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-dns.provider.DnsProviderUpdate">DnsProviderUpdate</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.provider.DnsProvider.property.update">update</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-dns.provider.DnsProviderUpdate">DnsProviderUpdate</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dns.provider.DnsProvider.property.updateInput">update_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-dns.provider.DnsProviderUpdate">DnsProviderUpdate</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dns.provider.DnsProvider.property.update">update</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-dns.provider.DnsProviderUpdate">DnsProviderUpdate</a>]</code> | *No description.* |
 
 ---
 
@@ -419,20 +419,20 @@ alias_input: str
 ##### `update_input`<sup>Optional</sup> <a name="update_input" id="@cdktf/provider-dns.provider.DnsProvider.property.updateInput"></a>
 
 ```python
-update_input: typing.Union[IResolvable, typing.List[DnsProviderUpdate]]
+update_input: IResolvable | typing.List[DnsProviderUpdate]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-dns.provider.DnsProviderUpdate">DnsProviderUpdate</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-dns.provider.DnsProviderUpdate">DnsProviderUpdate</a>]
 
 ---
 
 ##### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-dns.provider.DnsProvider.property.update"></a>
 
 ```python
-update: typing.Union[IResolvable, typing.List[DnsProviderUpdate]]
+update: IResolvable | typing.List[DnsProviderUpdate]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-dns.provider.DnsProviderUpdate">DnsProviderUpdate</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-dns.provider.DnsProviderUpdate">DnsProviderUpdate</a>]
 
 ---
 
@@ -465,7 +465,7 @@ from cdktf_cdktf_provider_dns import provider
 
 provider.DnsProviderConfig(
   alias: str = None,
-  update: typing.Union[IResolvable, typing.List[DnsProviderUpdate]] = None
+  update: IResolvable | typing.List[DnsProviderUpdate] = None
 )
 ```
 
@@ -474,7 +474,7 @@ provider.DnsProviderConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-dns.provider.DnsProviderConfig.property.alias">alias</a></code> | <code>str</code> | Alias name. |
-| <code><a href="#@cdktf/provider-dns.provider.DnsProviderConfig.property.update">update</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-dns.provider.DnsProviderUpdate">DnsProviderUpdate</a>]]</code> | update block. |
+| <code><a href="#@cdktf/provider-dns.provider.DnsProviderConfig.property.update">update</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-dns.provider.DnsProviderUpdate">DnsProviderUpdate</a>]</code> | update block. |
 
 ---
 
@@ -495,10 +495,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-dns.provider.DnsProviderConfig.property.update"></a>
 
 ```python
-update: typing.Union[IResolvable, typing.List[DnsProviderUpdate]]
+update: IResolvable | typing.List[DnsProviderUpdate]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-dns.provider.DnsProviderUpdate">DnsProviderUpdate</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-dns.provider.DnsProviderUpdate">DnsProviderUpdate</a>]
 
 update block.
 
@@ -514,7 +514,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 from cdktf_cdktf_provider_dns import provider
 
 provider.DnsProviderUpdate(
-  gssapi: typing.Union[IResolvable, typing.List[DnsProviderUpdateGssapi]] = None,
+  gssapi: IResolvable | typing.List[DnsProviderUpdateGssapi] = None,
   key_algorithm: str = None,
   key_name: str = None,
   key_secret: str = None,
@@ -530,7 +530,7 @@ provider.DnsProviderUpdate(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-dns.provider.DnsProviderUpdate.property.gssapi">gssapi</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-dns.provider.DnsProviderUpdateGssapi">DnsProviderUpdateGssapi</a>]]</code> | gssapi block. |
+| <code><a href="#@cdktf/provider-dns.provider.DnsProviderUpdate.property.gssapi">gssapi</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-dns.provider.DnsProviderUpdateGssapi">DnsProviderUpdateGssapi</a>]</code> | gssapi block. |
 | <code><a href="#@cdktf/provider-dns.provider.DnsProviderUpdate.property.keyAlgorithm">key_algorithm</a></code> | <code>str</code> | Required if `key_name` is set. |
 | <code><a href="#@cdktf/provider-dns.provider.DnsProviderUpdate.property.keyName">key_name</a></code> | <code>str</code> | The name of the TSIG key used to sign the DNS update messages. |
 | <code><a href="#@cdktf/provider-dns.provider.DnsProviderUpdate.property.keySecret">key_secret</a></code> | <code>str</code> | Required if `key_name` is set A Base64-encoded string containing the shared secret to be used for TSIG. |
@@ -545,10 +545,10 @@ provider.DnsProviderUpdate(
 ##### `gssapi`<sup>Optional</sup> <a name="gssapi" id="@cdktf/provider-dns.provider.DnsProviderUpdate.property.gssapi"></a>
 
 ```python
-gssapi: typing.Union[IResolvable, typing.List[DnsProviderUpdateGssapi]]
+gssapi: IResolvable | typing.List[DnsProviderUpdateGssapi]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-dns.provider.DnsProviderUpdateGssapi">DnsProviderUpdateGssapi</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-dns.provider.DnsProviderUpdateGssapi">DnsProviderUpdateGssapi</a>]
 
 gssapi block.
 

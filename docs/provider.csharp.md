@@ -273,8 +273,8 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/
 | <code><a href="#@cdktf/provider-dns.provider.DnsProvider.property.terraformProviderSource">TerraformProviderSource</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.provider.DnsProvider.property.alias">Alias</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.provider.DnsProvider.property.aliasInput">AliasInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.provider.DnsProvider.property.updateInput">UpdateInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.provider.DnsProvider.property.update">Update</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dns.provider.DnsProvider.property.updateInput">UpdateInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-dns.provider.DnsProviderUpdate">DnsProviderUpdate</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-dns.provider.DnsProvider.property.update">Update</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-dns.provider.DnsProviderUpdate">DnsProviderUpdate</a>[]</code> | *No description.* |
 
 ---
 
@@ -383,20 +383,20 @@ public string AliasInput { get; }
 ##### `UpdateInput`<sup>Optional</sup> <a name="UpdateInput" id="@cdktf/provider-dns.provider.DnsProvider.property.updateInput"></a>
 
 ```csharp
-public object UpdateInput { get; }
+public IResolvable|DnsProviderUpdate[] UpdateInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-dns.provider.DnsProviderUpdate">DnsProviderUpdate</a>[]
 
 ---
 
 ##### `Update`<sup>Optional</sup> <a name="Update" id="@cdktf/provider-dns.provider.DnsProvider.property.update"></a>
 
 ```csharp
-public object Update { get; }
+public IResolvable|DnsProviderUpdate[] Update { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-dns.provider.DnsProviderUpdate">DnsProviderUpdate</a>[]
 
 ---
 
@@ -429,7 +429,7 @@ using HashiCorp.Cdktf.Providers.Dns;
 
 new DnsProviderConfig {
     string Alias = null,
-    object Update = null
+    IResolvable|DnsProviderUpdate[] Update = null
 };
 ```
 
@@ -438,7 +438,7 @@ new DnsProviderConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-dns.provider.DnsProviderConfig.property.alias">Alias</a></code> | <code>string</code> | Alias name. |
-| <code><a href="#@cdktf/provider-dns.provider.DnsProviderConfig.property.update">Update</a></code> | <code>object</code> | update block. |
+| <code><a href="#@cdktf/provider-dns.provider.DnsProviderConfig.property.update">Update</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-dns.provider.DnsProviderUpdate">DnsProviderUpdate</a>[]</code> | update block. |
 
 ---
 
@@ -459,10 +459,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Update`<sup>Optional</sup> <a name="Update" id="@cdktf/provider-dns.provider.DnsProviderConfig.property.update"></a>
 
 ```csharp
-public object Update { get; set; }
+public IResolvable|DnsProviderUpdate[] Update { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-dns.provider.DnsProviderUpdate">DnsProviderUpdate</a>[]
 
 update block.
 
@@ -478,7 +478,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using HashiCorp.Cdktf.Providers.Dns;
 
 new DnsProviderUpdate {
-    object Gssapi = null,
+    IResolvable|DnsProviderUpdateGssapi[] Gssapi = null,
     string KeyAlgorithm = null,
     string KeyName = null,
     string KeySecret = null,
@@ -494,7 +494,7 @@ new DnsProviderUpdate {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-dns.provider.DnsProviderUpdate.property.gssapi">Gssapi</a></code> | <code>object</code> | gssapi block. |
+| <code><a href="#@cdktf/provider-dns.provider.DnsProviderUpdate.property.gssapi">Gssapi</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-dns.provider.DnsProviderUpdateGssapi">DnsProviderUpdateGssapi</a>[]</code> | gssapi block. |
 | <code><a href="#@cdktf/provider-dns.provider.DnsProviderUpdate.property.keyAlgorithm">KeyAlgorithm</a></code> | <code>string</code> | Required if `key_name` is set. |
 | <code><a href="#@cdktf/provider-dns.provider.DnsProviderUpdate.property.keyName">KeyName</a></code> | <code>string</code> | The name of the TSIG key used to sign the DNS update messages. |
 | <code><a href="#@cdktf/provider-dns.provider.DnsProviderUpdate.property.keySecret">KeySecret</a></code> | <code>string</code> | Required if `key_name` is set A Base64-encoded string containing the shared secret to be used for TSIG. |
@@ -509,10 +509,10 @@ new DnsProviderUpdate {
 ##### `Gssapi`<sup>Optional</sup> <a name="Gssapi" id="@cdktf/provider-dns.provider.DnsProviderUpdate.property.gssapi"></a>
 
 ```csharp
-public object Gssapi { get; set; }
+public IResolvable|DnsProviderUpdateGssapi[] Gssapi { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-dns.provider.DnsProviderUpdateGssapi">DnsProviderUpdateGssapi</a>[]
 
 gssapi block.
 

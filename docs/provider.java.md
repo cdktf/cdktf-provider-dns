@@ -13,8 +13,7 @@ import com.hashicorp.cdktf.providers.dns.provider.DnsProvider;
 
 DnsProvider.Builder.create(Construct scope, java.lang.String id)
 //  .alias(java.lang.String)
-//  .update(IResolvable)
-//  .update(java.util.List<DnsProviderUpdate>)
+//  .update(IResolvable|java.util.List<DnsProviderUpdate>)
     .build();
 ```
 
@@ -23,7 +22,7 @@ DnsProvider.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-dns.provider.DnsProvider.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-dns.provider.DnsProvider.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-dns.provider.DnsProvider.Initializer.parameter.alias">alias</a></code> | <code>java.lang.String</code> | Alias name. |
-| <code><a href="#@cdktf/provider-dns.provider.DnsProvider.Initializer.parameter.update">update</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-dns.provider.DnsProviderUpdate">DnsProviderUpdate</a>></code> | update block. |
+| <code><a href="#@cdktf/provider-dns.provider.DnsProvider.Initializer.parameter.update">update</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-dns.provider.DnsProviderUpdate">DnsProviderUpdate</a>></code> | update block. |
 
 ---
 
@@ -57,7 +56,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-dns.provider.DnsProvider.Initializer.parameter.update"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-dns.provider.DnsProviderUpdate">DnsProviderUpdate</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-dns.provider.DnsProviderUpdate">DnsProviderUpdate</a>>
 
 update block.
 
@@ -292,8 +291,8 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/
 | <code><a href="#@cdktf/provider-dns.provider.DnsProvider.property.terraformProviderSource">terraformProviderSource</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.provider.DnsProvider.property.alias">alias</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-dns.provider.DnsProvider.property.aliasInput">aliasInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.provider.DnsProvider.property.updateInput">updateInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-dns.provider.DnsProviderUpdate">DnsProviderUpdate</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.provider.DnsProvider.property.update">update</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-dns.provider.DnsProviderUpdate">DnsProviderUpdate</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-dns.provider.DnsProvider.property.updateInput">updateInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-dns.provider.DnsProviderUpdate">DnsProviderUpdate</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-dns.provider.DnsProvider.property.update">update</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-dns.provider.DnsProviderUpdate">DnsProviderUpdate</a>></code> | *No description.* |
 
 ---
 
@@ -402,20 +401,20 @@ public java.lang.String getAliasInput();
 ##### `updateInput`<sup>Optional</sup> <a name="updateInput" id="@cdktf/provider-dns.provider.DnsProvider.property.updateInput"></a>
 
 ```java
-public java.lang.Object getUpdateInput();
+public IResolvable|java.util.List<DnsProviderUpdate> getUpdateInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-dns.provider.DnsProviderUpdate">DnsProviderUpdate</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-dns.provider.DnsProviderUpdate">DnsProviderUpdate</a>>
 
 ---
 
 ##### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-dns.provider.DnsProvider.property.update"></a>
 
 ```java
-public java.lang.Object getUpdate();
+public IResolvable|java.util.List<DnsProviderUpdate> getUpdate();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-dns.provider.DnsProviderUpdate">DnsProviderUpdate</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-dns.provider.DnsProviderUpdate">DnsProviderUpdate</a>>
 
 ---
 
@@ -448,8 +447,7 @@ import com.hashicorp.cdktf.providers.dns.provider.DnsProviderConfig;
 
 DnsProviderConfig.builder()
 //  .alias(java.lang.String)
-//  .update(IResolvable)
-//  .update(java.util.List<DnsProviderUpdate>)
+//  .update(IResolvable|java.util.List<DnsProviderUpdate>)
     .build();
 ```
 
@@ -458,7 +456,7 @@ DnsProviderConfig.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-dns.provider.DnsProviderConfig.property.alias">alias</a></code> | <code>java.lang.String</code> | Alias name. |
-| <code><a href="#@cdktf/provider-dns.provider.DnsProviderConfig.property.update">update</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-dns.provider.DnsProviderUpdate">DnsProviderUpdate</a>></code> | update block. |
+| <code><a href="#@cdktf/provider-dns.provider.DnsProviderConfig.property.update">update</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-dns.provider.DnsProviderUpdate">DnsProviderUpdate</a>></code> | update block. |
 
 ---
 
@@ -479,10 +477,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-dns.provider.DnsProviderConfig.property.update"></a>
 
 ```java
-public java.lang.Object getUpdate();
+public IResolvable|java.util.List<DnsProviderUpdate> getUpdate();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-dns.provider.DnsProviderUpdate">DnsProviderUpdate</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-dns.provider.DnsProviderUpdate">DnsProviderUpdate</a>>
 
 update block.
 
@@ -498,8 +496,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 import com.hashicorp.cdktf.providers.dns.provider.DnsProviderUpdate;
 
 DnsProviderUpdate.builder()
-//  .gssapi(IResolvable)
-//  .gssapi(java.util.List<DnsProviderUpdateGssapi>)
+//  .gssapi(IResolvable|java.util.List<DnsProviderUpdateGssapi>)
 //  .keyAlgorithm(java.lang.String)
 //  .keyName(java.lang.String)
 //  .keySecret(java.lang.String)
@@ -515,7 +512,7 @@ DnsProviderUpdate.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-dns.provider.DnsProviderUpdate.property.gssapi">gssapi</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-dns.provider.DnsProviderUpdateGssapi">DnsProviderUpdateGssapi</a>></code> | gssapi block. |
+| <code><a href="#@cdktf/provider-dns.provider.DnsProviderUpdate.property.gssapi">gssapi</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-dns.provider.DnsProviderUpdateGssapi">DnsProviderUpdateGssapi</a>></code> | gssapi block. |
 | <code><a href="#@cdktf/provider-dns.provider.DnsProviderUpdate.property.keyAlgorithm">keyAlgorithm</a></code> | <code>java.lang.String</code> | Required if `key_name` is set. |
 | <code><a href="#@cdktf/provider-dns.provider.DnsProviderUpdate.property.keyName">keyName</a></code> | <code>java.lang.String</code> | The name of the TSIG key used to sign the DNS update messages. |
 | <code><a href="#@cdktf/provider-dns.provider.DnsProviderUpdate.property.keySecret">keySecret</a></code> | <code>java.lang.String</code> | Required if `key_name` is set A Base64-encoded string containing the shared secret to be used for TSIG. |
@@ -530,10 +527,10 @@ DnsProviderUpdate.builder()
 ##### `gssapi`<sup>Optional</sup> <a name="gssapi" id="@cdktf/provider-dns.provider.DnsProviderUpdate.property.gssapi"></a>
 
 ```java
-public java.lang.Object getGssapi();
+public IResolvable|java.util.List<DnsProviderUpdateGssapi> getGssapi();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-dns.provider.DnsProviderUpdateGssapi">DnsProviderUpdateGssapi</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-dns.provider.DnsProviderUpdateGssapi">DnsProviderUpdateGssapi</a>>
 
 gssapi block.
 
